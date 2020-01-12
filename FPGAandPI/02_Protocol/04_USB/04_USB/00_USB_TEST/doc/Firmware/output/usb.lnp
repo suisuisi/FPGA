@@ -1,0 +1,7 @@
+"..\output\fw.obj",
+"..\output\periph.obj",
+"..\output\dscr.obj",
+"..\Lib\EZUSB.LIB",
+"..\Lib\USBJmpTb.OBJ" 
+TO "..\output\usb" 
+PRINT(".\Listings\usb.m51") RAMSIZE(256) 

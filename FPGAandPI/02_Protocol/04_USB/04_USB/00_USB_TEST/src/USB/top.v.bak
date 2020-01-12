@@ -1,0 +1,66 @@
+/************************************************************************
+ * Author        : Wen Chunyang
+ * Email         : 1494640955@qq.com
+ * Create time   : 2018-05-09 22:42
+ * Last modified : 2018-05-09 22:42
+ * Filename      : top.v
+ * Description   : 
+ * *********************************************************************/
+module  top(
+        input                   clk                     ,
+        //usb interface
+        input                   flag_d                  ,
+        input                   flag_a                  ,
+        output  wire            slwr                    ,
+        output  wire            slrd                    ,
+        output  wire            sloe                    ,
+        output  wire            pktend                  ,
+        output  wire            ifclk                   ,
+        output  wire [ 1: 0]    fifo_addr               ,
+        inout   wire [15: 0]    usb_data                
+);
+//=====================================================================\
+// ********** Define Parameter and Internal Signals *************
+//=====================================================================/
+wire                            clk_48m                         ;
+wire                            rst_n                           ; 
+
+wire                            clk_48m_r                       ;
+wire                            clk_24m                         ;
+wire                            clk_96m                         ; 
+
+wire                            cmd_flag    /*synthesis keep*/  ;
+wire    [ 7: 0]                 cmd_data    /*synthesis keep*/  ; 
+//======================================================================
+// ***************      Main    Code    ****************
+//======================================================================
+
+
+pll_clk	pll_clk_inst (
+        .inclk0                 (clk                    ),
+        .c0                     (clk_48m                ),
+        .locked                 (rst_n                  )
+);
+
+usb usb_inst(
+        .clk                    (clk_48m                ),
+        .rst_n                  (rst_n                  ),
+        //usb interface
+        .flag_d                 (flag_d                 ),
+        .flag_a                 (flag_a                 ),
+        .slwr                   (slwr                   ),
+        .slrd                   (slrd                   ),
+        .sloe                   (sloe                   ),
+        .pktend                 (pktend                 ),
+        .ifclk                  (ifclk                  ),
+        .fifo_addr              (fifo_addr              ),
+        .usb_data               (usb_data               ),
+        //receive cmd from pc
+        .cmd_flag               (cmd_flag               ),
+        .cmd_data               (cmd_data               )
+);
+
+
+
+
+endmodule

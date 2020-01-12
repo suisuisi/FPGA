@@ -1,0 +1,39 @@
+module  led(
+        input                   CLCOK                     ,
+        input                   rst_n                   ,
+        //usb interface
+        input                   flag_d                  ,
+        input                   flag_a                  ,
+        output  reg             slwr                    ,
+        output  reg             slrd                    ,
+        output  reg             sloe                    ,
+        output  wire            pktend                  ,
+        output  wire            ifclk                   ,
+        output  reg  [ 1: 0]    fifo_addr               ,
+        inout   wire [15: 0]    usb_data                ,
+        //receive cmd from pc
+        output  wire            cmd_flag                ,
+        output  wire  [15: 0]   cmd_data                
+);
+
+
+
+
+
+reg[3:0]ledctrl;
+reg[3:0]led_r;
+
+always @(posedge CLCOK or negedge rst_n)begin
+    if(!rst_n)begin
+        cnt0 <= 0;
+    end
+    else if(add_cnt0)begin
+        if(end_cnt0)
+            cnt0 <= 0;
+        else
+            cnt0 <= cnt0 + 1;
+    end
+    else begin
+        cnt0 <= 0;
+    end
+end

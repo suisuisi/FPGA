@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Aug 14 21:04:19 2019
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+Revision Name : usb
+Top-level Entity Name : top
+Family : Cyclone IV E
+Total logic elements : 1,473
+    Total combinational functions : 722
+    Dedicated logic registers : 1,179
+Total registers : 1179
+Total pins : 27
+Total virtual pins : 0
+Total memory bits : 62,464
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
