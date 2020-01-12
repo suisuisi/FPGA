@@ -1,0 +1,74 @@
+//****************************************************************************//
+//# @Author: 碎碎思
+//# @Date:   2019-06-05 21:05:29
+//# @Last Modified by:   zlk
+//# @WeChat Official Account: OpenFPGA
+//# @Last Modified time: 2019-06-09 04:34:28
+//# Description: 
+//# @Modification History: 2010-08-07 14:36:26
+//# Date			    By			   Version			   Change Description: 
+//# ========================================================================= #
+//# 2010-08-07 14:36:26
+//# ========================================================================= #
+//# |                                          								| #
+//# |                                OpenFPGA     							| #
+//****************************************************************************//
+module SClickLClickDClick_module
+(
+    CLOCK, RST_n, 
+	key_in_y,         // 输入矩阵键盘的列信号(KEY0~KEY3)
+	key_out_x,        // 输出矩阵键盘的行信号(KEY4~KEY7)				
+	SMG_Data,
+	Scan_Sig
+);
+    
+	input CLOCK;
+	input RST_n;
+    input  [3:0] key_in_y;
+	output reg [3:0] key_out_x;
+	output [7:0]SMG_Data;
+	output [5:0]Scan_Sig;
+
+	/**************************/
+	 
+	wire [15:0]Pin_Out;
+
+	key4x4funcmod_module  U1
+	 (
+	    .CLOCK( CLOCK ),
+		.RST_n( RST_n ),
+		.key_in_y( key_in_y ),   // input - from top
+		.key_out_x(key_out_x),   // output - to top
+		.Pin_Out( Pin_Out )      // < core
+	 );
+	 
+	 /**************************/
+	 smg_interface U2
+	 (
+	     .CLOCK( CLOCK ),
+		 .RST_n( RST_n ),
+		 .SMG_Data( SMG_Data ),          // output - to top
+		 .Scan_Sig( Scan_Sig ),          // output - to top
+		 .Number_Sig( Number_Sig )          // < core
+	 );
+
+	reg [23:0]Number_Sig;
+	
+	always @ ( posedge CLOCK or negedge RST_n )
+	    if( !RST_n )
+		     begin
+			    i <= 4'd0;
+			    Number_Sig <= 24'd0;
+			  end
+		 else 
+		     case( Pin_Out )
+			    0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15:
+			    begin 
+			    	Number_Sig[7:0] <= Pin_Out; 
+			    end
+					
+				default:Number_Sig[7:0]<=8'hFF;
+
+			  endcase
+
+endmodule

@@ -1,0 +1,46 @@
+module smg_encode_immdmod
+(
+	 input [3:0]iData,
+	 output [7:0]oData
+);
+	 parameter _0 = 8'b1100_0000, _1 = 8'b1111_1001, _2 = 8'b1010_0100, 
+	           _3 = 8'b1011_0000, _4 = 8'b1001_1001, _5 = 8'b1001_0010, 
+				  _6 = 8'b1000_0010, _7 = 8'b1111_1000, _8 = 8'b1000_0000,
+				  _9 = 8'b1001_0000;
+	 
+	 reg [7:0]rData = 8'b1111_1111;
+	 
+	 always @ ( * )
+	     if( iData == 4'd0 ) rData = _0;
+		  else if( iData == 4'd1 ) rData = _1;
+		  else if( iData == 4'd2 ) rData = _2;
+		  else if( iData == 4'd3 ) rData = _3;
+		  else if( iData == 4'd4 ) rData = _4;
+		  else if( iData == 4'd5 ) rData = _5;
+		  else if( iData == 4'd6 ) rData = _6;
+		  else if( iData == 4'd7 ) rData = _7;
+		  else if( iData == 4'd8 ) rData = _8;
+		  else if( iData == 4'd9 ) rData = _9;
+		  else rData = 8'dx;
+	 
+	 /*
+	 always @ ( posedge CLOCK or negedge RESET )
+	    if( !RESET )
+		    rData <= 8'b1111_1111;
+		 else 
+			 case( iData )
+				  4'd0 : rData <= _0;
+				  4'd1 : rData <= _1;
+				  4'd2 : rData <= _2;
+				  4'd3 : rData <= _3;
+				  4'd4 : rData <= _4;
+				  4'd5 : rData <= _5;
+				  4'd6 : rData <= _6;
+				  4'd7 : rData <= _7;
+				  4'd8 : rData <= _8;
+				  4'd9 : rData <= _9;
+			 endcase
+    */
+	 assign oData = rData;
+
+endmodule

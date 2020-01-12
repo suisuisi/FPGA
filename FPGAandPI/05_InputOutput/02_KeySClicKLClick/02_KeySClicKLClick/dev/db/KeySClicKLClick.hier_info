@@ -1,0 +1,100 @@
+|SClicKLClick_module
+CLOCK => CLOCK.IN2
+RST_n => RST_n.IN2
+KEY => KEY.IN1
+LED[0] << led_module:U2.LED
+LED[1] << led_module:U2.LED
+
+
+|SClicKLClick_module|keyfuncmod_module:U1
+CLOCK => C1[0].CLK
+CLOCK => C1[1].CLK
+CLOCK => C1[2].CLK
+CLOCK => C1[3].CLK
+CLOCK => C1[4].CLK
+CLOCK => C1[5].CLK
+CLOCK => C1[6].CLK
+CLOCK => C1[7].CLK
+CLOCK => C1[8].CLK
+CLOCK => C1[9].CLK
+CLOCK => C1[10].CLK
+CLOCK => C1[11].CLK
+CLOCK => C1[12].CLK
+CLOCK => C1[13].CLK
+CLOCK => C1[14].CLK
+CLOCK => C1[15].CLK
+CLOCK => C1[16].CLK
+CLOCK => C1[17].CLK
+CLOCK => C1[18].CLK
+CLOCK => C1[19].CLK
+CLOCK => C1[20].CLK
+CLOCK => C1[21].CLK
+CLOCK => C1[22].CLK
+CLOCK => C1[23].CLK
+CLOCK => C1[24].CLK
+CLOCK => C1[25].CLK
+CLOCK => C1[26].CLK
+CLOCK => C1[27].CLK
+CLOCK => isSClick.CLK
+CLOCK => isLClick.CLK
+CLOCK => i[0].CLK
+CLOCK => i[1].CLK
+CLOCK => i[2].CLK
+CLOCK => i[3].CLK
+CLOCK => F1.CLK
+CLOCK => F2.CLK
+CLOCK => isTag~4.DATAIN
+RST_n => C1[0].ACLR
+RST_n => C1[1].ACLR
+RST_n => C1[2].ACLR
+RST_n => C1[3].ACLR
+RST_n => C1[4].ACLR
+RST_n => C1[5].ACLR
+RST_n => C1[6].ACLR
+RST_n => C1[7].ACLR
+RST_n => C1[8].ACLR
+RST_n => C1[9].ACLR
+RST_n => C1[10].ACLR
+RST_n => C1[11].ACLR
+RST_n => C1[12].ACLR
+RST_n => C1[13].ACLR
+RST_n => C1[14].ACLR
+RST_n => C1[15].ACLR
+RST_n => C1[16].ACLR
+RST_n => C1[17].ACLR
+RST_n => C1[18].ACLR
+RST_n => C1[19].ACLR
+RST_n => C1[20].ACLR
+RST_n => C1[21].ACLR
+RST_n => C1[22].ACLR
+RST_n => C1[23].ACLR
+RST_n => C1[24].ACLR
+RST_n => C1[25].ACLR
+RST_n => C1[26].ACLR
+RST_n => C1[27].ACLR
+RST_n => isSClick.ACLR
+RST_n => isLClick.ACLR
+RST_n => i[0].ACLR
+RST_n => i[1].ACLR
+RST_n => i[2].ACLR
+RST_n => i[3].ACLR
+RST_n => F1.PRESET
+RST_n => F2.PRESET
+RST_n => isTag~6.DATAIN
+KEY => F1.DATAIN
+Pin_Out[0] <= isLClick.DB_MAX_OUTPUT_PORT_TYPE
+Pin_Out[1] <= isSClick.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SClicKLClick_module|led_module:U2
+CLOCK => rLED[0].CLK
+CLOCK => rLED[1].CLK
+RST_n => rLED[0].ACLR
+RST_n => rLED[1].ACLR
+Pin_In[0] => rLED.OUTPUTSELECT
+Pin_In[1] => rLED[0].ENA
+Pin_In[1] => rLED[1].ENA
+LED[0] <= rLED[0].DB_MAX_OUTPUT_PORT_TYPE
+LED[1] <= rLED[1].DB_MAX_OUTPUT_PORT_TYPE
+
+

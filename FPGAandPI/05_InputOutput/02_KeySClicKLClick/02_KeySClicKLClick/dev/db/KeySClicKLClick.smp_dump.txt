@@ -1,0 +1,6 @@
+
+State Machine - |SClicKLClick_module|keyfuncmod_module:U1|isTag
+Name isTag.00 isTag.10 isTag.01 
+isTag.00 0 0 0 
+isTag.01 1 0 1 
+isTag.10 1 1 0 

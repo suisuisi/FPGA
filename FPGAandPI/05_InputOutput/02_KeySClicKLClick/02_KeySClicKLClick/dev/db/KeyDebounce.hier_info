@@ -1,0 +1,102 @@
+|debounce_module
+CLOCK => CLOCK.IN2
+RST_n => RST_n.IN2
+Pin_In => Pin_In.IN1
+Pin_Out << delay_module:U2.Pin_Out
+
+
+|debounce_module|detect_module:U1
+CLOCK => L2H_F2.CLK
+CLOCK => L2H_F1.CLK
+CLOCK => H2L_F2.CLK
+CLOCK => H2L_F1.CLK
+CLOCK => isEn.CLK
+CLOCK => Count1[0].CLK
+CLOCK => Count1[1].CLK
+CLOCK => Count1[2].CLK
+CLOCK => Count1[3].CLK
+CLOCK => Count1[4].CLK
+CLOCK => Count1[5].CLK
+CLOCK => Count1[6].CLK
+CLOCK => Count1[7].CLK
+CLOCK => Count1[8].CLK
+CLOCK => Count1[9].CLK
+CLOCK => Count1[10].CLK
+RST_n => isEn.ACLR
+RST_n => Count1[0].ACLR
+RST_n => Count1[1].ACLR
+RST_n => Count1[2].ACLR
+RST_n => Count1[3].ACLR
+RST_n => Count1[4].ACLR
+RST_n => Count1[5].ACLR
+RST_n => Count1[6].ACLR
+RST_n => Count1[7].ACLR
+RST_n => Count1[8].ACLR
+RST_n => Count1[9].ACLR
+RST_n => Count1[10].ACLR
+RST_n => L2H_F2.ACLR
+RST_n => L2H_F1.ACLR
+RST_n => H2L_F2.PRESET
+RST_n => H2L_F1.PRESET
+Pin_In => L2H_F1.DATAIN
+Pin_In => H2L_F1.DATAIN
+H2L_Sig <= H2L_Sig.DB_MAX_OUTPUT_PORT_TYPE
+L2H_Sig <= L2H_Sig.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|debounce_module|delay_module:U2
+CLOCK => rPin_Out.CLK
+CLOCK => isCount.CLK
+CLOCK => Count_MS[0].CLK
+CLOCK => Count_MS[1].CLK
+CLOCK => Count_MS[2].CLK
+CLOCK => Count_MS[3].CLK
+CLOCK => Count1[0].CLK
+CLOCK => Count1[1].CLK
+CLOCK => Count1[2].CLK
+CLOCK => Count1[3].CLK
+CLOCK => Count1[4].CLK
+CLOCK => Count1[5].CLK
+CLOCK => Count1[6].CLK
+CLOCK => Count1[7].CLK
+CLOCK => Count1[8].CLK
+CLOCK => Count1[9].CLK
+CLOCK => Count1[10].CLK
+CLOCK => Count1[11].CLK
+CLOCK => Count1[12].CLK
+CLOCK => Count1[13].CLK
+CLOCK => Count1[14].CLK
+CLOCK => Count1[15].CLK
+CLOCK => i~4.DATAIN
+RST_n => Count1[0].ACLR
+RST_n => Count1[1].ACLR
+RST_n => Count1[2].ACLR
+RST_n => Count1[3].ACLR
+RST_n => Count1[4].ACLR
+RST_n => Count1[5].ACLR
+RST_n => Count1[6].ACLR
+RST_n => Count1[7].ACLR
+RST_n => Count1[8].ACLR
+RST_n => Count1[9].ACLR
+RST_n => Count1[10].ACLR
+RST_n => Count1[11].ACLR
+RST_n => Count1[12].ACLR
+RST_n => Count1[13].ACLR
+RST_n => Count1[14].ACLR
+RST_n => Count1[15].ACLR
+RST_n => rPin_Out.ACLR
+RST_n => isCount.ACLR
+RST_n => Count_MS[0].ACLR
+RST_n => Count_MS[1].ACLR
+RST_n => Count_MS[2].ACLR
+RST_n => Count_MS[3].ACLR
+RST_n => i~6.DATAIN
+H2L_Sig => i.OUTPUTSELECT
+H2L_Sig => i.OUTPUTSELECT
+H2L_Sig => i.OUTPUTSELECT
+L2H_Sig => i.OUTPUTSELECT
+L2H_Sig => i.OUTPUTSELECT
+L2H_Sig => i.OUTPUTSELECT
+Pin_Out <= rPin_Out.DB_MAX_OUTPUT_PORT_TYPE
+
+
