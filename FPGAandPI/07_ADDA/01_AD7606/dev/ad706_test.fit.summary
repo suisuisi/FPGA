@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu May 05 14:51:20 2016
+Quartus II 64-Bit Version : 11.0 Build 208 07/03/2011 SP 1 SJ Full Version
+Revision Name : ad706_test
+Top-level Entity Name : ad706_test
+Family : Cyclone IV E
+Device : EP4CE6F17C8
+Timing Models : Final
+Total logic elements : 3,265 / 6,272 ( 52 % )
+    Total combinational functions : 3,220 / 6,272 ( 51 % )
+    Dedicated logic registers : 1,150 / 6,272 ( 18 % )
+Total registers : 1150
+Total pins : 28 / 180 ( 16 % )
+Total virtual pins : 0
+Total memory bits : 96 / 276,480 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

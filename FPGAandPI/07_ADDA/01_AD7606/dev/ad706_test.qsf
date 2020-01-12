@@ -1,0 +1,127 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2011 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Full Version
+# Date created = 14:24:43  June 07, 2015
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		ad706_test_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE15F17C8
+set_global_assignment -name TOP_LEVEL_ENTITY ad706_test
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "11.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:24:43  JUNE 07, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Standard Edition"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 256
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_busy
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_convstab
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_cs
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to tx
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to rx
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to rst_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to first_data
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_reset
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_rd
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_os[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_os[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_os[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[14]
+set_location_assignment PIN_M11 -to ad_data[0]
+set_location_assignment PIN_L13 -to ad_data[1]
+set_location_assignment PIN_N12 -to ad_data[2]
+set_location_assignment PIN_N14 -to ad_data[3]
+set_location_assignment PIN_L9 -to ad_data[4]
+set_location_assignment PIN_P14 -to ad_data[5]
+set_location_assignment PIN_R14 -to ad_data[6]
+set_location_assignment PIN_T15 -to ad_data[7]
+set_location_assignment PIN_R13 -to ad_data[8]
+set_location_assignment PIN_T14 -to ad_data[9]
+set_location_assignment PIN_R12 -to ad_data[10]
+set_location_assignment PIN_T13 -to ad_data[11]
+set_location_assignment PIN_R11 -to ad_data[12]
+set_location_assignment PIN_T12 -to ad_data[13]
+set_location_assignment PIN_R10 -to ad_data[14]
+set_location_assignment PIN_T11 -to ad_data[15]
+set_location_assignment PIN_N15 -to ad_busy
+set_location_assignment PIN_L15 -to ad_convstab
+set_location_assignment PIN_N16 -to ad_cs
+set_location_assignment PIN_J16 -to ad_os[0]
+set_location_assignment PIN_K15 -to ad_os[1]
+set_location_assignment PIN_K16 -to ad_os[2]
+set_location_assignment PIN_L14 -to ad_rd
+set_location_assignment PIN_L16 -to ad_reset
+set_location_assignment PIN_P16 -to first_data
+set_location_assignment PIN_R9 -to clk
+set_location_assignment PIN_L1 -to tx
+set_global_assignment -name VERILOG_FILE ../src/AD7606/volt_cal.v
+set_global_assignment -name VERILOG_FILE ../src/AD7606/uarttx.v
+set_global_assignment -name VERILOG_FILE ../src/AD7606/uart.v
+set_global_assignment -name VERILOG_FILE ../src/AD7606/clkdiv.v
+set_global_assignment -name VERILOG_FILE ../src/AD7606/bcd.v
+set_global_assignment -name VERILOG_FILE ../src/AD7606/ad7606.v
+set_global_assignment -name VERILOG_FILE ../src/AD7606/ad706_test.v
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY "F:\\FILE\\FPGA\\FPGA_Interface\\07_ADDA\\01_AD7606\\out"
+set_global_assignment -name TCL_SCRIPT_FILE ../tcl/PIN_ASSIGN.tcl
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name ENABLE_INIT_DONE_OUTPUT OFF
+set_location_assignment PIN_M1 -to rst_n
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

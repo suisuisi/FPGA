@@ -1,0 +1,136 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(symbol
+	(rect 536 104 880 408)
+	(text "kernel" (rect 4 0 45 16)(font "Arial" (font_size 10)))
+	(text "inst" (rect 4 288 21 300)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk " (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "clk " (rect 20 25 38 39)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset_n " (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "reset_n " (rect 20 41 67 55)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "data0_to_the_epcs " (rect 0 0 113 14)(font "Arial" (font_size 8)))
+		(text "data0_to_the_epcs " (rect 20 73 133 87)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 344 80)
+		(output)
+		(text "dclk_from_the_epcs " (rect 0 0 119 14)(font "Arial" (font_size 8)))
+		(text "dclk_from_the_epcs " (rect 219 73 338 87)(font "Arial" (font_size 8)))
+		(line (pt 328 80)(pt 344 80))
+	)
+	(port
+		(pt 344 96)
+		(output)
+		(text "sce_from_the_epcs " (rect 0 0 118 14)(font "Arial" (font_size 8)))
+		(text "sce_from_the_epcs " (rect 222 89 340 103)(font "Arial" (font_size 8)))
+		(line (pt 328 96)(pt 344 96))
+	)
+	(port
+		(pt 344 112)
+		(output)
+		(text "sdo_from_the_epcs " (rect 0 0 118 14)(font "Arial" (font_size 8)))
+		(text "sdo_from_the_epcs " (rect 221 105 339 119)(font "Arial" (font_size 8)))
+		(line (pt 328 112)(pt 344 112))
+	)
+	(port
+		(pt 344 144)
+		(output)
+		(text "zs_addr_from_the_sdram[12..0] " (rect 0 0 186 14)(font "Arial" (font_size 8)))
+		(text "zs_addr_from_the_sdram[12..0] " (rect 164 137 350 151)(font "Arial" (font_size 8)))
+		(line (pt 328 144)(pt 344 144)(line_width 3))
+	)
+	(port
+		(pt 344 160)
+		(output)
+		(text "zs_ba_from_the_sdram[1..0] " (rect 0 0 167 14)(font "Arial" (font_size 8)))
+		(text "zs_ba_from_the_sdram[1..0] " (rect 180 153 347 167)(font "Arial" (font_size 8)))
+		(line (pt 328 160)(pt 344 160)(line_width 3))
+	)
+	(port
+		(pt 344 176)
+		(output)
+		(text "zs_cas_n_from_the_sdram " (rect 0 0 160 14)(font "Arial" (font_size 8)))
+		(text "zs_cas_n_from_the_sdram " (rect 186 169 346 183)(font "Arial" (font_size 8)))
+		(line (pt 328 176)(pt 344 176))
+	)
+	(port
+		(pt 344 192)
+		(output)
+		(text "zs_cke_from_the_sdram " (rect 0 0 145 14)(font "Arial" (font_size 8)))
+		(text "zs_cke_from_the_sdram " (rect 198 185 343 199)(font "Arial" (font_size 8)))
+		(line (pt 328 192)(pt 344 192))
+	)
+	(port
+		(pt 344 208)
+		(output)
+		(text "zs_cs_n_from_the_sdram " (rect 0 0 153 14)(font "Arial" (font_size 8)))
+		(text "zs_cs_n_from_the_sdram " (rect 193 201 346 215)(font "Arial" (font_size 8)))
+		(line (pt 328 208)(pt 344 208))
+	)
+	(port
+		(pt 344 240)
+		(output)
+		(text "zs_dqm_from_the_sdram[1..0] " (rect 0 0 177 14)(font "Arial" (font_size 8)))
+		(text "zs_dqm_from_the_sdram[1..0] " (rect 171 233 348 247)(font "Arial" (font_size 8)))
+		(line (pt 328 240)(pt 344 240)(line_width 3))
+	)
+	(port
+		(pt 344 256)
+		(output)
+		(text "zs_ras_n_from_the_sdram " (rect 0 0 158 14)(font "Arial" (font_size 8)))
+		(text "zs_ras_n_from_the_sdram " (rect 189 249 347 263)(font "Arial" (font_size 8)))
+		(line (pt 328 256)(pt 344 256))
+	)
+	(port
+		(pt 344 272)
+		(output)
+		(text "zs_we_n_from_the_sdram " (rect 0 0 158 14)(font "Arial" (font_size 8)))
+		(text "zs_we_n_from_the_sdram " (rect 190 265 348 279)(font "Arial" (font_size 8)))
+		(line (pt 328 272)(pt 344 272))
+	)
+	(port
+		(pt 344 224)
+		(bidir)
+		(text "zs_dq_to_and_from_the_sdram[15..0] " (rect 0 0 220 14)(font "Arial" (font_size 8)))
+		(text "zs_dq_to_and_from_the_sdram[15..0] " (rect 134 217 354 231)(font "Arial" (font_size 8)))
+		(line (pt 328 224)(pt 344 224)(line_width 3))
+	)
+	(drawing
+		(line (pt 16 64)(pt 327 64)(color 0 0 0)(dotted))
+		(line (pt 16 128)(pt 327 128)(color 0 0 0)(dotted))
+		(rectangle (rect 16 16 328 288))
+	)
+)

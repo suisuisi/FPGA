@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu May 05 14:51:11 2016
+Quartus II 64-Bit Version : 11.0 Build 208 07/03/2011 SP 1 SJ Full Version
+Revision Name : ad706_test
+Top-level Entity Name : ad706_test
+Family : Cyclone IV E
+Total logic elements : 3,462
+    Total combinational functions : 3,220
+    Dedicated logic registers : 1,150
+Total registers : 1150
+Total pins : 28
+Total virtual pins : 0
+Total memory bits : 96
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

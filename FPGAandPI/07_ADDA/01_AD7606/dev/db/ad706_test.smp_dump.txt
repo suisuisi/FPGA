@@ -1,0 +1,22 @@
+
+State Machine - |ad706_test|uart:u3|uart_stat
+Name uart_stat.000 uart_stat.010 uart_stat.001 
+uart_stat.000 0 0 0 
+uart_stat.001 1 0 1 
+uart_stat.010 1 1 0 
+
+State Machine - |ad706_test|ad7606:u1|state
+Name state.READ_DONE state.READ_CH8 state.READ_CH7 state.READ_CH6 state.READ_CH5 state.READ_CH4 state.READ_CH3 state.READ_CH2 state.READ_CH1 state.Wait_busy state.Wait_1 state.AD_CONV state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.AD_CONV 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.Wait_1 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.Wait_busy 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.READ_CH1 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.READ_CH2 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.READ_CH3 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.READ_CH4 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.READ_CH5 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.READ_CH6 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.READ_CH7 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.READ_CH8 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_DONE 1 0 0 0 0 0 0 0 0 0 0 0 1 

@@ -1,0 +1,120 @@
+Flow report for ad706_test
+Thu May 05 14:51:27 2016
+Quartus II 64-Bit Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------+
+; Flow Summary                                                                        ;
++------------------------------------+------------------------------------------------+
+; Flow Status                        ; Successful - Thu May 05 14:51:23 2016          ;
+; Quartus II 64-Bit Version          ; 11.0 Build 208 07/03/2011 SP 1 SJ Full Version ;
+; Revision Name                      ; ad706_test                                     ;
+; Top-level Entity Name              ; ad706_test                                     ;
+; Family                             ; Cyclone IV E                                   ;
+; Device                             ; EP4CE6F17C8                                    ;
+; Timing Models                      ; Final                                          ;
+; Total logic elements               ; 3,265 / 6,272 ( 52 % )                         ;
+;     Total combinational functions  ; 3,220 / 6,272 ( 51 % )                         ;
+;     Dedicated logic registers      ; 1,150 / 6,272 ( 18 % )                         ;
+; Total registers                    ; 1150                                           ;
+; Total pins                         ; 28 / 180 ( 16 % )                              ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 96 / 276,480 ( < 1 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                                 ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                                  ;
++------------------------------------+------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 05/05/2016 14:51:00 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; ad706_test          ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                ;
++-------------------------------------+--------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+--------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 48736235528460.146243106006652 ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                             ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                              ; --            ; --          ; --         ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                           ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; 16764057                       ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; --          ; Top        ;
++-------------------------------------+--------------------------------+---------------+-------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 374 MB              ; 00:00:11                           ;
+; Fitter                    ; 00:00:08     ; 1.0                     ; 550 MB              ; 00:00:10                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 322 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.6                     ; 415 MB              ; 00:00:06                           ;
+; Total                     ; 00:00:25     ; --                      ; --                  ; 00:00:28                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; LAOLUO-PC        ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; LAOLUO-PC        ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; LAOLUO-PC        ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; LAOLUO-PC        ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off ad706_test -c ad706_test
+quartus_fit --read_settings_files=off --write_settings_files=off ad706_test -c ad706_test
+quartus_asm --read_settings_files=off --write_settings_files=off ad706_test -c ad706_test
+quartus_sta ad706_test -c ad706_test
+
+
+

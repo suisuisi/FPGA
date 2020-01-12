@@ -1,0 +1,101 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ad_cs",
+					"strict" : false
+				},
+				{
+					"name" : "ad_rd",
+					"strict" : false
+				},
+				{
+					"name" : "ad_reset",
+					"strict" : false
+				},
+				{
+					"name" : "ad_convstab",
+					"strict" : false
+				},
+				{
+					"name" : "tx",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "ad_busy",
+					"strict" : false
+				},
+				{
+					"name" : "ad_data[15]",
+					"strict" : false
+				},
+				{
+					"name" : "ad_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ad_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ad_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ad_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ad_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ad_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ad_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ad_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ad_data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ad_data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ad_data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ad_data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ad_data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ad_data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "ad_data[13]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,6 @@
+指定Quartus II编译输出文件路径。如参考文献所述，Assignments-》Setting-》Compilation Process Setting,在右边的选项中勾选Save project output files in specified directory选择输出路径即可。
+--------------------- 
+作者：pang9998 
+来源：CSDN 
+原文：https://blog.csdn.net/pang9998/article/details/83990485 
+版权声明：本文为博主原创文章，转载请附上博文链接！
