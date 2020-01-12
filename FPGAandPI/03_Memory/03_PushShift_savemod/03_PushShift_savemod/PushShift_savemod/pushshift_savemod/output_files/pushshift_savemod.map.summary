@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Fri Oct 04 12:38:39 2013
+Quartus II 32-bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : pushshift_savemod
+Top-level Entity Name : pushshift_savemod
+Family : Cyclone IV GX
+Total logic elements : 144
+    Total combinational functions : 72
+    Dedicated logic registers : 76
+Total registers : 76
+Total pins : 15
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

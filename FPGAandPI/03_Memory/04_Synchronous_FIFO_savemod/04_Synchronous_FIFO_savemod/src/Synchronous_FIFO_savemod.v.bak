@@ -1,0 +1,48 @@
+//***************************************//
+//# @Author: 碎碎思
+//# @Date:   2019-04-06 22:44:48
+//# @Last Modified by:   zlk
+//# @Last Modified time: 2019-04-06 22:55:33
+//****************************************//
+ module fifo_savemod
+(
+input CLOCK, RESET,
+input ReqW，ReqR,
+input [3:0]DataW,
+output [3:0]DataR,
+output Full,Empty
+);
+
+reg [3:0] RAM [3:0];
+reg [3:0] D1;
+reg [2:0] WP,RP; // N+1
+
+always @ ( posedge CLOCK or negedge RESET )
+if( !RESET )
+	begin
+		WP <= 3'd0;
+	end
+else if( ReqW )
+	begin
+		RAM[ WP[1:0] ] <= DataW;//前两位才是深度，最高位是标志位
+		WP <= WP + 1'b1;
+	end
+	
+always @ ( posedge CLOCK or negedge RESET )
+	if( !RESET )
+		begin
+			D1 <= 4'd0;
+			RP <= 3'd0;
+	end
+	else if( ReqR )
+		begin
+			D1 <= RAM[ RP[1:0] ];//前两位才是深度，最高位是标志位
+			RP <= RP + 1'b1;
+	end
+	
+assign DataR = D1;
+assign Full = ( WP[2]^RP[2] & WP[1:0] == RP[1:0] ); // Full
+assign Empty = ( WP == RP ); // Empty
+
+
+endmodule

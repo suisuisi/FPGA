@@ -1,0 +1,123 @@
+//****************************************************************************//
+//# @Author: 碎碎思
+//# @Date:   2019-05-19 20:55:44
+//# @Last Modified by:   zlk
+//# @WeChat Official Account: OpenFPGA
+//# @Last Modified time: 2019-05-26 17:16:17
+//# Description: 
+//# @Modification History: 2019-05-19 20:58:05
+//# Date			    By			   Version			   Change Description: 
+//# ========================================================================= #
+//# 2019-05-19 20:58:05
+//# ========================================================================= #
+//# |                                          								| #
+//# |                                OpenFPGA     							| #
+//****************************************************************************//
+module ds1302_ctrlmod
+(
+    input CLOCK, RST_n,	 
+	 input [13:0]iCall,
+	 output oDone,
+	 input [7:0]iData,
+	 output [1:0]oCall,
+	 input iDone,
+	 output [7:0]oAddr, oData
+);	 
+	 reg [7:0]D1,D2;
+
+	 always @ ( posedge CLOCK or negedge RST_n )
+	     if( !RST_n )
+		      begin
+				    D1 <= 8'd0;
+					 D2 <= 8'd0;
+				end
+		  else 
+		      case( iCall[7:0] )
+				
+				    8'b1000000_0000000 : // Write pslave_address & psub_address
+					 begin D1 = 8'b10100010;  end
+					
+				    8'b0100000_0000000 : // psub_address & control_data
+					 begin D1 = 8'b0000_0000; D2 = iData; end
+					 
+					 8'b0010000_0000000 : // Write second
+					 begin D1 = 8'b00000010; D2 = iData; end
+					 
+					 8'b0001000_0000000 : // Write minit
+					 begin D1 = 8'b00000011; D2 = iData; end
+					 
+					 8'b0000100_0000000 : // Write hour
+					 begin D1 = 8'b00000100; D2 = iData; end
+
+					 8'b0000010_0000000 : // Write 闹钟控制器
+					 begin D1 = 8'b00000001; D2 = iData; end
+
+					 8'b0000001_0000000 : // Write 闹钟小时设置
+					 begin D1 = 8'b000001010; D2 = iData; end
+
+					 8'b1000000_1000000 : // Write pslave_address 
+					 begin D1 = 8'b10100010;  end
+
+					 8'b0100000_0100000 : // 读操作地址 & control_data
+					 begin D1 = 8'b10100011; D2 = iData; end
+
+					 8'b0000000_0010000 : // Read second 
+					 begin D1 = 8'b00000010; end
+					 
+					 8'b0000000_0001000 : // Read minit
+					 begin D1 = 8'b00000011; end
+					 
+					 8'b0000000_0000100 : // Read hour  
+					 begin D1 = 8'b00000100; end
+
+					 8'b0000000_0000010 : // Read 闹钟数据  
+					 begin D1 = 8'b00000001; end
+				
+				endcase
+	 
+	 reg [1:0]i;
+	 reg [1:0]isCall;
+	 reg isDone;
+	 
+	 always @ ( posedge CLOCK or negedge RST_n )
+	     if( !RST_n )
+		      begin
+				     i <= 2'd0;
+					 isCall <= 2'b00;
+					 isDone <= 1'b0;
+				end
+		  else if( iCall[13:7] ) // Write action
+		      case( i )
+				
+				    0 :
+					 if( iDone ) begin isCall[1] <= 1'b0; i <= i + 1'b1; end
+					 else begin isCall[1] <= 1'b1; end
+					 
+					 1 :
+					 begin isDone <= 1'b1; i <= i + 1'b1; end
+					 
+					 2 :
+					 begin isDone <= 1'b0; i <= 2'd0; end
+					  
+				endcase
+		  else if( iCall[6:0] ) // Read action
+		      case( i )
+				
+				    0 :
+					 if( iDone ) begin isCall[0] <= 1'b0; i <= i + 1'b1; end
+					 else begin isCall[0] <= 1'b1; end
+					 
+					 1 :
+					 begin isDone <= 1'b1; i <= i + 1'b1; end
+					 
+					 2 :
+					 begin isDone <= 1'b0; i <= 2'd0; end
+					  
+				endcase
+	  
+	  assign oDone = isDone;
+	  assign oCall = isCall;
+	  assign oAddr = D1;
+	  assign oData = D2;
+
+endmodule

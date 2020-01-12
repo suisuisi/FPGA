@@ -1,0 +1,123 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+# Date created = 20:47:59  April 01, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		SRAM_test_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE15F17C8
+set_global_assignment -name TOP_LEVEL_ENTITY savemod_demo
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:47:59  APRIL 01, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name VERILOG_FILE ../src/savemod_demo.v
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name TCL_SCRIPT_FILE ../tcl/osh.tcl
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name ENABLE_INIT_DONE_OUTPUT OFF
+set_location_assignment PIN_M1 -to RESET
+set_location_assignment PIN_R9 -to CLOCK
+set_location_assignment PIN_A9 -to CLOCK_40M
+set_location_assignment PIN_L9 -to SRAM_A[0]
+set_location_assignment PIN_P14 -to SRAM_A[1]
+set_location_assignment PIN_N12 -to SRAM_A[2]
+set_location_assignment PIN_N14 -to SRAM_A[3]
+set_location_assignment PIN_M11 -to SRAM_A[4]
+set_location_assignment PIN_L15 -to SRAM_A[5]
+set_location_assignment PIN_K16 -to SRAM_A[6]
+set_location_assignment PIN_K15 -to SRAM_A[7]
+set_location_assignment PIN_J16 -to SRAM_A[8]
+set_location_assignment PIN_J15 -to SRAM_A[9]
+set_location_assignment PIN_T6 -to SRAM_A[10]
+set_location_assignment PIN_R5 -to SRAM_A[11]
+set_location_assignment PIN_T5 -to SRAM_A[12]
+set_location_assignment PIN_R4 -to SRAM_A[13]
+set_location_assignment PIN_T4 -to SRAM_A[14]
+set_location_assignment PIN_T14 -to SRAM_A[15]
+set_location_assignment PIN_R14 -to SRAM_A[16]
+set_location_assignment PIN_T15 -to SRAM_A[17]
+set_location_assignment PIN_L13 -to SRAM_DB[0]
+set_location_assignment PIN_K12 -to SRAM_DB[1]
+set_location_assignment PIN_R16 -to SRAM_DB[2]
+set_location_assignment PIN_P15 -to SRAM_DB[3]
+set_location_assignment PIN_P16 -to SRAM_DB[4]
+set_location_assignment PIN_N15 -to SRAM_DB[5]
+set_location_assignment PIN_N16 -to SRAM_DB[6]
+set_location_assignment PIN_L14 -to SRAM_DB[7]
+set_location_assignment PIN_R6 -to SRAM_DB[8]
+set_location_assignment PIN_T7 -to SRAM_DB[9]
+set_location_assignment PIN_R7 -to SRAM_DB[10]
+set_location_assignment PIN_T10 -to SRAM_DB[11]
+set_location_assignment PIN_R10 -to SRAM_DB[12]
+set_location_assignment PIN_T11 -to SRAM_DB[13]
+set_location_assignment PIN_R11 -to SRAM_DB[14]
+set_location_assignment PIN_T12 -to SRAM_DB[15]
+set_location_assignment PIN_R12 -to SRAM_LB_N
+set_location_assignment PIN_T13 -to SRAM_UB_N
+set_location_assignment PIN_R13 -to SRAM_OE_N
+set_location_assignment PIN_L16 -to SRAM_WE_N
+set_location_assignment PIN_L11 -to SRAM_CE_N
+set_location_assignment PIN_J1 -to LED[0]
+set_location_assignment PIN_J2 -to LED[1]
+set_location_assignment PIN_K1 -to LED[2]
+set_location_assignment PIN_K2 -to LED[3]
+set_location_assignment PIN_M8 -to DIG[0]
+set_location_assignment PIN_L7 -to DIG[1]
+set_location_assignment PIN_P9 -to DIG[2]
+set_location_assignment PIN_N9 -to DIG[3]
+set_location_assignment PIN_M9 -to DIG[4]
+set_location_assignment PIN_M10 -to DIG[5]
+set_location_assignment PIN_P11 -to DIG[6]
+set_location_assignment PIN_N11 -to DIG[7]
+set_location_assignment PIN_N6 -to SEL[5]
+set_location_assignment PIN_P6 -to SEL[4]
+set_location_assignment PIN_M6 -to SEL[3]
+set_location_assignment PIN_M7 -to SEL[2]
+set_location_assignment PIN_P8 -to SEL[1]
+set_location_assignment PIN_N8 -to SEL[0]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

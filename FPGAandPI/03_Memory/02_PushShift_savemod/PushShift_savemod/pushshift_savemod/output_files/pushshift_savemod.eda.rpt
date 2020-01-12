@@ -1,0 +1,107 @@
+EDA Netlist Writer report for pushshift_savemod
+Fri Oct 04 12:39:16 2013
+Quartus II 32-bit Version 12.1 Build 177 11/07/2012 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. EDA Netlist Writer Summary
+  3. Simulation Settings
+  4. Simulation Generated Files
+  5. EDA Netlist Writer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                        ;
++---------------------------+---------------------------------------+
+; EDA Netlist Writer Status ; Successful - Fri Oct 04 12:39:16 2013 ;
+; Revision Name             ; pushshift_savemod                     ;
+; Top-level Entity Name     ; pushshift_savemod                     ;
+; Family                    ; Cyclone IV GX                         ;
+; Simulation Files Creation ; Successful                            ;
++---------------------------+---------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                        ;
++---------------------------------------------------------------------------------------------------+------------------------+
+; Option                                                                                            ; Setting                ;
++---------------------------------------------------------------------------------------------------+------------------------+
+; Tool Name                                                                                         ; ModelSim-Altera (VHDL) ;
+; Generate netlist for functional simulation only                                                   ; Off                    ;
+; Time scale                                                                                        ; 1 ps                   ;
+; Truncate long hierarchy paths                                                                     ; Off                    ;
+; Map illegal HDL characters                                                                        ; Off                    ;
+; Flatten buses into individual nodes                                                               ; Off                    ;
+; Maintain hierarchy                                                                                ; Off                    ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                    ;
+; Enable glitch filtering                                                                           ; Off                    ;
+; Do not write top level VHDL entity                                                                ; Off                    ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                    ;
+; Architecture name in VHDL output netlist                                                          ; structure              ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                    ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; Off                    ;
++---------------------------------------------------------------------------------------------------+------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                   ;
++--------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                              ;
++--------------------------------------------------------------------------------------------------------------+
+; C:/FPGA_Story_Drive/Experiment/Experiment15/simulation/modelsim/pushshift_savemod_6_1200mv_85c_slow.vho      ;
+; C:/FPGA_Story_Drive/Experiment/Experiment15/simulation/modelsim/pushshift_savemod_6_1200mv_0c_slow.vho       ;
+; C:/FPGA_Story_Drive/Experiment/Experiment15/simulation/modelsim/pushshift_savemod_min_1200mv_0c_fast.vho     ;
+; C:/FPGA_Story_Drive/Experiment/Experiment15/simulation/modelsim/pushshift_savemod.vho                        ;
+; C:/FPGA_Story_Drive/Experiment/Experiment15/simulation/modelsim/pushshift_savemod_6_1200mv_85c_vhd_slow.sdo  ;
+; C:/FPGA_Story_Drive/Experiment/Experiment15/simulation/modelsim/pushshift_savemod_6_1200mv_0c_vhd_slow.sdo   ;
+; C:/FPGA_Story_Drive/Experiment/Experiment15/simulation/modelsim/pushshift_savemod_min_1200mv_0c_vhd_fast.sdo ;
+; C:/FPGA_Story_Drive/Experiment/Experiment15/simulation/modelsim/pushshift_savemod_vhd.sdo                    ;
++--------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------+
+; EDA Netlist Writer Messages ;
++-----------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit EDA Netlist Writer
+    Info: Version 12.1 Build 177 11/07/2012 SJ Full Version
+    Info: Processing started: Fri Oct 04 12:39:14 2013
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off pushshift_savemod -c pushshift_savemod
+Info (204019): Generated file pushshift_savemod_6_1200mv_85c_slow.vho in folder "C:/FPGA_Story_Drive/Experiment/Experiment15/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file pushshift_savemod_6_1200mv_0c_slow.vho in folder "C:/FPGA_Story_Drive/Experiment/Experiment15/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file pushshift_savemod_min_1200mv_0c_fast.vho in folder "C:/FPGA_Story_Drive/Experiment/Experiment15/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file pushshift_savemod.vho in folder "C:/FPGA_Story_Drive/Experiment/Experiment15/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file pushshift_savemod_6_1200mv_85c_vhd_slow.sdo in folder "C:/FPGA_Story_Drive/Experiment/Experiment15/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file pushshift_savemod_6_1200mv_0c_vhd_slow.sdo in folder "C:/FPGA_Story_Drive/Experiment/Experiment15/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file pushshift_savemod_min_1200mv_0c_vhd_fast.sdo in folder "C:/FPGA_Story_Drive/Experiment/Experiment15/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file pushshift_savemod_vhd.sdo in folder "C:/FPGA_Story_Drive/Experiment/Experiment15/simulation/modelsim/" for EDA simulation tool
+Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 301 megabytes
+    Info: Processing ended: Fri Oct 04 12:39:16 2013
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+
