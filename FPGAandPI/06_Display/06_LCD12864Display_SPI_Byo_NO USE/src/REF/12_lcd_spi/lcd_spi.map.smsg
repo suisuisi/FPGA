@@ -1,0 +1,2 @@
+Warning (10273): Verilog HDL warning at lcd_module.v(61): extended using "x" or "z" File: F:/FILE/FPGA/FPGA_Interface/06_Display/12_lcd_spi/source/lcd_module.v Line: 61
+Warning (10268): Verilog HDL information at lcd_module.v(59): always construct contains both blocking and non-blocking assignments File: F:/FILE/FPGA/FPGA_Interface/06_Display/12_lcd_spi/source/lcd_module.v Line: 59

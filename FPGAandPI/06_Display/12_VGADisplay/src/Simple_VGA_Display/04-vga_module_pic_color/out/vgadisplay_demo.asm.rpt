@@ -1,0 +1,105 @@
+Assembler report for vgadisplay_demo
+Sun Sep 01 19:56:20 2019
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Assembler Summary
+  3. Assembler Settings
+  4. Assembler Generated Files
+  5. Assembler Device Options: F:/FILE/FPGA/FPGA_Interface/06_Display/12_VGADisplay/src/Simple_VGA_Display/04-vga_module_pic_color/out/vgadisplay_demo.sof
+  6. Assembler Device Options: F:/FILE/FPGA/FPGA_Interface/06_Display/12_VGADisplay/src/Simple_VGA_Display/04-vga_module_pic_color/out/vgadisplay_demo.pof
+  7. Assembler Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; Assembler Summary                                             ;
++-----------------------+---------------------------------------+
+; Assembler Status      ; Successful - Sun Sep 01 19:56:20 2019 ;
+; Revision Name         ; vgadisplay_demo                       ;
+; Top-level Entity Name ; vga_module                            ;
+; Family                ; Cyclone IV E                          ;
+; Device                ; EP4CE15F17C8                          ;
++-----------------------+---------------------------------------+
+
+
++----------------------------------+
+; Assembler Settings               ;
++--------+---------+---------------+
+; Option ; Setting ; Default Value ;
++--------+---------+---------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                                   ;
++-----------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                                   ;
++-----------------------------------------------------------------------------------------------------------------------------+
+; F:/FILE/FPGA/FPGA_Interface/06_Display/12_VGADisplay/src/Simple_VGA_Display/04-vga_module_pic_color/out/vgadisplay_demo.sof ;
+; F:/FILE/FPGA/FPGA_Interface/06_Display/12_VGADisplay/src/Simple_VGA_Display/04-vga_module_pic_color/out/vgadisplay_demo.pof ;
++-----------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: F:/FILE/FPGA/FPGA_Interface/06_Display/12_VGADisplay/src/Simple_VGA_Display/04-vga_module_pic_color/out/vgadisplay_demo.sof ;
++----------------+--------------------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                              ;
++----------------+--------------------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00122078                                                                                                                           ;
+; Checksum       ; 0x00122078                                                                                                                           ;
++----------------+--------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: F:/FILE/FPGA/FPGA_Interface/06_Display/12_VGADisplay/src/Simple_VGA_Display/04-vga_module_pic_color/out/vgadisplay_demo.pof ;
++--------------------+----------------------------------------------------------------------------------------------------------------------------------+
+; Option             ; Setting                                                                                                                          ;
++--------------------+----------------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode      ; 0x00000000                                                                                                                       ;
+; Checksum           ; 0x05D72E25                                                                                                                       ;
+; Compression Ratio  ; 3                                                                                                                                ;
++--------------------+----------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------+
+; Assembler Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Assembler
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+    Info: Processing started: Sun Sep 01 19:56:19 2019
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off vgadisplay_demo -c vgadisplay_demo
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (115031): Writing out detailed assembly data for power analysis
+Info (115030): Assembler is generating device programming files
+Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4680 megabytes
+    Info: Processing ended: Sun Sep 01 19:56:20 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

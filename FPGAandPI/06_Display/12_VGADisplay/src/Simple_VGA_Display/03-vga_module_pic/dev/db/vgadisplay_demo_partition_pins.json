@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "VSYNC_Sig",
+					"strict" : false
+				},
+				{
+					"name" : "HSYNC_Sig",
+					"strict" : false
+				},
+				{
+					"name" : "Red_Sig",
+					"strict" : false
+				},
+				{
+					"name" : "Green_Sig",
+					"strict" : false
+				},
+				{
+					"name" : "Blue_Sig",
+					"strict" : false
+				},
+				{
+					"name" : "RSTn",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

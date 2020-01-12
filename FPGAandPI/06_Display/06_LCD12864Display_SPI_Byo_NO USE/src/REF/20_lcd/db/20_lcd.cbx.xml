@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="20_lcd">
+		<CBX_INST_ENTRY INSTANCE_NAME="|lcd_interface_demo|lcd_interface:U2|lcd_ram_module:U1|altsyncram:RAM_rtl_0" CBX_FILE_NAME="altsyncram_60i1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lcd_interface_demo|lcd_rom_module:U1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_h5c1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

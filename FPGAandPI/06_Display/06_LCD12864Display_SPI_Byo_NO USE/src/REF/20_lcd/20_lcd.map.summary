@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Oct 07 16:39:36 2012
+Quartus II 64-Bit Version : 11.0 Build 208 07/03/2011 SP 1 SJ Full Version
+Revision Name : 20_lcd
+Top-level Entity Name : lcd_interface_demo
+Family : Cyclone IV E
+Total logic elements : 322
+    Total combinational functions : 314
+    Dedicated logic registers : 124
+Total registers : 124
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 24,576
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

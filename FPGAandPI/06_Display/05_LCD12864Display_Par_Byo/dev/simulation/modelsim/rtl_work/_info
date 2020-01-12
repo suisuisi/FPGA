@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/dev/simulation/modelsim
+vlcd1602_basemod
+Z1 !s110 1561801745
+!i10b 1
+!s100 f48jjzNfmWMPCZk68FLCM3
+I`nBomCzHUDG`8U7`aYZ^81
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1561800521
+8F:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/src/LCD1602_Display/lcd1602_basemod.v
+FF:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/src/LCD1602_Display/lcd1602_basemod.v
+Z3 L0 16
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1561801745.000000
+!s107 F:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/src/LCD1602_Display/lcd1602_basemod.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/src/LCD1602_Display|F:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/src/LCD1602_Display/lcd1602_basemod.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/src/LCD1602_Display
+Z8 tCvgOpt 0
+vlcd1602_basemod_tb
+R1
+!i10b 1
+!s100 I@D8YVK8W4Vf5FP8G@Hb:2
+I>0IHhgj]<zZnnMRI;^0ZQ1
+R2
+R0
+w1561801577
+8F:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/dev/../src/TestBench/lcd1602_basemod_tb.v
+FF:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/dev/../src/TestBench/lcd1602_basemod_tb.v
+L0 8
+R4
+r1
+!s85 0
+31
+R5
+!s107 F:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/dev/../src/TestBench/lcd1602_basemod_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/dev/../src/TestBench|F:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/dev/../src/TestBench/lcd1602_basemod_tb.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/dev/../src/TestBench
+R8
+vlcd1602_funcmod
+R1
+!i10b 1
+!s100 hQDIL?Kc2nY_7T[kWPb`]2
+I01JSbYN2LD4K=:9g5a]FL2
+R2
+R0
+w1561801516
+8F:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/src/LCD1602_Display/lcd1602_funcmod.v
+FF:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/src/LCD1602_Display/lcd1602_funcmod.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 F:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/src/LCD1602_Display/lcd1602_funcmod.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/src/LCD1602_Display|F:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/src/LCD1602_Display/lcd1602_funcmod.v|
+!i113 1
+R6
+R7
+R8

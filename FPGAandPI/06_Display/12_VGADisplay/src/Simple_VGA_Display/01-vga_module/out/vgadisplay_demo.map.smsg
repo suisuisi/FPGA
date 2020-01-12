@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at vga_interface_demo.v(80): always construct contains both blocking and non-blocking assignments File: F:/FILE/FPGA/FPGA_Interface/06_Display/12_VGADisplay/src/Simple_VGA_Display/vga_interface_demo.v Line: 80

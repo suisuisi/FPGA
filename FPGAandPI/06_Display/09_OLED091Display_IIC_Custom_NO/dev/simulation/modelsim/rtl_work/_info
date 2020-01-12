@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/dev/simulation/modelsim
+viic
+Z1 !s110 1563036644
+!i10b 1
+!s100 SM5`i0Jb]d_L_jgfU]8PA1
+ISQ<klf2H[__0Vze`]fH>[0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1563036570
+8F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/iic/iic.v
+FF:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/iic/iic.v
+L0 17
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1563036644.000000
+!s107 F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/iic/iic.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/iic|F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/iic/iic.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/iic
+Z6 tCvgOpt 0
+voled_basemod
+R1
+!i10b 1
+!s100 =?c166jmhKZdGB`ndHeln3
+I]HL1C:M06Lo<nI:8UA7Y30
+R2
+R0
+w1562764532
+8F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_basemod.v
+FF:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_basemod.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_basemod.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display|F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_basemod.v|
+!i113 1
+R5
+Z7 !s92 -vlog01compat -work work +incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display
+R6
+voled_basemod_tb
+!s110 1563036645
+!i10b 1
+!s100 HDohbo1o5n?<g::40dm7V3
+In>9GIUgoLG]a@7MZfYCP`3
+R2
+R0
+w1562853997
+8F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/dev/../src/TestBench/oled_basemod_tb.v
+FF:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/dev/../src/TestBench/oled_basemod_tb.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/dev/../src/TestBench/oled_basemod_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/dev/../src/TestBench|F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/dev/../src/TestBench/oled_basemod_tb.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/dev/../src/TestBench
+R6
+voled_ctrlmod
+R1
+!i10b 1
+!s100 OI`?0czX30c<?Q7NgC^AZ1
+IMKZ_bl1ORd:kf5A6b8?Yi3
+R2
+R0
+w1563033072
+8F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_ctrlmod.v
+FF:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_ctrlmod.v
+L0 16
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_ctrlmod.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display|F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_ctrlmod.v|
+!i113 1
+R5
+R7
+R6

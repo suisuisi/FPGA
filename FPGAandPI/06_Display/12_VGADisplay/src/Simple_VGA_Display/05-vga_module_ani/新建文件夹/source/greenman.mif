@@ -1,0 +1,114 @@
+-- Copyright (C) 1991-2010 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=16;
+DEPTH=96;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	0   :   0000;
+	1   :   1800;
+	2   :   3C00;
+	3   :   1800;
+	4   :   0C00;
+	5   :   0F00;
+	6   :   0E80;
+	7   :   1E40;
+	8   :   2340;
+	9   :   0300;
+	10  :   0280;
+	11  :   0440;
+	12  :   0820;
+	13  :   3010;
+	14  :   0010;
+	[15..16]  :   0000;
+	17  :   1800;
+	18  :   3C00;
+	19  :   1800;
+	20  :   0C00;
+	21  :   0F80;
+	22  :   0EC0;
+	23  :   1E60;
+	24  :   3340;
+	25  :   0300;
+	26  :   0280;
+	27  :   0460;
+	28  :   0C20;
+	29  :   3410;
+	30  :   3830;
+	[31..32]  :   0000;
+	33  :   1800;
+	34  :   3C00;
+	35  :   1800;
+	36  :   0C00;
+	37  :   0F80;
+	38  :   0E40;
+	39  :   1E20;
+	[40..41]  :   0300;
+	42  :   0280;
+	43  :   0460;
+	[44..45]  :   0410;
+	46  :   3820;
+	[47..48]  :   0000;
+	49  :   1800;
+	50  :   3C00;
+	51  :   1800;
+	52  :   0C00;
+	53  :   0F80;
+	54  :   0C40;
+	55  :   0E20;
+	56  :   1320;
+	57  :   0300;
+	58  :   0280;
+	59  :   04E0;
+	60  :   0420;
+	61  :   02C0;
+	62  :   0E00;
+	[63..64]  :   0000;
+	65  :   1800;
+	66  :   3C00;
+	67  :   1800;
+	68  :   0C00;
+	69  :   0F00;
+	70  :   0D80;
+	71  :   0EC0;
+	72  :   17C0;
+	73  :   0300;
+	74  :   0280;
+	75  :   04F0;
+	76  :   0470;
+	77  :   0670;
+	78  :   0E10;
+	79  :   0600;
+	80  :   0000;
+	81  :   1800;
+	82  :   3C00;
+	83  :   1800;
+	84  :   0C00;
+	85  :   0E00;
+	86  :   0D00;
+	87  :   0E80;
+	88  :   0680;
+	89  :   0300;
+	90  :   0700;
+	91  :   0900;
+	92  :   08C0;
+	93  :   0C20;
+	94  :   0420;
+	95  :   0C00;
+END;

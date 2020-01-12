@@ -1,0 +1,65 @@
+module oled(
+  input CLOCK,
+//  input RST_n,
+  output reg[3:0] spi_out,
+  output res_oled
+);
+
+wire init_start_sig;
+wire write_start_sig;
+wire init_done_sig;
+wire write_done_sig;
+wire [9:0] init_spi_out;
+wire [9:0] write_spi_out;
+
+wire sys_RST_n;
+//assign sys_RST_n = RST_n;
+
+
+
+wire clk_1m;
+//wire RST_n;
+PLL u_PLL(
+		.inclk0(CLOCK),
+		.c0(clk_1m),
+		.locked(sys_RST_n)
+		);
+
+oled_control_module u_oled_control_module(
+                                      .clk_1m(clk_1m),
+                                      .RST_n(sys_RST_n),//
+                                      .init_done_sig(init_done_sig),
+                                      .write_done_sig(write_done_sig),
+                                      .init_start_sig(init_start_sig),
+                                      .write_start_sig(write_start_sig)
+                                      );
+
+init_module u_init_module(
+                        .clk_1m(clk_1m),
+                        .RST_n(sys_RST_n),
+                        .initial_start(init_start_sig),
+                        .initial_done(init_done_sig),
+                        .spi_out(init_spi_out),
+                        .res_oled(res_oled)
+                        );
+                        
+write_data_module u_write_data_module(
+                                    .clk_1m(clk_1m),
+                                    .RST_n(sys_RST_n),
+                                    .write_data_start(write_start_sig),
+                                    .write_done(write_done_sig),
+                                    .spi_out(write_spi_out)
+                                    );
+//reg [3:0] spi_out;
+always @(*)
+begin
+  if(init_start_sig) 
+    spi_out = init_spi_out;
+  else
+    if(write_start_sig)
+      spi_out = write_spi_out;
+    else
+      spi_out <= 3'bx;
+end                                   
+
+endmodule           

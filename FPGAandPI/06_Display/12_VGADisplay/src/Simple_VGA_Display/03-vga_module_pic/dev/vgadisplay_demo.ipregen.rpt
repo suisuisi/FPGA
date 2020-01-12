@@ -1,0 +1,69 @@
+IP Upgrade report for vgadisplay_demo
+Sun Sep 01 19:16:37 2019
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Successfully Upgraded IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++--------------------------------------------------------------------------------+
+; IP Upgrade Summary                                                             ;
++------------------------------+-------------------------------------------------+
+; IP Components Upgrade Status ; Passed - Sun Sep 01 19:16:37 2019               ;
+; Quartus Prime Version        ; 17.0.0 Build 595 04/25/2017 SJ Standard Edition ;
+; Revision Name                ; vgadisplay_demo                                 ;
+; Top-level Entity Name        ; vga_module                                      ;
+; Family                       ; Cyclone IV E                                    ;
++------------------------------+-------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Successfully Upgraded IP Components                                                                                     ;
++-------------+----------------+---------+-----------------------+----------------------+-----------------------+---------+
+; Entity Name ; Component Name ; Version ; Original Source File  ; Generation File Path ; New Source File       ; Message ;
++-------------+----------------+---------+-----------------------+----------------------+-----------------------+---------+
+; pll_module  ; ALTPLL         ; 11.0    ; ../src/pll_module.qip ; ../src/pll_module.v  ; ../src/pll_module.qip ;         ;
++-------------+----------------+---------+-----------------------+----------------------+-----------------------+---------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "../src/pll_module.v" to "../src/pll_module.BAK.v"
+Info (11837): Started upgrading IP component ALTPLL with file "../src/pll_module.v"
+Info (11131): Completed upgrading IP component ALTPLL with file "../src/pll_module.v"
+Info (23030): Evaluation of Tcl script e:/intelfpga/17.0/quartus/common/tcl/internal/ip_regen/ip_regen.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4862 megabytes
+    Info: Processing ended: Sun Sep 01 19:16:37 2019
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:19
+
+

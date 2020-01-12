@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Sep 01 19:28:16 2019
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+Revision Name : vgadisplay_demo
+Top-level Entity Name : vga_module
+Family : Cyclone IV E
+Device : EP4CE15F17C8
+Timing Models : Final
+Total logic elements : 131 / 15,408 ( < 1 % )
+    Total combinational functions : 128 / 15,408 ( < 1 % )
+    Dedicated logic registers : 35 / 15,408 ( < 1 % )
+Total registers : 35
+Total pins : 7 / 166 ( 4 % )
+Total virtual pins : 0
+Total memory bits : 4,096 / 516,096 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

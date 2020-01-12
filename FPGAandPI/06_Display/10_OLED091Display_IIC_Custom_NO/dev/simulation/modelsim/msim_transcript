@@ -1,0 +1,105 @@
+# Reading E:/intelFPGA/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do oleddisplay_demo_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying E:/intelFPGA/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/src/OLED_Display {F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/src/OLED_Display/write_data_module.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:44:49 on Jul 14,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/src/OLED_Display" F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/src/OLED_Display/write_data_module.v 
+# -- Compiling module write_data_module
+# 
+# Top level modules:
+# 	write_data_module
+# End time: 18:44:49 on Jul 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/src/OLED_Display {F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/src/OLED_Display/write_data.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:44:49 on Jul 14,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/src/OLED_Display" F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/src/OLED_Display/write_data.v 
+# -- Compiling module write_data
+# ** Warning: F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/src/OLED_Display/write_data.v(487): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	write_data
+# End time: 18:44:49 on Jul 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -vlog01compat -work work +incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/src/iic {F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/src/iic/iic.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:44:49 on Jul 14,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/src/iic" F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/src/iic/iic.v 
+# -- Compiling module iic
+# 
+# Top level modules:
+# 	iic
+# End time: 18:44:49 on Jul 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/src/OLED_Display/ROM.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:44:50 on Jul 14,2019
+# vcom -reportprogress 300 -93 -work work F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/src/OLED_Display/ROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity ROM
+# -- Compiling architecture SYN of rom
+# End time: 18:44:50 on Jul 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/dev/../src/TestBench {F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/dev/../src/TestBench/write_data_module_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:44:50 on Jul 14,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/dev/../src/TestBench" F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/dev/../src/TestBench/write_data_module_tb.v 
+# -- Compiling module write_data_module_tb
+# 
+# Top level modules:
+# 	write_data_module_tb
+# End time: 18:44:50 on Jul 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  write_data_module_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" write_data_module_tb 
+# Start time: 18:44:50 on Jul 14,2019
+# Loading work.write_data_module_tb
+# Loading work.write_data_module
+# Loading work.write_data
+# Loading work.iic
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading altera_mf.altera_mf_components
+# Loading work.rom(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+# ** Warning: (vsim-3017) F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/src/OLED_Display/write_data_module.v(29): [TFMPC] - Too few port connections. Expected 12, found 10.
+#    Time: 0 ps  Iteration: 0  Instance: /write_data_module_tb/dut/u1_write_data File: F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/src/OLED_Display/write_data.v
+# ** Warning: (vsim-3722) F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/src/OLED_Display/write_data_module.v(29): [TFMPC] - Missing connection for port 'OLED_SCL'.
+# ** Warning: (vsim-3722) F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/src/OLED_Display/write_data_module.v(29): [TFMPC] - Missing connection for port 'OLED_SDA'.
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: zlk  Hostname: LAPTOP-8E6RLG3I  ProcessID: 31336
+#           Attempting to use alternate WLF file "./wlft2gn0he".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2gn0he
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/dev/../src/TestBench/write_data_module_tb.v(45)
+#    Time: 500000200 ns  Iteration: 0  Instance: /write_data_module_tb
+# Break in Module write_data_module_tb at F:/FILE/FPGA/FPGA_Interface/06_Display/10_OLED091Display_IIC_Custom/dev/../src/TestBench/write_data_module_tb.v line 45
+# End time: 19:32:30 on Jul 14,2019, Elapsed time: 0:47:40
+# Errors: 0, Warnings: 5

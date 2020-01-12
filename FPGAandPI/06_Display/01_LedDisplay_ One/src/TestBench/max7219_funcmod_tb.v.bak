@@ -1,0 +1,130 @@
+//***************************************//
+//# @Author: 碎碎思
+//# @Date:   2019-04-06 22:44:48
+//# @Last Modified by:   zlk
+//# @Last Modified time: 2019-06-23 01:42:45
+//****************************************//
+`timescale 1ns/ 1ps
+module max7219_funcmod_tb; // 申明TestBench名称
+reg       clock;
+reg       reset; // 申明信号
+
+// Inputs
+    reg CallU1;
+    wire DoneU2;
+    reg [7:0] oDATA0,oDATA1;
+
+    // Outputs
+    wire MAX7219_CS;
+    wire MAX7219_SCLK;
+    wire MAX7219_DATA;
+
+
+max7219_funcmod dut
+     (
+         .CLOCK( clock ),
+          .RST_n( reset ),
+          .MAX7219_CS( MAX7219_CS ),   // > top
+          .MAX7219_SCLK( MAX7219_SCLK ),         // > top
+          .MAX7219_DATA( MAX7219_DATA ),         // <> top
+          .iCall( CallU1 ),            // < U1
+          .oDone( DoneU2 ),              // > U1
+          .iDATA0( oDATA0 ),              // > U1
+          .iDATA1( oDATA1 )              // > U1
+     );
+    
+
+initial begin   // 建立时钟
+    clock = 0;
+    forever #20 clock = ~clock;
+end
+
+initial begin   // 提供激励
+	clock = 0;
+    CallU1 = 0;
+//    DoneU2 = 1;
+    oDATA0 = 8'h00;
+    oDATA1 = 8'h00;
+    reset = 0;
+    #200 // Wait 200 ns for global reset to finish
+    reset = 1;
+    #5000000 $stop;
+end
+
+/***************************/
+reg[7:0] i;
+/***************************/
+    always @ ( posedge clock or negedge reset )
+         if( !reset )
+              begin
+                    oDATA0 <= 8'h00;
+                    oDATA1 <= 8'h00;
+                    CallU1 <= 0;
+                    i  <= 8'd0;
+                end
+          else if ( 1'b1 )
+              case( i )
+//************************初始化操作*********************************//
+        
+                    8'd0 : // 译码方式：BCD码
+                     begin oDATA0 = 8'h09; oDATA1 = 8'h00; i <= i+1; end
+
+                    8'd1 : // 亮度 
+                     begin oDATA0 = 8'h0a; oDATA1 = 8'h03; i <= i+1; end
+
+/*                     8'd2 : // 扫描界限；8个数码管显示
+                     begin oDATA0 = 8'h0b; oDATA1 = 8'h07; i <= i+1; end
+
+                     8'd3 : // 掉电模式：0，普通模式：1
+                     begin oDATA0 = 8'h0c; oDATA1 = 8'h01; i <= i+1; end
+                
+                     8'd4 : // 显示测试：1；测试结束，正常显示：0
+                     begin oDATA0 = 8'h0f; oDATA1 = 8'h00; i <= i+1; end
+//************************初始化操作结束******************************//   
+//************************显示第一位*********************************//  
+/*                    8'd5 : 
+                     begin oDATA0 =8'h10; oDATA1 = 8'hFE; i <= i+1; end
+                     
+                    8'd6 : 
+                     begin oDATA0 = 8'h92; oDATA1 = 8'h92; i <= i+1; end
+
+                    8'd7 : 
+                     begin oDATA0 = 8'hFE; oDATA1 = 8'h10; i <= i+1; end
+
+                    8'd8 : 
+                     begin oDATA0 = 8'h10; oDATA1 =8'h10; i <= i+1; end*/
+                     
+                    8'd2 : // 循环显示
+                     begin i <= 8'd0;  end//
+
+                endcase
+     
+     reg [1:0]j;
+     reg isDone;
+     
+     always @ ( posedge clock or negedge reset )
+         if( !reset )
+              begin
+                     j <= 2'd0;
+                     CallU1 <= 2'b00;
+                     isDone <= 1'b0;
+                end
+          else if( 1'b1 ) // Write actioniCall
+              case( j )
+                
+                    0 :
+                     if( DoneU2 ) begin CallU1 <= 1'b0; j <= j + 1'b1; end
+                     else begin CallU1 <= 1'b1; end
+                     
+                     1 :
+                     begin isDone <= 1'b1; j <= j + 1'b1; end
+                     
+                     2 :
+                     begin isDone <= 1'b0; j <= 2'd0; end
+                      
+                endcase
+	
+
+endmodule
+
+

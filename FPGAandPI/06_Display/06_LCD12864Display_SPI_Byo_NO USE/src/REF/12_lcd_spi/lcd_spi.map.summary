@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Jun 30 02:34:03 2019
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+Revision Name : lcd_spi
+Top-level Entity Name : lcd_module
+Family : Cyclone IV E
+Total logic elements : 175
+    Total combinational functions : 175
+    Dedicated logic registers : 74
+Total registers : 74
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 8,192
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

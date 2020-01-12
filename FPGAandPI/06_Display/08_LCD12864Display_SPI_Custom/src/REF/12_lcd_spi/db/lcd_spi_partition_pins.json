@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "SPI_Out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SPI_Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SPI_Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SPI_Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "RSTn",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

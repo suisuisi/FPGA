@@ -1,0 +1,17 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/zlk/Desktop/04_LCD1602_Display_Design/sim/LCD1602_Driver_TB {C:/Users/zlk/Desktop/04_LCD1602_Display_Design/sim/LCD1602_Driver_TB/lcd1602_driver.v}
+
+vlog -vlog01compat -work work +incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/dev/../src/TestBench {F:/FILE/FPGA/FPGA_Interface/06_Display/04_LCD1602Display/dev/../src/TestBench/lcd1602_funcmod_tb.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  lcd1602_funcmod_tb
+
+add wave *
+view structure
+view signals
+run -all

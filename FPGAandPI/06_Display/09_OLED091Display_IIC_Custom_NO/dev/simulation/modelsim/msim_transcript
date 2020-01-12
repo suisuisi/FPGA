@@ -1,0 +1,81 @@
+# Reading E:/intelFPGA/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do oleddisplay_demo_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying E:/intelFPGA/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/iic {F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/iic/iic.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:50:44 on Jul 14,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/iic" F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/iic/iic.v 
+# -- Compiling module iic
+# 
+# Top level modules:
+# 	iic
+# End time: 00:50:44 on Jul 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display {F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_ctrlmod.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:50:44 on Jul 14,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display" F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_ctrlmod.v 
+# -- Compiling module oled_ctrlmod
+# 
+# Top level modules:
+# 	oled_ctrlmod
+# End time: 00:50:44 on Jul 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display {F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_basemod.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:50:44 on Jul 14,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display" F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_basemod.v 
+# -- Compiling module oled_basemod
+# 
+# Top level modules:
+# 	oled_basemod
+# End time: 00:50:44 on Jul 14,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/dev/../src/TestBench {F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/dev/../src/TestBench/oled_basemod_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:50:44 on Jul 14,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/dev/../src/TestBench" F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/dev/../src/TestBench/oled_basemod_tb.v 
+# -- Compiling module oled_basemod_tb
+# 
+# Top level modules:
+# 	oled_basemod_tb
+# End time: 00:50:45 on Jul 14,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  oled_basemod_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" oled_basemod_tb 
+# Start time: 00:50:45 on Jul 14,2019
+# Loading work.oled_basemod_tb
+# Loading work.oled_basemod
+# Loading work.oled_ctrlmod
+# Loading work.iic
+# ** Warning: (vsim-3015) F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_basemod.v(225): [PCDPC] - Port size (1024) does not match connection size (384) for port 'iData1'. The port definition is at: F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_ctrlmod.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /oled_basemod_tb/dut/U1 File: F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_ctrlmod.v
+# ** Warning: (vsim-3015) F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_basemod.v(225): [PCDPC] - Port size (1024) does not match connection size (384) for port 'iData2'. The port definition is at: F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_ctrlmod.v(22).
+#    Time: 0 ps  Iteration: 0  Instance: /oled_basemod_tb/dut/U1 File: F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_ctrlmod.v
+# ** Warning: (vsim-3015) F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_basemod.v(225): [PCDPC] - Port size (1024) does not match connection size (384) for port 'iData3'. The port definition is at: F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_ctrlmod.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /oled_basemod_tb/dut/U1 File: F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_ctrlmod.v
+# ** Warning: (vsim-3015) F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_basemod.v(225): [PCDPC] - Port size (1024) does not match connection size (384) for port 'iData4'. The port definition is at: F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_ctrlmod.v(24).
+#    Time: 0 ps  Iteration: 0  Instance: /oled_basemod_tb/dut/U1 File: F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_ctrlmod.v
+# ** Warning: (vsim-3015) F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/OLED_Display/oled_basemod.v(242): [PCDPC] - Port size (8) does not match connection size (1) for port 'oData'. The port definition is at: F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/iic/iic.v(26).
+#    Time: 0 ps  Iteration: 0  Instance: /oled_basemod_tb/dut/U2 File: F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/src/iic/iic.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/dev/../src/TestBench/oled_basemod_tb.v(44)
+#    Time: 500000200 ns  Iteration: 0  Instance: /oled_basemod_tb
+# Break in Module oled_basemod_tb at F:/FILE/FPGA/FPGA_Interface/06_Display/09_OLED091Display_IIC_Custom/dev/../src/TestBench/oled_basemod_tb.v line 44

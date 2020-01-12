@@ -1,0 +1,76 @@
+-- Copyright (C) 1991-2010 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=64;
+DEPTH=64;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	[0..7]  :   0000000000000000;
+	8   :   0000180000000000;
+	9   :   0000380000000000;
+	10  :   00003C0000000000;
+	11  :   00007C0000000000;
+	12  :   0000FC0000070000;
+	13  :   0000FE00003F0000;
+	14  :   0000E60001FF0000;
+	15  :   0001860007FF0000;
+	16  :   0001C6000C3E0000;
+	17  :   000101F8701C0000;
+	18  :   00018FFFE0380000;
+	19  :   0001840780300000;
+	20  :   0001600000607800;
+	21  :   0001000000C0C800;
+	22  :   0003000001C0CF00;
+	23  :   0003003803010780;
+	24  :   000F004C160300C0;
+	25  :   000D807C1C0300E0;
+	26  :   000F007C0C060060;
+	27  :   001720380C060060;
+	28  :   001A6001060600C0;
+	29  :   00180003820C0180;
+	30  :   001CFFC7C30C0300;
+	31  :   001C7707C1B80E00;
+	32  :   001C3F07C1181800;
+	33  :   003C1E01F1B01800;
+	34  :   00EC0003B1D83000;
+	35  :   018200071BCC3C00;
+	36  :   0181000219C61600;
+	37  :   00C1000031660E00;
+	38  :   0060000020371C00;
+	39  :   0028000000AC3000;
+	40  :   003C0001E1F0E000;
+	41  :   0006001B5BFCC000;
+	42  :   0003001F03FCE000;
+	43  :   0003803581FC6000;
+	44  :   00010031807FC000;
+	45  :   00038030E07F8000;
+	46  :   0001000840F80000;
+	47  :   0001C008C0F00000;
+	48  :   0000C018C3C00000;
+	49  :   0000C01D83000000;
+	50  :   0000600E8C000000;
+	51  :   000034066C000000;
+	52  :   00001E03F0000000;
+	53  :   0000070380000000;
+	54  :   000001CF00000000;
+	55  :   000000E700000000;
+	56  :   0000006300000000;
+	57  :   0000007E00000000;
+	[58..63]  :   0000000000000000;
+END;

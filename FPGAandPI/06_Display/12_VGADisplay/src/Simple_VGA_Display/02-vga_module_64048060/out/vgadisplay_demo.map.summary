@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Sep 01 05:17:07 2019
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+Revision Name : vgadisplay_demo
+Top-level Entity Name : vga_module
+Family : Cyclone IV E
+Total logic elements : 91
+    Total combinational functions : 91
+    Dedicated logic registers : 26
+Total registers : 26
+Total pins : 7
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

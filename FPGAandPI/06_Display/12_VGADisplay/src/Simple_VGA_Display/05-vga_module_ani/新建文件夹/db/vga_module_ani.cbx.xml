@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="vga_module_ani">
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_module|greenman_rom_module:U3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_aab1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_module|pll_module:U1|altpll:altpll_component" CBX_FILE_NAME="pll_module_altpll.v"/>
+	</PROJECT>
+</LOG_ROOT>

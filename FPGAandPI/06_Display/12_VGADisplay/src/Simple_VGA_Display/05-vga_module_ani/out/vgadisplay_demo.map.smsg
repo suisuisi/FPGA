@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at vga_control_module.v(26): always construct contains both blocking and non-blocking assignments File: F:/FILE/FPGA/FPGA_Interface/06_Display/12_VGADisplay/src/Simple_VGA_Display/05-vga_module_ani/src/vga_control_module.v Line: 26
+Warning (10268): Verilog HDL information at vga_control_module.v(36): always construct contains both blocking and non-blocking assignments File: F:/FILE/FPGA/FPGA_Interface/06_Display/12_VGADisplay/src/Simple_VGA_Display/05-vga_module_ani/src/vga_control_module.v Line: 36

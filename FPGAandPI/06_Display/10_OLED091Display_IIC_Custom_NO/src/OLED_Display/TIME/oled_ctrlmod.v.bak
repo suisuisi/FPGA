@@ -1,0 +1,290 @@
+//****************************************************************************//
+//# @Author: 碎碎思
+//# @Date:   2019-05-19 20:55:44
+//# @Last Modified by:   zlk
+//# @WeChat Official Account: OpenFPGA
+//# @Last Modified time: 2019-07-09 22:08:01
+//# Description: 
+//# @Modification History: 2019-05-19 20:58:05
+//# Date			    By			   Version			   Change Description: 
+//# ========================================================================= #
+//# 2019-05-19 20:58:05
+//# ========================================================================= #
+//# |                                          								| #
+//# |                                OpenFPGA     							| #
+//****************************************************************************//
+module oled_ctrlmod
+(
+    input CLOCK, RST_n,	 
+	 input iCall,
+	 output oDone,
+	 input [1023:0]iData1,
+	 input [1023:0]iData2,
+	 input [1023:0]iData3,
+	 input [1023:0]iData4,
+	 output [1:0]oCall,
+	 input iDone,
+	 output [7:0]oAddr, oData
+);	 
+
+parameter     WR_CMD   = 8'b0000_0000;        //写命令控制字write_command
+parameter     DATA_CMD = 8'b0100_0000;      //写数据控制字write_data
+//parameter    psub_address2=8'b0000_0011;       //PCF8563 的分寄存器的地址
+//parameter    psub_address3=8'b0000_0100;       //PCF8563 的时寄存器的地址
+parameter    page_1st  = 8'hb0;//第一page地址
+parameter    page_2nd  = 8'hb1;//第二page地址
+parameter    page_3rd  = 8'hb2;//第三page地址
+parameter    page_4th  = 8'hb3;//第四page地址
+	 
+	 reg [7:0]D1,D2;
+	 reg [7:0] i,j;
+
+	 always @ ( posedge CLOCK or negedge RST_n )
+	    if( !RST_n )
+		      begin
+				    D1 <= 8'd0;
+					 D2 <= 8'd0;
+					 i <= 8'd0;
+					 j <= 8'd0;
+				end
+		else if( iCall )
+		    case( i )
+//# ========================================================================= #
+//# |                                初始化开始    							| #
+//****************************************************************************//
+				0  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'hAE; end
+					else begin isCall <= 2'b10; end////关闭显示	
+				1  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'h00; end
+					else begin isCall <= 2'b10; end//---set low column address
+				2  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'h10; end
+					else begin isCall <= 2'b10; end//---set high column address
+				3  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'h00; end
+					else begin isCall <= 2'b10; end//*set display start line*/
+				4  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'hB0; end
+					else begin isCall <= 2'b10; end//*set page address*/						
+				5  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'h81; end
+					else begin isCall <= 2'b10; end///设置对比度
+				6  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'hFF; end
+					else begin isCall <= 2'b10; end///设置对比度
+				7  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'hA1; end
+					else begin isCall <= 2'b10; end//段重定向设置/*set segment remap*/
+				8  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'hA6; end
+					else begin isCall <= 2'b10; end//段重定向设置/*normal / reverse*/
+				9  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'hA8; end
+					else begin isCall <= 2'b10; end//设置驱动路数/*multiplex ratio*/
+				10  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'h1f; end
+					else begin isCall <= 2'b10; end//设置驱动路数/*duty = 1/32*/
+				11  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'hC8; end
+					else begin isCall <= 2'b10; end//设置驱动路数/*Com scan direction*/
+				12  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'hD3; end
+					else begin isCall <= 2'b10; end//设置驱动路数/*set display offset*/
+				13  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'h00; end
+					else begin isCall <= 2'b10; end//设置驱动路数
+				14  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'hD5; end
+					else begin isCall <= 2'b10; end//设置驱动路数/*set osc division*/
+				15  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'h80; end
+					else begin isCall <= 2'b10; end//设置驱动路数
+				16  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'hD9; end
+					else begin isCall <= 2'b10; end//设置驱动路数/*set pre-charge period*/
+				17  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'h04; end
+					else begin isCall <= 2'b10; end//设置驱动路数
+				18  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'hDA; end
+					else begin isCall <= 2'b10; end//设置驱动路数/*set COM pins*/
+				19  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'h00; end
+					else begin isCall <= 2'b10; end//设置驱动路数
+				20  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'hdb; end
+					else begin isCall <= 2'b10; end//设置驱动路数/*set vcomh*/
+				21  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'h30; end
+					else begin isCall <= 2'b10; end//设置驱动路数
+				22  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'h8d; end
+					else begin isCall <= 2'b10; end//设置驱动路数/*set charge pump enable*/
+				23  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'h14; end
+					else begin isCall <= 2'b10; end//设置驱动路数						
+				24  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = WR_CMD;  D2 <= 8'haf; end
+					else begin isCall <= 2'b10; end//设置驱动路数/*display ON*/
+				25  :
+					begin isDone <= 1'b1; i <= i + 1'b1; end
+					 
+				26  :
+					begin isDone <= 1'b0; i <= i + 1'b1; end						
+//# ==========			=============================================================== #
+//# |         					             初始化结束 开始写数据   							| #
+//************			****************************************************************//
+				27  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = DATA_CMD;  D2 <= page_1st; end
+					else begin isCall <= 2'b10; end					
+				28  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = DATA_CMD;  D2 <= 8'h00; end
+					else begin isCall <= 2'b10; end
+				29  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = DATA_CMD;  D2 <= 8'h10; end
+					else begin isCall <= 2'b10; end	
+				30  ：
+					if( iDone ) begin
+						if ( j == 127 ) 
+        					begin
+ 
+            					j <= 8'd0;
+            					i <= i + 1'b1;
+ 
+        					end
+ 
+    					else
+ 
+        					begin
+ 
+            					j <= j + 1'b1;
+            					isCall <= 2'b00;
+            					D1 = DATA_CMD;  
+            					D2 <= iData1[j*8+7:j*8];
+ 
+        					end				
+					end
+					else begin isCall <= 2'b10; end
+				31  :
+					begin isDone <= 1'b1; i <= i + 1'b1; end
+					 
+				32  :
+					begin isDone <= 1'b0; i <= i + 1'b1; end							
+				33  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = DATA_CMD;  D2 <= page_2nd; end
+					else begin isCall <= 2'b10; end					
+				34  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = DATA_CMD;  D2 <= 8'h00; end
+					else begin isCall <= 2'b10; end
+				35  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = DATA_CMD;  D2 <= 8'h10; end
+					else begin isCall <= 2'b10; end
+				36  ：
+					if( iDone ) begin
+						if ( j == 127 ) 
+        					begin
+ 
+            					j <= 8'd0;
+            					i <= i + 1'b1;
+ 
+        					end
+ 
+    					else
+ 
+        					begin
+ 
+            					j <= j + 1'b1;
+            					isCall <= 2'b00;
+            					D1 = DATA_CMD;  
+            					D2 <= iData2[j*8+7:j*8];
+ 
+        					end				
+					end
+					else begin isCall <= 2'b10; end		
+				37  :
+					begin isDone <= 1'b1; i <= i + 1'b1; end
+					 
+				38  :
+					begin isDone <= 1'b0; i <= i + 1'b1; end										
+				39  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = DATA_CMD;  D2 <= page_3rd; end
+					else begin isCall <= 2'b10; end					
+				40  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = DATA_CMD;  D2 <= 8'h00; end
+					else begin isCall <= 2'b10; end
+				41  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = DATA_CMD;  D2 <= 8'h10; end
+					else begin isCall <= 2'b10; end
+				42  ：
+					if( iDone ) begin
+						if ( j == 127 ) 
+        					begin
+ 
+            					j <= 8'd0;
+            					i <= i + 1'b1;
+ 
+        					end
+ 
+    					else
+ 
+        					begin
+ 
+            					j <= j + 1'b1;
+            					isCall <= 2'b00;
+            					D1 = DATA_CMD;  
+            					D2 <= iData3[j*8+7:j*8];
+ 
+        					end				
+					end
+					else begin isCall <= 2'b10; end	
+				43  :
+					begin isDone <= 1'b1; i <= i + 1'b1; end
+					 
+				44  :
+					begin isDone <= 1'b0; i <= i + 1'b1; end											
+				45  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = DATA_CMD;  D2 <= page_4th; end
+					else begin isCall <= 2'b10; end					
+				46  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = DATA_CMD;  D2 <= 8'h00; end
+					else begin isCall <= 2'b10; end
+				47  :
+					if( iDone ) begin isCall <= 2'b00; i <= i + 1'b1;D1 = DATA_CMD;  D2 <= 8'h10; end
+					else begin isCall <= 2'b10; end						
+				48  ：
+					if( iDone ) begin
+						if ( j == 127 ) 
+        					begin
+ 
+            					j <= 8'd0;
+            					i <= i + 1'b1;
+ 
+        					end
+ 
+    					else
+ 
+        					begin
+ 
+            					j <= j + 1'b1;
+            					isCall <= 2'b00;
+            					D1 = DATA_CMD;  
+            					D2 <= iData4[j*8+7:j*8];
+ 
+        					end				
+					end
+					else begin isCall <= 2'b10; end
+				49  :
+					begin isDone <= 1'b1; i <= i + 1'b1; end
+					 
+				50  :
+					begin isDone <= 1'b0; i <= 8'd0; end	
+
+			endcase
+	  
+	  assign oDone = isDone;
+	  assign oCall = isCall;
+	  assign oAddr = D1;
+	  assign oData = D2;
+
+endmodule
