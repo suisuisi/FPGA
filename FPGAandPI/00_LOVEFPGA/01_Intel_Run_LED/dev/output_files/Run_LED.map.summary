@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Apr 14 21:40:25 2019
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+Revision Name : Run_LED
+Top-level Entity Name : Run_LED
+Family : Cyclone IV E
+Total logic elements : 48
+    Total combinational functions : 46
+    Dedicated logic registers : 30
+Total registers : 30
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
