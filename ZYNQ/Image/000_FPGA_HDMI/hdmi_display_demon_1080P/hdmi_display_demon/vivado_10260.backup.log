@@ -1,0 +1,136 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Nov 01 09:59:59 2017
+# Process ID: 10260
+# Current directory: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12272 F:\MIZ7035_Demon\s1\S01_CH11_hdmi_display_demon_1080P\hdmi_display_demon\hdmi_display_demon.xpr
+# Log file: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/vivado.log
+# Journal file: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.xpr
+INFO: [Project 1-313] Project file moved from 'F:/Miz702N/free/s1/S01_CH11_hdmi_display_demon/hdmi_display_demon' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/ADV7511_HDMI_OUT'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+set_property part xc7z035ffg676-2 [current_project]
+WARNING: [IP_Flow 19-2162] IP 'hdmi_display_0' is locked:
+* Current project part 'xc7z035ffg676-2' and the part 'xc7z020clg484-1' used to customize the IP 'hdmi_display_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* Current project part 'xc7z035ffg676-2' and the part 'xc7z020clg484-1' used to customize the IP 'clk_wiz_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+report_ip_status -name ip_status 
+upgrade_ip -srcset clk_wiz_0 [get_ips  {clk_wiz_0 hdmi_display_0}] -log ip_upgrade.log
+Upgrading 'clk_wiz_0'
+INFO: [Project 1-386] Moving file 'F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' from fileset 'clk_wiz_0' to fileset 'sources_1'.
+INFO: [Project 1-386] Moving file 'F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0.xcix' from fileset 'clk_wiz_0' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated clk_wiz_0 to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+Upgrading 'hdmi_display_0'
+INFO: [Project 1-386] Moving file 'F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/hdmi_display_0_1/hdmi_display_0.xci' from fileset 'hdmi_display_0' to fileset 'sources_1'.
+INFO: [Project 1-386] Moving file 'F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/hdmi_display_0_1.xcix' from fileset 'hdmi_display_0' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated hdmi_display_0 to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'hdmi_display_0'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 980.059 ; gain = 111.758
+export_ip_user_files -of_objects [get_ips {clk_wiz_0 hdmi_display_0}] -no_script -sync -force -quiet
+generate_target all [get_files  {F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/hdmi_display_0_1/hdmi_display_0.xci}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_display_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'hdmi_display_0'...
+export_ip_user_files -of_objects [get_files F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/hdmi_display_0_1/hdmi_display_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/hdmi_display_0_1/hdmi_display_0.xci]
+launch_runs -jobs 8 {clk_wiz_0_synth_1 hdmi_display_0_synth_1}
+[Wed Nov 01 10:01:04 2017] Launched clk_wiz_0_synth_1, hdmi_display_0_synth_1...
+Run output will be captured here:
+clk_wiz_0_synth_1: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/clk_wiz_0_synth_1/runme.log
+hdmi_display_0_synth_1: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/hdmi_display_0_synth_1/runme.log
+export_simulation -of_objects [get_files F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.ip_user_files/sim_scripts -ip_user_files_dir F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.ip_user_files -ipstatic_source_dir F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/modelsim} {questa=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/questa} {riviera=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/riviera} {activehdl=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/hdmi_display_0_1/hdmi_display_0.xci] -directory F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.ip_user_files/sim_scripts -ip_user_files_dir F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.ip_user_files -ipstatic_source_dir F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/modelsim} {questa=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/questa} {riviera=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/riviera} {activehdl=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+remove_files  -fileset hdmi_display_0 F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/hdmi_display_0_1/hdmi_display_0.xci
+INFO: [Project 1-386] Moving file 'F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/hdmi_display_0_1/hdmi_display_0.xci' from fileset 'hdmi_display_0' to fileset 'sources_1'.
+INFO: [Project 1-386] Moving file 'F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/hdmi_display_0_1.xcix' from fileset 'hdmi_display_0' to fileset 'sources_1'.
+file delete -force F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/hdmi_display_0_1.xcix
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib'.
+create_ip -name HDMI_FPGA_ML -vendor xilinx.com -library user -version 1.0 -module_name hdmi_display_0 -dir f:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip
+INFO: [filemgmt 56-101] Creating core container 'f:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/hdmi_display_0_1.xcix' for IP 'hdmi_display_0'
+generate_target {instantiation_template} [get_files f:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/hdmi_display_0_1/hdmi_display_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'hdmi_display_0'...
+generate_target all [get_files  f:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/hdmi_display_0_1/hdmi_display_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_display_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'hdmi_display_0'...
+export_ip_user_files -of_objects [get_files f:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/hdmi_display_0_1/hdmi_display_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] f:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/hdmi_display_0_1/hdmi_display_0.xci]
+launch_runs -jobs 8 hdmi_display_0_synth_1
+[Wed Nov 01 10:04:43 2017] Launched hdmi_display_0_synth_1...
+Run output will be captured here: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/hdmi_display_0_synth_1/runme.log
+export_simulation -of_objects [get_files f:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/hdmi_display_0_1/hdmi_display_0.xci] -directory F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.ip_user_files/sim_scripts -ip_user_files_dir F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.ip_user_files -ipstatic_source_dir F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/modelsim} {questa=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/questa} {riviera=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/riviera} {activehdl=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+can't read "mmcm_bufgcediv2": no such variable
+can't read "mmcm_bufgcediv2": no such variable
+set_property -dict [list CONFIG.CLKOUT3_USED {false} CONFIG.MMCM_DIVCLK_DIVIDE {2} CONFIG.MMCM_CLKFBOUT_MULT_F {21.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {7.000} CONFIG.MMCM_CLKOUT1_DIVIDE {7} CONFIG.MMCM_CLKOUT2_DIVIDE {1} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {141.740} CONFIG.CLKOUT1_PHASE_ERROR {164.344} CONFIG.CLKOUT2_JITTER {141.740} CONFIG.CLKOUT2_PHASE_ERROR {164.344}] [get_ips clk_wiz_0]
+generate_target all [get_files  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+export_ip_user_files -of_objects [get_files F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+launch_runs -jobs 8 clk_wiz_0_synth_1
+[Wed Nov 01 10:16:04 2017] Launched clk_wiz_0_synth_1...
+Run output will be captured here: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.ip_user_files/sim_scripts -ip_user_files_dir F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.ip_user_files -ipstatic_source_dir F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/modelsim} {questa=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/questa} {riviera=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/riviera} {activehdl=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+can't read "mmcm_bufgcediv2": no such variable
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/new/HDMI_display_Demon.v" into library work [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/new/HDMI_display_Demon.v:1]
+[Wed Nov 01 10:34:10 2017] Launched synth_1...
+Run output will be captured here: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/runme.log
+report_ip_status -name ip_status 
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z035ffg676-2
+INFO: [Project 1-454] Reading design checkpoint 'F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/.Xil/Vivado-10260-LB-201708051431/clk_wiz_0/clk_wiz_0.dcp' for cell 'u_clk'
+INFO: [Project 1-454] Reading design checkpoint 'F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/.Xil/Vivado-10260-LB-201708051431/hdmi_display_0_1/hdmi_display_0.dcp' for cell 'u_hdmi_display_0'
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z035ffg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [f:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk/inst'
+Finished Parsing XDC File [f:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk/inst'
+Parsing XDC File [f:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [f:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [f:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1790.082 ; gain = 546.516
+Finished Parsing XDC File [f:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk/inst'
+Parsing XDC File [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/constrs_1/new/zynq_pin.xdc]
+Finished Parsing XDC File [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/constrs_1/new/zynq_pin.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/.Xil/Vivado-10260-LB-201708051431/clk_wiz_0/clk_wiz_0.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 8 instances
+
+open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 1843.785 ; gain = 724.496
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 01 11:25:13 2017...

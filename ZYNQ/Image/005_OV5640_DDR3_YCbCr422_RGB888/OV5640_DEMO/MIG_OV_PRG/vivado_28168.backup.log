@@ -1,0 +1,658 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Oct 19 22:16:54 2019
+# Process ID: 28168
+# Current directory: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19556 F:\FILE\FPGA\ZYNQ\zynq_7035\TEST\CH04_OV5640_DEMO\OV5640_TS_DATA\MIG_OV_PRG\MIG_OV_PRG.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.xpr
+INFO: [Project 1-313] Project file moved from 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/user/I2C_OV7725_RGB565_Config.v', nor could it be found using path 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/user/I2C_OV7725_RGB565_Config.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/user/OV7725_TOP.v', nor could it be found using path 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/user/OV7725_TOP.v'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/user/OV_Sensor_ML', nor could it be found using path 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/user/OV_Sensor_ML'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/user/OV_Sensor_ML'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2017.4/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'MSG_FIFO' is locked:
+* IP definition 'FIFO Generator (13.1)' for IP 'MSG_FIFO' (customized with software release 2016.4) has a newer minor version in the IP Catalog.
+* IP definition 'FIFO Generator (13.1)' for IP 'MSG_FIFO' (customized with software release 2016.4) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'CH0_FIFO' is locked:
+* IP definition 'FIFO Generator (13.1)' for IP 'CH0_FIFO' (customized with software release 2016.4) has a newer minor version in the IP Catalog.
+* IP definition 'FIFO Generator (13.1)' for IP 'CH0_FIFO' (customized with software release 2016.4) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'mig_7series_0' is locked:
+* IP definition 'Memory Interface Generator (MIG 7 Series) (4.0)' for IP 'mig_7series_0' (customized with software release 2016.4) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'HDMI_FPGA_ML_A7_0' is locked:
+* IP definition 'HDMI_FPGA_ML_A7 (1.0)' for IP 'HDMI_FPGA_ML_A7_0' (customized with software release 2016.4) was not found in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_sys' is locked:
+* IP definition 'Clocking Wizard (5.3)' for IP 'clk_wiz_sys' (customized with software release 2016.4) has a newer minor version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_hdmi' is locked:
+* IP definition 'Clocking Wizard (5.3)' for IP 'clk_wiz_hdmi' (customized with software release 2016.4) has a newer minor version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'CH6_FIFO' is locked:
+* IP definition 'FIFO Generator (13.1)' for IP 'CH6_FIFO' (customized with software release 2016.4) has a newer minor version in the IP Catalog.
+* IP definition 'FIFO Generator (13.1)' for IP 'CH6_FIFO' (customized with software release 2016.4) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'ila_2' is locked:
+* IP definition 'ILA (Integrated Logic Analyzer) (6.2)' for IP 'ila_2' (customized with software release 2016.4) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [Project 1-230] Project 'MIG_OV_PRG.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 887.027 ; gain = 135.070
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {CH0_FIFO CH6_FIFO MSG_FIFO clk_wiz_hdmi clk_wiz_sys ila_2 mig_7series_0}] -log ip_upgrade.log
+Upgrading 'CH0_FIFO'
+INFO: [IP_Flow 19-1972] Upgraded CH0_FIFO from FIFO Generator 13.1 to FIFO Generator 13.2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'CH0_FIFO'...
+Upgrading 'CH6_FIFO'
+INFO: [Project 1-386] Moving file 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH6_FIFO/CH6_FIFO.xci' from fileset 'CH6_FIFO' to fileset 'sources_1'.
+INFO: [IP_Flow 19-1972] Upgraded CH6_FIFO from FIFO Generator 13.1 to FIFO Generator 13.2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'CH6_FIFO'...
+Upgrading 'MSG_FIFO'
+INFO: [IP_Flow 19-1972] Upgraded MSG_FIFO from FIFO Generator 13.1 to FIFO Generator 13.2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'MSG_FIFO'...
+Upgrading 'clk_wiz_hdmi'
+INFO: [Project 1-386] Moving file 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_hdmi/clk_wiz_hdmi.xci' from fileset 'clk_wiz_hdmi' to fileset 'sources_1'.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKIN1_PERIOD' from '20.000' to '20.0' has been ignored for IP 'clk_wiz_hdmi'
+WARNING: [IP_Flow 19-3501] Upgraded clk_wiz_hdmi from Clocking Wizard 5.3 to Clocking Wizard 5.4, with warnings. Please review the message log.
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_hdmi'...
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'clk_wiz_hdmi' has identified issues that may require user intervention. Please review the upgrade log 'f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Upgrading 'clk_wiz_sys'
+INFO: [Project 1-386] Moving file 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_sys/clk_wiz_sys.xci' from fileset 'clk_wiz_sys' to fileset 'sources_1'.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKIN1_PERIOD' from '20.000' to '20.0' has been ignored for IP 'clk_wiz_sys'
+WARNING: [IP_Flow 19-3501] Upgraded clk_wiz_sys from Clocking Wizard 5.3 to Clocking Wizard 5.4, with warnings. Please review the message log.
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_sys'...
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'clk_wiz_sys' has identified issues that may require user intervention. Please review the upgrade log 'f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Upgrading 'ila_2'
+INFO: [Project 1-386] Moving file 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/ila_2/ila_2.xci' from fileset 'ila_2' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded ila_2 (ILA (Integrated Logic Analyzer) 6.2) from revision 1 to revision 5
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_2'...
+Upgrading 'mig_7series_0'
+INFO: [IP_Flow 19-3422] Upgraded mig_7series_0 (Memory Interface Generator (MIG 7 Series) 4.0) from revision 2 to revision 5
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mig_7series_0'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:46 ; elapsed = 00:01:02 . Memory (MB): peak = 1186.117 ; gain = 277.105
+export_ip_user_files -of_objects [get_ips {CH0_FIFO CH6_FIFO MSG_FIFO clk_wiz_hdmi clk_wiz_sys ila_2 mig_7series_0}] -no_script -sync -force -quiet
+generate_target all [get_files  {F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH6_FIFO/CH6_FIFO.xci F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_hdmi/clk_wiz_hdmi.xci F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_sys/clk_wiz_sys.xci F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/ila_2/ila_2.xci F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CH0_FIFO'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'CH0_FIFO'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'CH0_FIFO'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CH6_FIFO'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'CH6_FIFO'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'CH6_FIFO'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'MSG_FIFO'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'MSG_FIFO'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'MSG_FIFO'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_sys'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_sys'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_sys'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_sys'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_2'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/ila_2/ila_2_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_2'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_2'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_2'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mig_7series_0'...
+generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1192.328 ; gain = 6.211
+catch { config_ip_cache -export [get_ips -all CH0_FIFO] }
+catch { config_ip_cache -export [get_ips -all CH6_FIFO] }
+catch { config_ip_cache -export [get_ips -all MSG_FIFO] }
+catch { config_ip_cache -export [get_ips -all clk_wiz_hdmi] }
+catch { config_ip_cache -export [get_ips -all clk_wiz_sys] }
+catch { config_ip_cache -export [get_ips -all ila_2] }
+catch { config_ip_cache -export [get_ips -all mig_7series_0] }
+export_ip_user_files -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH6_FIFO/CH6_FIFO.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_hdmi/clk_wiz_hdmi.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_sys/clk_wiz_sys.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/ila_2/ila_2.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH6_FIFO/CH6_FIFO.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_hdmi/clk_wiz_hdmi.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_sys/clk_wiz_sys.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/ila_2/ila_2.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+launch_runs -jobs 12 {CH0_FIFO_synth_1 CH6_FIFO_synth_1 MSG_FIFO_synth_1 clk_wiz_hdmi_synth_1 clk_wiz_sys_synth_1 ila_2_synth_1 mig_7series_0_synth_1}
+[Sat Oct 19 22:45:52 2019] Launched CH0_FIFO_synth_1, CH6_FIFO_synth_1, MSG_FIFO_synth_1, clk_wiz_hdmi_synth_1, clk_wiz_sys_synth_1, ila_2_synth_1, mig_7series_0_synth_1...
+Run output will be captured here:
+CH0_FIFO_synth_1: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/CH0_FIFO_synth_1/runme.log
+CH6_FIFO_synth_1: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/CH6_FIFO_synth_1/runme.log
+MSG_FIFO_synth_1: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/MSG_FIFO_synth_1/runme.log
+clk_wiz_hdmi_synth_1: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/clk_wiz_hdmi_synth_1/runme.log
+clk_wiz_sys_synth_1: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/clk_wiz_sys_synth_1/runme.log
+ila_2_synth_1: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/ila_2_synth_1/runme.log
+mig_7series_0_synth_1: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/mig_7series_0_synth_1/runme.log
+export_simulation -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci] -directory F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH6_FIFO/CH6_FIFO.xci] -directory F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci] -directory F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_hdmi/clk_wiz_hdmi.xci] -directory F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_sys/clk_wiz_sys.xci] -directory F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/ila_2/ila_2.xci] -directory F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -directory F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property flow {Vivado Implementation 2017} [get_runs impl_1]
+create_run impl_2 -parent_run synth_1 -flow {Vivado Implementation 2017} -strategy {Vivado Implementation Defaults} -report_strategy {Vivado Implementation Default Reports}
+Run is defaulting to parent run srcset: sources_1
+Run is defaulting to parent run constrset: constrs_1
+Run is defaulting to parent run part: xc7a100tfgg484-2
+current_run [get_runs impl_2]
+set_property part xc7z035ffg676-2 [current_project]
+WARNING: [IP_Flow 19-2162] IP 'HDMI_FPGA_ML_A7_0' is locked:
+* IP definition 'HDMI_FPGA_ML_A7 (1.0)' for IP 'HDMI_FPGA_ML_A7_0' (customized with software release 2016.4) was not found in the IP Catalog.
+* Current project part 'xc7z035ffg676-2' and the part 'xc7a100tfgg484-2' used to customize the IP 'HDMI_FPGA_ML_A7_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'CH0_FIFO' is locked:
+* Current project part 'xc7z035ffg676-2' and the part 'xc7a100tfgg484-2' used to customize the IP 'CH0_FIFO' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'CH6_FIFO' is locked:
+* Current project part 'xc7z035ffg676-2' and the part 'xc7a100tfgg484-2' used to customize the IP 'CH6_FIFO' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'MSG_FIFO' is locked:
+* Current project part 'xc7z035ffg676-2' and the part 'xc7a100tfgg484-2' used to customize the IP 'MSG_FIFO' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_hdmi' is locked:
+* Current project part 'xc7z035ffg676-2' and the part 'xc7a100tfgg484-2' used to customize the IP 'clk_wiz_hdmi' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_sys' is locked:
+* Current project part 'xc7z035ffg676-2' and the part 'xc7a100tfgg484-2' used to customize the IP 'clk_wiz_sys' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'ila_2' is locked:
+* Current project part 'xc7z035ffg676-2' and the part 'xc7a100tfgg484-2' used to customize the IP 'ila_2' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'mig_7series_0' is locked:
+* Current project part 'xc7z035ffg676-2' and the part 'xc7a100tfgg484-2' used to customize the IP 'mig_7series_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+upgrade_ip -srcset CH0_FIFO [get_ips  {CH0_FIFO CH6_FIFO MSG_FIFO clk_wiz_hdmi clk_wiz_sys ila_2 mig_7series_0}] -log ip_upgrade.log
+Upgrading 'CH0_FIFO'
+INFO: [Project 1-386] Moving file 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' from fileset 'CH0_FIFO' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated CH0_FIFO to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'CH0_FIFO'...
+Upgrading 'CH6_FIFO'
+INFO: [Project 1-386] Moving file 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH6_FIFO/CH6_FIFO.xci' from fileset 'CH6_FIFO' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated CH6_FIFO to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'CH6_FIFO'...
+Upgrading 'MSG_FIFO'
+INFO: [Project 1-386] Moving file 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' from fileset 'MSG_FIFO' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated MSG_FIFO to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'MSG_FIFO'...
+Upgrading 'clk_wiz_hdmi'
+INFO: [Project 1-386] Moving file 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_hdmi/clk_wiz_hdmi.xci' from fileset 'clk_wiz_hdmi' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated clk_wiz_hdmi to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_hdmi'...
+Upgrading 'clk_wiz_sys'
+INFO: [Project 1-386] Moving file 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_sys/clk_wiz_sys.xci' from fileset 'clk_wiz_sys' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated clk_wiz_sys to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_sys'...
+Upgrading 'ila_2'
+INFO: [Project 1-386] Moving file 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/ila_2/ila_2.xci' from fileset 'ila_2' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated ila_2 to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_2'...
+Upgrading 'mig_7series_0'
+INFO: [Project 1-386] Moving file 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' from fileset 'mig_7series_0' to fileset 'sources_1'.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0: Target FPGA device 'xc7a100t' provided in the mig project did not match with the selected FPGA device 'xc7z035' in project settings. Please cross check the mig project loaded or review the project settings
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA3 provided for the port ddr3_addr[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y1 provided for the port ddr3_addr[10] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA5 provided for the port ddr3_addr[11] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y3 provided for the port ddr3_addr[12] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB8 provided for the port ddr3_addr[13] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB3 provided for the port ddr3_addr[1] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA4 provided for the port ddr3_addr[2] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y6 provided for the port ddr3_addr[3] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB2 provided for the port ddr3_addr[4] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB7 provided for the port ddr3_addr[5] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA6 provided for the port ddr3_addr[6] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA8 provided for the port ddr3_addr[7] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y7 provided for the port ddr3_addr[8] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB5 provided for the port ddr3_addr[9] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint W5 provided for the port ddr3_ba[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y2 provided for the port ddr3_ba[1] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB1 provided for the port ddr3_ba[2] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint W1 provided for the port ddr3_cas_n is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint U5 provided for the port ddr3_ck_n[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint T5 provided for the port ddr3_ck_p[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint W2 provided for the port ddr3_cke[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y4 provided for the port ddr3_cs_n[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint G3 provided for the port ddr3_dm[1] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint H5 provided for the port ddr3_dq[13] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint K4 provided for the port ddr3_dq[16] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint M3 provided for the port ddr3_dq[17] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P1 provided for the port ddr3_dq[24] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint R1 provided for the port ddr3_dq[25] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P2 provided for the port ddr3_dq[26] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint N5 provided for the port ddr3_dq[28] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P6 provided for the port ddr3_dq[30] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint A1 provided for the port ddr3_dq[4] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint F1 provided for the port ddr3_dq[5] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint D2 provided for the port ddr3_dq[7] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint J2 provided for the port ddr3_dqs_n[1] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint L1 provided for the port ddr3_dqs_n[2] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P4 provided for the port ddr3_dqs_n[3] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P5 provided for the port ddr3_dqs_p[3] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint W4 provided for the port ddr3_odt[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint V2 provided for the port ddr3_ras_n is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y9 provided for the port ddr3_reset_n is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA1 provided for the port ddr3_we_n is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  Location Constraint(s) is(are) not provided for certain ports even though they are required for the selected configuration. Following are the ports missing in the provided Constraints file. 
+INFO: [IP_Flow 19-3420] Updated mig_7series_0 to use current project options
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'CLK_REF_I'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'CLOCK'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'DDR2_RESET'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'DDR3'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'DDR3_RESET'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'LPDDR2_RESET'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'MMCM_CLKOUT0'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'MMCM_CLKOUT1'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'MMCM_CLKOUT2'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'MMCM_CLKOUT3'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'MMCM_CLKOUT4'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'QDRIIP_RESET'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'RESET'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'RLDIII_RESET'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'RLDII_RESET'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'SYS_CLK_I'
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 'CLK_REF' (xilinx.com:interface:diff_clock:1.0)
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'mig_7series_0'.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'app_addr'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'app_cmd'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'app_en'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'app_rd_data'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'app_rd_data_end'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'app_rd_data_valid'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'app_rdy'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'app_ref_ack'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'app_ref_req'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'app_sr_active'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'app_sr_req'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'app_wdf_data'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'app_wdf_end'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'app_wdf_mask'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'app_wdf_rdy'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'app_wdf_wren'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'app_zq_ack'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'app_zq_req'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'aresetn'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'clk_ref_i'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ddr3_addr'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ddr3_ba'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ddr3_cas_n'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ddr3_ck_n'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ddr3_ck_p'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ddr3_cke'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ddr3_cs_n'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ddr3_dm'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ddr3_dq'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ddr3_dqs_n'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ddr3_dqs_p'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ddr3_odt'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ddr3_ras_n'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ddr3_reset_n'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ddr3_we_n'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'init_calib_complete'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'sys_clk_i'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ui_clk'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'ui_clk_sync_rst'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk_ref_n'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk_ref_p'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'mig_7series_0'. These changes may impact your design.
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mig_7series_0'...
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0: Target FPGA device 'xc7a100t' provided in the mig project did not match with the selected FPGA device 'xc7z035' in project settings. Please cross check the mig project loaded or review the project settings
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA3 provided for the port ddr3_addr[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y1 provided for the port ddr3_addr[10] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA5 provided for the port ddr3_addr[11] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y3 provided for the port ddr3_addr[12] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB8 provided for the port ddr3_addr[13] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB3 provided for the port ddr3_addr[1] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA4 provided for the port ddr3_addr[2] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y6 provided for the port ddr3_addr[3] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB2 provided for the port ddr3_addr[4] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB7 provided for the port ddr3_addr[5] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA6 provided for the port ddr3_addr[6] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA8 provided for the port ddr3_addr[7] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y7 provided for the port ddr3_addr[8] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB5 provided for the port ddr3_addr[9] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint W5 provided for the port ddr3_ba[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y2 provided for the port ddr3_ba[1] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB1 provided for the port ddr3_ba[2] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint W1 provided for the port ddr3_cas_n is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint U5 provided for the port ddr3_ck_n[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint T5 provided for the port ddr3_ck_p[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint W2 provided for the port ddr3_cke[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y4 provided for the port ddr3_cs_n[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint G3 provided for the port ddr3_dm[1] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint H5 provided for the port ddr3_dq[13] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint K4 provided for the port ddr3_dq[16] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint M3 provided for the port ddr3_dq[17] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P1 provided for the port ddr3_dq[24] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint R1 provided for the port ddr3_dq[25] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P2 provided for the port ddr3_dq[26] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint N5 provided for the port ddr3_dq[28] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P6 provided for the port ddr3_dq[30] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint A1 provided for the port ddr3_dq[4] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint F1 provided for the port ddr3_dq[5] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint D2 provided for the port ddr3_dq[7] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint J2 provided for the port ddr3_dqs_n[1] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint L1 provided for the port ddr3_dqs_n[2] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P4 provided for the port ddr3_dqs_n[3] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P5 provided for the port ddr3_dqs_p[3] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint W4 provided for the port ddr3_odt[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint V2 provided for the port ddr3_ras_n is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y9 provided for the port ddr3_reset_n is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA1 provided for the port ddr3_we_n is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  Location Constraint(s) is(are) not provided for certain ports even though they are required for the selected configuration. Following are the ports missing in the provided Constraints file. 
+CRITICAL WARNING: [IP_Flow 19-1747] Failed to deliver file 'e:/Xilinx/Vivado/2017.4/data/ip/xilinx/mig_7series_v4_0/xit/instantiation_template.xit': 
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'mig_7series_0'. Failed to generate 'Verilog Instantiation Template' outputs: 
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0: Target FPGA device 'xc7a100t' provided in the mig project did not match with the selected FPGA device 'xc7z035' in project settings. Please cross check the mig project loaded or review the project settings
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA3 provided for the port ddr3_addr[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y1 provided for the port ddr3_addr[10] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA5 provided for the port ddr3_addr[11] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y3 provided for the port ddr3_addr[12] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB8 provided for the port ddr3_addr[13] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB3 provided for the port ddr3_addr[1] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA4 provided for the port ddr3_addr[2] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y6 provided for the port ddr3_addr[3] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB2 provided for the port ddr3_addr[4] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB7 provided for the port ddr3_addr[5] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA6 provided for the port ddr3_addr[6] is not the valid pad location of the FPGA selected.
+INFO: [Common 17-14] Message 'xilinx.com:ip:mig_7series:4.0 0' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'mig_7series_0' has identified issues that may require user intervention. Please review the upgrade log 'f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:42 ; elapsed = 00:01:08 . Memory (MB): peak = 1469.008 ; gain = 189.910
+ERROR: [Common 17-39] 'upgrade_ip' failed due to earlier errors.
+update_compile_order -fileset sources_1
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0: Target FPGA device 'xc7a100t' provided in the mig project did not match with the selected FPGA device 'xc7z035' in project settings. Please cross check the mig project loaded or review the project settings
+set_property -dict [list CONFIG.XML_INPUT_FILE {mig_b.prj} CONFIG.RESET_BOARD_INTERFACE {Custom} CONFIG.MIG_DONT_TOUCH_PARAM {Custom} CONFIG.BOARD_MIG_PARAM {Custom}] [get_ips mig_7series_0]
+generate_target {instantiation_template} [get_files f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mig_7series_0'...
+generate_target all [get_files  F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mig_7series_0'...
+catch { config_ip_cache -export [get_ips -all mig_7series_0] }
+export_ip_user_files -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+launch_runs -jobs 12 mig_7series_0_synth_1
+[Sat Oct 19 23:04:14 2019] Launched mig_7series_0_synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/mig_7series_0_synth_1/runme.log
+export_simulation -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -directory F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property  ip_repo_paths  {f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/user/OV_Sensor_ML F:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/user/OV_Sensor_ML'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML'.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1
+
+launch_runs synth_1 -jobs 12
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CH6_FIFO'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CH0_FIFO'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'MSG_FIFO'...
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/user/HDMI_SRC/HDMI_FPGA_ML_A7_0/HDMI_FPGA_ML_A7_0.xci' is already up-to-date
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_2'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/ila_2/ila_2_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_2'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_sys'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_sys'...
+[Sat Oct 19 23:05:27 2019] Launched mig_7series_0_synth_1, CH0_FIFO_synth_1, MSG_FIFO_synth_1, ila_2_synth_1, clk_wiz_sys_synth_1, clk_wiz_hdmi_synth_1, CH6_FIFO_synth_1...
+Run output will be captured here:
+mig_7series_0_synth_1: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/mig_7series_0_synth_1/runme.log
+CH0_FIFO_synth_1: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/CH0_FIFO_synth_1/runme.log
+MSG_FIFO_synth_1: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/MSG_FIFO_synth_1/runme.log
+ila_2_synth_1: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/ila_2_synth_1/runme.log
+clk_wiz_sys_synth_1: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/clk_wiz_sys_synth_1/runme.log
+clk_wiz_hdmi_synth_1: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/clk_wiz_hdmi_synth_1/runme.log
+CH6_FIFO_synth_1: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/CH6_FIFO_synth_1/runme.log
+[Sat Oct 19 23:05:27 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1604.090 ; gain = 9.285
+set_property -dict [list CONFIG.PRIM_IN_FREQ {100} CONFIG.CLKIN1_JITTER_PS {100.0} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_CLKIN1_PERIOD {10.000} CONFIG.MMCM_CLKIN2_PERIOD {10.000} CONFIG.CLKOUT1_JITTER {114.829} CONFIG.CLKOUT1_PHASE_ERROR {98.575} CONFIG.CLKOUT2_JITTER {175.402} CONFIG.CLKOUT2_PHASE_ERROR {98.575} CONFIG.CLKOUT3_JITTER {151.636} CONFIG.CLKOUT3_PHASE_ERROR {98.575}] [get_ips clk_wiz_sys]
+generate_target all [get_files  F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_sys/clk_wiz_sys.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_sys'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_sys'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_sys'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_sys'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_sys'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_sys] }
+export_ip_user_files -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_sys/clk_wiz_sys.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_sys_synth_1
+launch_runs -jobs 12 clk_wiz_sys_synth_1
+[Sat Oct 19 23:10:22 2019] Launched clk_wiz_sys_synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/clk_wiz_sys_synth_1/runme.log
+export_simulation -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_sys/clk_wiz_sys.xci] -directory F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.PRIM_IN_FREQ {100} CONFIG.CLKIN1_JITTER_PS {100.0} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {37.125} CONFIG.MMCM_CLKIN1_PERIOD {10.000} CONFIG.MMCM_CLKIN2_PERIOD {10.000} CONFIG.CLKOUT1_JITTER {337.616} CONFIG.CLKOUT1_PHASE_ERROR {322.999} CONFIG.CLKOUT2_JITTER {258.703} CONFIG.CLKOUT2_PHASE_ERROR {322.999}] [get_ips clk_wiz_hdmi]
+generate_target all [get_files  F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_hdmi/clk_wiz_hdmi.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_hdmi'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_hdmi] }
+export_ip_user_files -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_hdmi/clk_wiz_hdmi.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_hdmi_synth_1
+launch_runs -jobs 12 clk_wiz_hdmi_synth_1
+[Sat Oct 19 23:12:09 2019] Launched clk_wiz_hdmi_synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/clk_wiz_hdmi_synth_1/runme.log
+export_simulation -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_hdmi/clk_wiz_hdmi.xci] -directory F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/user/HDMI_SRC/HDMI_FPGA_ML_A7_0/HDMI_FPGA_ML_A7_0.xci' is already up-to-date
+[Sat Oct 19 23:12:59 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Sat Oct 19 23:12:59 2019] Launched impl_2...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/runme.log
+set_property -dict [list CONFIG.XML_INPUT_FILE {mig_a.prj} CONFIG.RESET_BOARD_INTERFACE {Custom} CONFIG.MIG_DONT_TOUCH_PARAM {Custom} CONFIG.BOARD_MIG_PARAM {Custom}] [get_ips mig_7series_0]
+generate_target {instantiation_template} [get_files f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mig_7series_0'...
+generate_target all [get_files  F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mig_7series_0'...
+catch { config_ip_cache -export [get_ips -all mig_7series_0] }
+export_ip_user_files -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -no_script -sync -force -quiet
+reset_run mig_7series_0_synth_1
+launch_runs -jobs 12 mig_7series_0_synth_1
+[Sat Oct 19 23:19:43 2019] Launched mig_7series_0_synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/mig_7series_0_synth_1/runme.log
+export_simulation -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -directory F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1
+
+launch_runs synth_1 -jobs 12
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/user/HDMI_SRC/HDMI_FPGA_ML_A7_0/HDMI_FPGA_ML_A7_0.xci' is already up-to-date
+[Sat Oct 19 23:20:29 2019] Launched mig_7series_0_synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/mig_7series_0_synth_1/runme.log
+[Sat Oct 19 23:20:29 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/user/HDMI_SRC/HDMI_FPGA_ML_A7_0/HDMI_FPGA_ML_A7_0.xci' is already up-to-date
+[Sat Oct 19 23:24:05 2019] Launched impl_2...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/runme.log
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA3 provided for the port ddr3_addr[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y1 provided for the port ddr3_addr[10] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA5 provided for the port ddr3_addr[11] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y3 provided for the port ddr3_addr[12] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB8 provided for the port ddr3_addr[13] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB3 provided for the port ddr3_addr[1] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA4 provided for the port ddr3_addr[2] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y6 provided for the port ddr3_addr[3] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB2 provided for the port ddr3_addr[4] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB7 provided for the port ddr3_addr[5] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA6 provided for the port ddr3_addr[6] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA8 provided for the port ddr3_addr[7] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y7 provided for the port ddr3_addr[8] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB5 provided for the port ddr3_addr[9] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint W5 provided for the port ddr3_ba[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y2 provided for the port ddr3_ba[1] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB1 provided for the port ddr3_ba[2] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint W1 provided for the port ddr3_cas_n is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint U5 provided for the port ddr3_ck_n[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint T5 provided for the port ddr3_ck_p[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint W2 provided for the port ddr3_cke[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y4 provided for the port ddr3_cs_n[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint G3 provided for the port ddr3_dm[1] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint H5 provided for the port ddr3_dq[13] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint K4 provided for the port ddr3_dq[16] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint M3 provided for the port ddr3_dq[17] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P1 provided for the port ddr3_dq[24] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint R1 provided for the port ddr3_dq[25] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P2 provided for the port ddr3_dq[26] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint N5 provided for the port ddr3_dq[28] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P6 provided for the port ddr3_dq[30] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint A1 provided for the port ddr3_dq[4] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint F1 provided for the port ddr3_dq[5] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint D2 provided for the port ddr3_dq[7] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint J2 provided for the port ddr3_dqs_n[1] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint L1 provided for the port ddr3_dqs_n[2] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P4 provided for the port ddr3_dqs_n[3] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P5 provided for the port ddr3_dqs_p[3] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint W4 provided for the port ddr3_odt[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint V2 provided for the port ddr3_ras_n is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y9 provided for the port ddr3_reset_n is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA1 provided for the port ddr3_we_n is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  Location Constraint(s) is(are) not provided for certain ports even though they are required for the selected configuration. Following are the ports missing in the provided Constraints file. 
+upgrade_ip [get_ips]
+WARNING: [Coretcl 2-1044] No upgrade is available for 'HDMI_FPGA_ML_A7_0'
+WARNING: [Coretcl 2-1042] No IP was identified for upgrade.
+set_property  ip_repo_paths  f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML'.
+set_property -dict [list CONFIG.XML_INPUT_FILE {mig_b.prj} CONFIG.RESET_BOARD_INTERFACE {Custom} CONFIG.MIG_DONT_TOUCH_PARAM {Custom} CONFIG.BOARD_MIG_PARAM {Custom}] [get_ips mig_7series_0]
+generate_target {instantiation_template} [get_files f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mig_7series_0'...
+generate_target all [get_files  F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mig_7series_0'...
+catch { config_ip_cache -export [get_ips -all mig_7series_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mig_7series_0, cache-ID = 7f50ed4d8c561b29; cache size = 49.191 MB.
+catch { [ delete_ip_run [get_ips -all mig_7series_0] ] }
+INFO: [Project 1-386] Moving file 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' from fileset 'mig_7series_0' to fileset 'sources_1'.
+export_ip_user_files -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci'
+export_simulation -of_objects [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -directory F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+ERROR: [filemgmt 20-1731] Too many checkpoints files associated with the sub-design 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci'
+ERROR: [filemgmt 20-1730] Too many black box stub files associated with the sub-design 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci'
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/user/HDMI_SRC/HDMI_FPGA_ML_A7_0/HDMI_FPGA_ML_A7_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Sat Oct 19 23:44:23 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Sat Oct 19 23:44:23 2019] Launched impl_2...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/runme.log
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML'.
+set_property  ip_repo_paths  {f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip'.
+INFO: [Vivado 12-5777] IP Instance 'mig_7series_0' cannot be used in a module reference: The 'xilinx.com:ip:mig_7series:4.0' core does not support module reference.
+INFO: [Vivado 12-5777] IP Instance 'mig_7series_0' cannot be used in a module reference: The 'xilinx.com:ip:mig_7series:4.0' core does not support module reference.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA3 provided for the port ddr3_addr[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y1 provided for the port ddr3_addr[10] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA5 provided for the port ddr3_addr[11] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y3 provided for the port ddr3_addr[12] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB8 provided for the port ddr3_addr[13] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB3 provided for the port ddr3_addr[1] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA4 provided for the port ddr3_addr[2] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y6 provided for the port ddr3_addr[3] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB2 provided for the port ddr3_addr[4] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB7 provided for the port ddr3_addr[5] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA6 provided for the port ddr3_addr[6] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA8 provided for the port ddr3_addr[7] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y7 provided for the port ddr3_addr[8] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB5 provided for the port ddr3_addr[9] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint W5 provided for the port ddr3_ba[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y2 provided for the port ddr3_ba[1] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AB1 provided for the port ddr3_ba[2] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint W1 provided for the port ddr3_cas_n is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint U5 provided for the port ddr3_ck_n[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint T5 provided for the port ddr3_ck_p[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint W2 provided for the port ddr3_cke[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y4 provided for the port ddr3_cs_n[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint G3 provided for the port ddr3_dm[1] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint H5 provided for the port ddr3_dq[13] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint K4 provided for the port ddr3_dq[16] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint M3 provided for the port ddr3_dq[17] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P1 provided for the port ddr3_dq[24] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint R1 provided for the port ddr3_dq[25] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P2 provided for the port ddr3_dq[26] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint N5 provided for the port ddr3_dq[28] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P6 provided for the port ddr3_dq[30] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint A1 provided for the port ddr3_dq[4] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint F1 provided for the port ddr3_dq[5] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint D2 provided for the port ddr3_dq[7] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint J2 provided for the port ddr3_dqs_n[1] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint L1 provided for the port ddr3_dqs_n[2] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P4 provided for the port ddr3_dqs_n[3] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint P5 provided for the port ddr3_dqs_p[3] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint W4 provided for the port ddr3_odt[0] is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint V2 provided for the port ddr3_ras_n is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint Y9 provided for the port ddr3_reset_n is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  The Location Constraint AA1 provided for the port ddr3_we_n is not the valid pad location of the FPGA selected.
+ERROR: [xilinx.com:ip:mig_7series:4.0-0] mig_7series_0:  Location Constraint(s) is(are) not provided for certain ports even though they are required for the selected configuration. Following are the ports missing in the provided Constraints file. 
+export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -no_script -reset -force -quiet
+remove_files  F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci
+file delete -force F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0
+create_ip -name mig_7series -vendor xilinx.com -library ip -version 4.0 -module_name mig_7series_0
+set_property -dict [list CONFIG.XML_INPUT_FILE {mig_a.prj} CONFIG.RESET_BOARD_INTERFACE {Custom} CONFIG.MIG_DONT_TOUCH_PARAM {Custom} CONFIG.BOARD_MIG_PARAM {Custom}] [get_ips mig_7series_0]
+generate_target {instantiation_template} [get_files f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mig_7series_0'...
+generate_target all [get_files  f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mig_7series_0'...
+catch { config_ip_cache -export [get_ips -all mig_7series_0] }
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip'.
+export_ip_user_files -of_objects [get_files f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+launch_runs -jobs 12 mig_7series_0_synth_1
+[Sat Oct 19 23:58:30 2019] Launched mig_7series_0_synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/mig_7series_0_synth_1/runme.log
+export_simulation -of_objects [get_files f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -directory F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/user/HDMI_SRC/HDMI_FPGA_ML_A7_0/HDMI_FPGA_ML_A7_0.xci' is already up-to-date
+[Sun Oct 20 00:01:40 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+reset_run synth_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 20 00:01:53 2019...

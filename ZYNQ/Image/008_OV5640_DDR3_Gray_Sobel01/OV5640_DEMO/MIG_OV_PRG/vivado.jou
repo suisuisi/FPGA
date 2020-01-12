@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Dec 21 20:03:08 2019
+# Process ID: 39840
+# Current directory: F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel01/OV5640_DEMO/MIG_OV_PRG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29784 F:\FILE\FPGA\ZYNQ\Image\008_OV5640_DDR3_Gray_Sobel01\OV5640_DEMO\MIG_OV_PRG\MIG_OV_PRG.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel01/OV5640_DEMO/MIG_OV_PRG/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel01/OV5640_DEMO/MIG_OV_PRG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel01/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z035_1] 0]
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel01/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel01/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel01/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]

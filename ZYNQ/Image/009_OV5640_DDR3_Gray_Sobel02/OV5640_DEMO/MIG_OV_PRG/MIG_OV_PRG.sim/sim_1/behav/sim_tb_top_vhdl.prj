@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../MIG_OV_PRG.ip_user_files/ipstatic/src/TMDSEncoder.vhd"
+vhdl xil_defaultlib  "../../../MIG_OV_PRG.ip_user_files/ipstatic/src/SerializerN_1.vhd"
+vhdl xil_defaultlib  "../../../MIG_OV_PRG.ip_user_files/ipstatic/src/DVITransmitter.vhd"
+vhdl xil_defaultlib  "../../../MIG_OV_PRG.ip_user_files/ipstatic/src/hdmi_tx.vhd"
+vhdl xil_defaultlib  "../../../../user/HDMI_SRC/HDMI_FPGA_ML_A7_0/sim/HDMI_FPGA_ML_A7_0.vhd"
+
+# Do not sort compile order
+nosort

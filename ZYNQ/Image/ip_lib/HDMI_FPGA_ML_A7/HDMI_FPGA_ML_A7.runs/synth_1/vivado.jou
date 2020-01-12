@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Apr 19 16:26:34 2017
+# Process ID: 15412
+# Current directory: F:/A7_HDMI/HDMI_FPGA_ML_A7/HDMI_FPGA_ML_A7.runs/synth_1
+# Command line: vivado.exe -log HDMI_FPGA_ML_A7.vds -mode batch -messageDb vivado.pb -notrace -source HDMI_FPGA_ML_A7.tcl
+# Log file: F:/A7_HDMI/HDMI_FPGA_ML_A7/HDMI_FPGA_ML_A7.runs/synth_1/HDMI_FPGA_ML_A7.vds
+# Journal file: F:/A7_HDMI/HDMI_FPGA_ML_A7/HDMI_FPGA_ML_A7.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source HDMI_FPGA_ML_A7.tcl -notrace

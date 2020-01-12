@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file F:\Miz702N\free\s1\S01_CH11_hdmi_display_demon\hdmi_display_demon\hdmi_display_demon.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: 没有权限

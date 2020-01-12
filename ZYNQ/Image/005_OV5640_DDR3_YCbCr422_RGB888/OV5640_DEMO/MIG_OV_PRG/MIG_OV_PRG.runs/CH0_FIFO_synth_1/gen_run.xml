@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="CH0_FIFO_synth_1" LaunchPart="xc7z035ffg676-2" LaunchTime="1571497525">
+  <File Type="PA-TCL" Name="CH0_FIFO.tcl"/>
+  <File Type="REPORTS-TCL" Name="CH0_FIFO_reports.tcl"/>
+  <File Type="RDS-RDS" Name="CH0_FIFO.vds"/>
+  <File Type="RDS-UTIL" Name="CH0_FIFO_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="CH0_FIFO_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="CH0_FIFO.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CH0_FIFO">
+    <File Path="$PSRCDIR/sources_1/ip/CH0_FIFO/CH0_FIFO.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="CH0_FIFO"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CH0_FIFO">
+    <File Path="$PSRCDIR/sources_1/ip/CH0_FIFO/CH0_FIFO.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="CH0_FIFO"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

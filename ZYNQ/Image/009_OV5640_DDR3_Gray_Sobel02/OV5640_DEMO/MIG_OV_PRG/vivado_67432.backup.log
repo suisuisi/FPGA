@@ -1,0 +1,173 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Nov  3 21:13:41 2019
+# Process ID: 67432
+# Current directory: F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent73284 F:\FILE\FPGA\ZYNQ\Image\003_OV5640_DDR3_Gray_Mean_Filter\OV5640_DEMO\MIG_OV_PRG\MIG_OV_PRG.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.xpr
+INFO: [Project 1-313] Project file moved from 'F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/Image_RGB888_YCbCr444.v', nor could it be found using path 'F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/Video_Image_Processor/Image_RGB888_YCbCr444.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/Video_Image_Processor.v', nor could it be found using path 'F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/Video_Image_Processor/Video_Image_Processor.v'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/mia_ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML', nor could it be found using path 'F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/mia_ip_lib/HDMI_FPGA_ML_A7', nor could it be found using path 'F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'f:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/mia_ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/mia_ip_lib/HDMI_FPGA_ML_A7'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2017.4/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'HDMI_FPGA_ML_A7_0' is locked:
+* IP definition 'HDMI_FPGA_ML_A7 (1.0)' for IP 'HDMI_FPGA_ML_A7_0' (customized with software release 2017.4) was not found in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 930.633 ; gain = 190.246
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  f:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/mia_ip_lib/HDMI_FPGA_ML_A7 [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/mia_ip_lib/HDMI_FPGA_ML_A7'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  F:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7 [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:HDMI_FPGA_ML_A7:1.0'. The one found in IP location 'f:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7' will take precedence over the same IP in location f:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML
+add_files -norecurse {F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/Gray_Mean_Filter/VIP_Matrix_Generate_3X3_8Bit.v F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/RGB888_YCbCr444/Video_Image_Processor.v F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/Gray_Mean_Filter/VIP_Gray_Mean_Filter.v F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/Gray_Mean_Filter/Line_Shift_RAM_8Bit.v F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/RGB888_YCbCr444/Image_RGB888_YCbCr444.v F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/Gray_Mean_Filter/Median_Filter_3X3.v F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/Gray_Mean_Filter/Video_Image_Processor.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/I2C_OV5640_YUV422_Config.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/RGB888_YCbCr444/Video_Image_Processor.v] -no_script -reset -force -quiet
+remove_files  F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/RGB888_YCbCr444/Video_Image_Processor.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/Video_Image_Processor.v] -no_script -reset -force -quiet
+remove_files  F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/Video_Image_Processor.v
+export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/Image_RGB888_YCbCr444.v] -no_script -reset -force -quiet
+remove_files  F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/Image_RGB888_YCbCr444.v
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Nov  3 21:42:41 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Sun Nov  3 21:42:41 2019] Launched impl_2...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/runme.log
+create_ip -name c_shift_ram -vendor xilinx.com -library ip -version 12.0 -module_name Line_Shift_RAM_8Bit -dir F:/FILE/Xilinx/Miz7035/My_ip_lib
+set_property -dict [list CONFIG.Component_Name {Line_Shift_RAM_8Bit} CONFIG.CE {true} CONFIG.Width {8} CONFIG.Depth {640} CONFIG.DefaultData {00000000} CONFIG.AsyncInitVal {00000000} CONFIG.SyncInitVal {00000000}] [get_ips Line_Shift_RAM_8Bit]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'Line_Shift_RAM_8Bit' to 'Line_Shift_RAM_8Bit' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/Line_Shift_RAM_8Bit/Line_Shift_RAM_8Bit.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Line_Shift_RAM_8Bit'...
+generate_target all [get_files  f:/FILE/Xilinx/Miz7035/My_ip_lib/Line_Shift_RAM_8Bit/Line_Shift_RAM_8Bit.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Line_Shift_RAM_8Bit'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'Line_Shift_RAM_8Bit'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'Line_Shift_RAM_8Bit'...
+catch { config_ip_cache -export [get_ips -all Line_Shift_RAM_8Bit] }
+export_ip_user_files -of_objects [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/Line_Shift_RAM_8Bit/Line_Shift_RAM_8Bit.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] f:/FILE/Xilinx/Miz7035/My_ip_lib/Line_Shift_RAM_8Bit/Line_Shift_RAM_8Bit.xci]
+launch_runs -jobs 12 Line_Shift_RAM_8Bit_synth_1
+[Sun Nov  3 21:47:33 2019] Launched Line_Shift_RAM_8Bit_synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/Line_Shift_RAM_8Bit_synth_1/runme.log
+export_simulation -of_objects [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/Line_Shift_RAM_8Bit/Line_Shift_RAM_8Bit.xci] -directory F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1
+
+launch_runs synth_1 -jobs 12
+[Sun Nov  3 21:48:55 2019] Launched Line_Shift_RAM_8Bit_synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/Line_Shift_RAM_8Bit_synth_1/runme.log
+[Sun Nov  3 21:48:55 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+set_property -dict [list CONFIG.DefaultDataRadix {2} CONFIG.DefaultData {00000000} CONFIG.AsyncInitRadix {2} CONFIG.AsyncInitVal {00000000}] [get_ips Line_Shift_RAM_8Bit]
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Sun Nov  3 22:02:30 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+add_files -norecurse {F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/Gray_Mean_Filter/Line_Shift_RAM_8Bit.v F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/Gray_Mean_Filter/Video_Image_Processor.v}
+WARNING: [filemgmt 56-12] File 'F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/Gray_Mean_Filter/Line_Shift_RAM_8Bit.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/Gray_Mean_Filter/Video_Image_Processor.v' cannot be added to the project because it already exists in the project, skipping this file
+export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/Gray_Mean_Filter/Line_Shift_RAM_8Bit.v] -no_script -reset -force -quiet
+remove_files  F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/Video_Image_Processor/Gray_Mean_Filter/Line_Shift_RAM_8Bit.v
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Sun Nov  3 22:06:41 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Nov  3 22:09:04 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Sun Nov  3 22:09:04 2019] Launched impl_2...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249856074
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210249856074.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1771.207 ; gain = 0.789
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-1434] Device xc7z035 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3403] Dropping logic core with cellname:'sensor_decode_inst/sensor_sg' from probes file, since it cannot be found on the programmed device.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Nov  3 22:19:58 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Sun Nov  3 22:19:58 2019] Launched impl_2...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/runme.log
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1776.707 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-2302] Device xc7z035 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sun Nov  3 22:40:58 2019] Launched impl_2...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/runme.log
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1784.348 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-1434] Device xc7z035 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3403] Dropping logic core with cellname:'sensor_decode_inst/sensor_sg' from probes file, since it cannot be found on the programmed device.
+save_wave_config {F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  3 22:45:20 2019...

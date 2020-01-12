@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L xbip_utils_v3_0_8 -L c_reg_fd_v12_0_4 -L c_mux_bit_v12_0_4 -L c_shift_ram_v12_0_11 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Line_Shift_RAM_8Bit xil_defaultlib.Line_Shift_RAM_8Bit xil_defaultlib.glbl -log elaborate.log

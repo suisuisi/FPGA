@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Nov 10 22:10:23 2019
+# Process ID: 29636
+# Current directory: F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/MIG_OV_PRG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7700 F:\FILE\FPGA\ZYNQ\Image\008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation\OV5640_DEMO\MIG_OV_PRG\MIG_OV_PRG.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/MIG_OV_PRG/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/MIG_OV_PRG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse {F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Bit_Dilation_Detector.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Bit_Erosion_Detector.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/SQRT.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Matrix_Generate_3X3_8Bit.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Line_Shift_RAM_1Bit.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Video_Image_Processor.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Matrix_Generate_3X3_1Bit.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Sobel_Edge_Detector.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Sobel_Threshold_Adj.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Line_Shift_RAM_8Bit.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion/Video_Image_Processor.v] -no_script -reset -force -quiet
+remove_files  F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion/Video_Image_Processor.v
+update_compile_order -fileset sources_1
+add_files -norecurse F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Video_Image_Processor.v
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+add_files -norecurse F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Bit_Dilation_Detector.v
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+add_files -norecurse {F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Bit_Dilation_Detector.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Bit_Erosion_Detector.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/SQRT.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Matrix_Generate_3X3_8Bit.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Line_Shift_RAM_1Bit.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Video_Image_Processor.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Matrix_Generate_3X3_1Bit.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Sobel_Edge_Detector.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Sobel_Threshold_Adj.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Line_Shift_RAM_8Bit.v}
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+add_files -norecurse F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Sobel_Edge_Detector.v
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2

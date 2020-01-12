@@ -1,0 +1,6 @@
+TMDSEncoder.vhd,vhdl,xil_defaultlib,../../../ipstatic/src/TMDSEncoder.vhd,
+SerializerN_1.vhd,vhdl,xil_defaultlib,../../../ipstatic/src/SerializerN_1.vhd,
+DVITransmitter.vhd,vhdl,xil_defaultlib,../../../ipstatic/src/DVITransmitter.vhd,
+hdmi_tx.vhd,vhdl,xil_defaultlib,../../../ipstatic/src/hdmi_tx.vhd,
+HDMI_FPGA_ML_0.vhd,vhdl,xil_defaultlib,../../../../../../../../../../Xilinx/Miz7035/My_ip_lib/HDMI_FPGA_ML_0_2/sim/HDMI_FPGA_ML_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

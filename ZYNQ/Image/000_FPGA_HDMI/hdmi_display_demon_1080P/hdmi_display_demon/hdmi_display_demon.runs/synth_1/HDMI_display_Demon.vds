@@ -1,0 +1,441 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Nov 06 11:06:26 2017
+# Process ID: 10504
+# Current directory: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1
+# Command line: vivado.exe -log HDMI_display_Demon.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HDMI_display_Demon.tcl
+# Log file: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/HDMI_display_Demon.vds
+# Journal file: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source HDMI_display_Demon.tcl -notrace
+Command: synth_design -top HDMI_display_Demon -part xc7z035ffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z035'
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/clk_wiz_0/clk_wiz_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/hdmi_display_0_1/hdmi_display_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/clk_wiz_0/clk_wiz_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/hdmi_display_0_1/hdmi_display_0.dcp]
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11488 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 311.695 ; gain = 102.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'HDMI_display_Demon' [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/new/HDMI_display_Demon.v:21]
+INFO: [Synth 8-638] synthesizing module 'hdmi_data_gen' [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/new/hdmi_data_gen.v:22]
+	Parameter H_Total bound to: 2200 - type: integer 
+	Parameter H_Sync bound to: 44 - type: integer 
+	Parameter H_Back bound to: 148 - type: integer 
+	Parameter H_Active bound to: 1920 - type: integer 
+	Parameter H_Front bound to: 88 - type: integer 
+	Parameter H_Start bound to: 192 - type: integer 
+	Parameter H_End bound to: 2112 - type: integer 
+	Parameter V_Total bound to: 1125 - type: integer 
+	Parameter V_Sync bound to: 5 - type: integer 
+	Parameter V_Back bound to: 37 - type: integer 
+	Parameter V_Active bound to: 1080 - type: integer 
+	Parameter V_Front bound to: 3 - type: integer 
+	Parameter V_Start bound to: 42 - type: integer 
+	Parameter V_End bound to: 1122 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'hdmi_data_gen' (1#1) [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/new/hdmi_data_gen.v:22]
+INFO: [Synth 8-638] synthesizing module 'hdmi_display_0' [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/realtime/hdmi_display_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_display_0' (2#1) [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/realtime/hdmi_display_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (3#1) [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'HDMI_display_Demon' (4#1) [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/new/HDMI_display_Demon.v:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 348.043 ; gain = 138.547
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 348.043 ; gain = 138.547
+---------------------------------------------------------------------------------
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/clk_wiz_0/clk_wiz_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/hdmi_display_0_1/hdmi_display_0.dcp]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'u_clk' [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/new/HDMI_display_Demon.v:112]
+WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'hdmi_display_0' instantiated as 'u_hdmi_display_0'. 2 instances of this cell are unresolved black boxes. [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/new/HDMI_display_Demon.v:70]
+INFO: [Device 21-403] Loading part xc7z035ffg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp/clk_wiz_0_in_context.xdc] for cell 'u_clk'
+Finished Parsing XDC File [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp/clk_wiz_0_in_context.xdc] for cell 'u_clk'
+Parsing XDC File [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc] for cell 'u_hdmi_display_0'
+Finished Parsing XDC File [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc] for cell 'u_hdmi_display_0'
+Parsing XDC File [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc] for cell 'u_hdmi_display_1'
+Finished Parsing XDC File [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc] for cell 'u_hdmi_display_1'
+Parsing XDC File [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/constrs_1/new/zynq_pin.xdc]
+Finished Parsing XDC File [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/constrs_1/new/zynq_pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/constrs_1/new/zynq_pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/HDMI_display_Demon_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/HDMI_display_Demon_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 724.645 ; gain = 0.000
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/clk_wiz_0/clk_wiz_0.dcp]
+WARNING: [filemgmt 56-147] Overwrite of existing file isn't enabled.  Please specify -force to overwrite file  [F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/hdmi_display_0_1/hdmi_display_0.dcp]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 724.645 ; gain = 515.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z035ffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 724.645 ; gain = 515.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100M. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100M. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI1_CLK_N. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI1_CLK_N. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI1_CLK_P. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI1_CLK_P. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI1_D0_N. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI1_D0_N. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI1_D0_P. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI1_D0_P. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI1_D1_N. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI1_D1_N. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI1_D1_P. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI1_D1_P. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI1_D2_N. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI1_D2_N. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI1_D2_P. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI1_D2_P. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI2_CLK_N. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI2_CLK_N. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI2_CLK_P. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI2_CLK_P. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI2_D0_N. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI2_D0_N. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI2_D0_P. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI2_D0_P. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI2_D1_N. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI2_D1_N. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI2_D1_P. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI2_D1_P. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI2_D2_N. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI2_D2_N. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI2_D2_P. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI2_D2_P. (constraint file  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/.Xil/Vivado-10504-LB-201708051431/dcp_2/hdmi_display_0_in_context.xdc, line 16).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 724.645 ; gain = 515.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "hsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hs_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hs_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vs_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vs_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dis_mode" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 724.645 ; gain = 515.148
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   3 Input     24 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 3     
+	   7 Input     24 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   7 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module hdmi_data_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   3 Input     24 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 3     
+	   7 Input     24 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   7 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1000 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "u_hdmi_data_gen/y_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_hdmi_data_gen/vs_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_hdmi_data_gen/vs_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_hdmi_data_gen/hs_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_hdmi_data_gen/hs_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_hdmi_data_gen/dis_mode" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_hdmi_data_gen/hsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_hdmi_data_gen/hsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_hdmi_data_gen/vsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_hdmi_data_gen/vsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[0]' (FDRE) to 'u_hdmi_data_gen/color_bar_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[1]' (FDRE) to 'u_hdmi_data_gen/color_bar_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[2]' (FDRE) to 'u_hdmi_data_gen/color_bar_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[3]' (FDRE) to 'u_hdmi_data_gen/color_bar_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[4]' (FDRE) to 'u_hdmi_data_gen/color_bar_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[5]' (FDRE) to 'u_hdmi_data_gen/color_bar_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[6]' (FDRE) to 'u_hdmi_data_gen/color_bar_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[8]' (FDRE) to 'u_hdmi_data_gen/color_bar_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[9]' (FDRE) to 'u_hdmi_data_gen/color_bar_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[10]' (FDRE) to 'u_hdmi_data_gen/color_bar_reg[11]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[11]' (FDRE) to 'u_hdmi_data_gen/color_bar_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[12]' (FDRE) to 'u_hdmi_data_gen/color_bar_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[13]' (FDRE) to 'u_hdmi_data_gen/color_bar_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[14]' (FDRE) to 'u_hdmi_data_gen/color_bar_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[16]' (FDSE) to 'u_hdmi_data_gen/color_bar_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/grid_data_2_reg[0]' (FDR) to 'u_hdmi_data_gen/grid_data_2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/grid_data_1_reg[0]' (FDR) to 'u_hdmi_data_gen/grid_data_1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[17]' (FDSE) to 'u_hdmi_data_gen/color_bar_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/grid_data_2_reg[1]' (FDR) to 'u_hdmi_data_gen/grid_data_2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/grid_data_1_reg[1]' (FDR) to 'u_hdmi_data_gen/grid_data_1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[18]' (FDSE) to 'u_hdmi_data_gen/color_bar_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/grid_data_2_reg[2]' (FDR) to 'u_hdmi_data_gen/grid_data_2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/grid_data_1_reg[2]' (FDR) to 'u_hdmi_data_gen/grid_data_1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[19]' (FDSE) to 'u_hdmi_data_gen/color_bar_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/grid_data_2_reg[3]' (FDR) to 'u_hdmi_data_gen/grid_data_2_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/grid_data_1_reg[3]' (FDR) to 'u_hdmi_data_gen/grid_data_1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[20]' (FDSE) to 'u_hdmi_data_gen/color_bar_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/grid_data_2_reg[4]' (FDR) to 'u_hdmi_data_gen/grid_data_2_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/grid_data_1_reg[4]' (FDR) to 'u_hdmi_data_gen/grid_data_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[21]' (FDSE) to 'u_hdmi_data_gen/color_bar_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/grid_data_2_reg[5]' (FDR) to 'u_hdmi_data_gen/grid_data_2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/grid_data_1_reg[5]' (FDR) to 'u_hdmi_data_gen/grid_data_1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/color_bar_reg[22]' (FDSE) to 'u_hdmi_data_gen/color_bar_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/grid_data_2_reg[6]' (FDR) to 'u_hdmi_data_gen/grid_data_2_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_data_gen/grid_data_1_reg[6]' (FDR) to 'u_hdmi_data_gen/grid_data_1_reg[7]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 724.645 ; gain = 515.148
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk/clk_out1' to pin 'u_clk/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk/clk_out2' to pin 'u_clk/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 724.645 ; gain = 515.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 724.645 ; gain = 515.148
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 724.645 ; gain = 515.148
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 724.645 ; gain = 515.148
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 724.645 ; gain = 515.148
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 724.645 ; gain = 515.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 724.645 ; gain = 515.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 724.645 ; gain = 515.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 724.645 ; gain = 515.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |hdmi_display_0 |         2|
+|2     |clk_wiz_0      |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |clk_wiz_0         |     1|
+|2     |hdmi_display_0    |     1|
+|3     |hdmi_display_0__1 |     1|
+|4     |CARRY4            |    11|
+|5     |LUT1              |    41|
+|6     |LUT2              |     8|
+|7     |LUT3              |    28|
+|8     |LUT4              |    17|
+|9     |LUT5              |    12|
+|10    |LUT6              |    52|
+|11    |FDRE              |    54|
+|12    |FDSE              |    24|
+|13    |IBUF              |     1|
+|14    |OBUF              |     4|
++------+------------------+------+
+
+Report Instance Areas: 
++------+------------------+--------------+------+
+|      |Instance          |Module        |Cells |
++------+------------------+--------------+------+
+|1     |top               |              |   271|
+|2     |  u_hdmi_data_gen |hdmi_data_gen |   247|
++------+------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 724.645 ; gain = 515.148
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 724.645 ; gain = 93.055
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 724.645 ; gain = 515.148
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+81 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 724.645 ; gain = 496.957
+INFO: [Common 17-1381] The checkpoint 'F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/HDMI_display_Demon.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 724.645 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 06 11:06:50 2017...

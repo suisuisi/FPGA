@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Oct  9 22:45:46 2019
+# Process ID: 21032
+# Current directory: F:/FILE/FPGA/ZYNQ/zynq_7035/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21020 F:\FILE\FPGA\ZYNQ\zynq_7035\hdmi_display_demon_720P\S01_CH11_hdmi_display_demon_720P\S01_CH11_hdmi_display_demon_1080P\hdmi_display_demon\hdmi_display_demon.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/zynq_7035/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/zynq_7035/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/zynq_7035/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.xpr
+update_compile_order -fileset sources_1
+reset_run clk_wiz_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z035_1] 0]
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/zynq_7035/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/impl_1/HDMI_display_Demon.bit} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/zynq_7035/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/impl_1/HDMI_display_Demon.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]

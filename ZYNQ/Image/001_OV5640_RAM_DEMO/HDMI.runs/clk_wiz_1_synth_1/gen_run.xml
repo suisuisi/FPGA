@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="clk_wiz_1_synth_1" LaunchPart="xc7z035ffg676-2" LaunchTime="1572180470">
+  <File Type="PA-TCL" Name="clk_wiz_1.tcl"/>
+  <File Type="REPORTS-TCL" Name="clk_wiz_1_reports.tcl"/>
+  <File Type="RDS-RDS" Name="clk_wiz_1.vds"/>
+  <File Type="RDS-UTIL" Name="clk_wiz_1_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="clk_wiz_1_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="clk_wiz_1.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_wiz_1">
+    <File Path="$PPRDIR/../../../../Xilinx/Miz7035/My_ip_lib/clk_wiz_1_3/clk_wiz_1.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="clk_wiz_1"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_wiz_1">
+    <File Path="$PPRDIR/../../../../Xilinx/Miz7035/My_ip_lib/clk_wiz_1_3/clk_wiz_1.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="clk_wiz_1"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

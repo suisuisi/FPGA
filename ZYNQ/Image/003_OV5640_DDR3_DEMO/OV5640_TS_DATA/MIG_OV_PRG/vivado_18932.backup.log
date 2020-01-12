@@ -1,0 +1,192 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Fri Oct 06 19:09:13 2017
+# Process ID: 18932
+# Current directory: E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19264 E:\MIA701SRC\S02_CH12\S02_CH11_OV7725_TEST_DATA\MIG_OV_PRG\MIG_OV_PRG.xpr
+# Log file: E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/vivado.log
+# Journal file: E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.xpr
+INFO: [Project 1-313] Project file moved from 'E:/DS_SRC/MIA701/S02_CH11/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/user/OV_Sensor_ML'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'HDMI_FPGA_ML_A7_0' is locked:
+* IP definition 'HDMI_FPGA_ML_A7 (1.0)' for IP 'HDMI_FPGA_ML_A7_0' (customized with software release 2016.4) was not found in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 905.684 ; gain = 228.383
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 19:13:13 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Dec 14 2016-22:58:11
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249855465
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV7725_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV7725_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a100t_0 and the probes file(s) E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210249855465.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV7725_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a100t_0 and the probes file(s) E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV7725_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-06 19:23:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-06 19:23:09
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes sensor_decode_inst/vs_o -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Oct-06 19:25:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Oct-06 19:25:51
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 19:42:46 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 19:42:46 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV7725_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+open_project E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG/MIG_OV_PRG.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG'
+CRITICAL WARNING: [Project 1-19] Could not find the file 'E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG/sim_tb_top_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'HDMI_FPGA_ML_A7_0' is locked:
+* IP definition 'HDMI_FPGA_ML_A7 (1.0)' for IP 'HDMI_FPGA_ML_A7_0' (customized with software release 2016.4) was not found in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1209.184 ; gain = 100.879
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 19:54:00 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 19:54:00 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+save_wave_config {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+current_project MIG_OV_PRG
+close_project
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Dec 14 2016-22:58:11
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249855465
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV7725_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a100t_0 and the probes file(s) E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx.
+The device design has 1 ILA core(s) and 0 VIO core(s). The probes file(s) have 2 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV7725_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"MIG_BURST_IMAGEP_inst/debug_inst0"}]]
+WARNING: Simulation object MIG_BURST_IMAGE_inst/CH0_data_o was not found in the design.
+WARNING: Simulation object MIG_BURST_IMAGE_inst/count_wren was not found in the design.
+WARNING: Simulation object MIG_BURST_IMAGE_inst/app_rdy was not found in the design.
+WARNING: Simulation object MIG_BURST_IMAGE_inst/app_wdf_rdy was not found in the design.
+WARNING: Simulation object MIG_BURST_IMAGE_inst/app_en was not found in the design.
+WARNING: Simulation object MIG_BURST_IMAGE_inst/app_wdf_wren was not found in the design.
+WARNING: Simulation object MIG_BURST_IMAGE_inst/CH0_rusdw_o was not found in the design.
+WARNING: Simulation object MIG_BURST_IMAGE_inst/CH6_data_i was not found in the design.
+WARNING: Simulation object MIG_BURST_IMAGE_inst/count_rden was not found in the design.
+WARNING: Simulation object MIG_BURST_IMAGE_inst/M_S was not found in the design.
+WARNING: Simulation object MIG_BURST_IMAGE_inst/CH6_wren_i was not found in the design.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG/MIG_OV_PRG.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"MIG_BURST_IMAGEP_inst/debug_inst1"}]]
+WARNING: Simulation object MIG_BURST_IMAGE_inst/CH6_FS_i was not found in the design.
+WARNING: Simulation object MIG_BURST_IMAGE_inst/CH6_data_o was not found in the design.
+WARNING: Simulation object MIG_BURST_IMAGE_inst/CH6_rden_i was not found in the design.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG/MIG_OV_PRG.hw/backup/hw_ila_data_2.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 06 20:21:40 2017...

@@ -1,0 +1,569 @@
+
+*** Running vivado
+    with args -log example_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source example_top.tcl -notrace
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source example_top.tcl -notrace
+Command: link_design -top example_top -part xc7z035ffg676-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'f:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'CLK_WIZ_DDR'
+INFO: [Project 1-454] Reading design checkpoint 'f:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.srcs/sources_1/ip/mig_7series_0/mig_7series_0.dcp' for cell 'u_mig_7series_0'
+INFO: [Netlist 29-17] Analyzing 713 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7z035ffg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:41]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[0]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[1]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[2]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[3]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[4]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[5]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[6]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[7]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[8]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[9]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[10]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[11]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[12]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[13]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[14]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[15]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[16]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[17]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[18]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[19]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[20]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[21]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[22]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[23]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[24]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[25]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[26]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[27]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[28]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[29]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[30]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[31]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[32]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[33]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[34]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[35]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[36]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[37]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[38]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[39]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[40]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[41]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[42]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[43]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[44]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[45]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[46]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[47]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[48]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[49]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[50]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[51]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[52]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[53]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[54]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[55]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[56]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[57]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[58]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[59]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[60]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[61]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[62]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'cmp_data_r[63]'. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc:43]
+Finished Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/imports/example_top.xdc]
+Parsing XDC File [f:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'u_mig_7series_0'
+Finished Parsing XDC File [f:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'u_mig_7series_0'
+Parsing XDC File [f:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'CLK_WIZ_DDR/inst'
+Finished Parsing XDC File [f:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'CLK_WIZ_DDR/inst'
+Parsing XDC File [f:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'CLK_WIZ_DDR/inst'
+Finished Parsing XDC File [f:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'CLK_WIZ_DDR/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 269 instances were transformed.
+  IOBUFDS_DIFF_OUT_DCIEN => IOBUFDS_DIFF_OUT_DCIEN (IBUFDS_IBUFDISABLE_INT, IBUFDS_IBUFDISABLE_INT, INV, OBUFTDS_DCIEN, OBUFTDS_DCIEN): 4 instances
+  IOBUF_DCIEN => IOBUF_DCIEN (IBUF_IBUFDISABLE, OBUFT_DCIEN): 32 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 232 instances
+
+9 Infos, 64 Warnings, 2 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 813.078 ; gain = 487.828
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z035'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z035'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.851 . Memory (MB): peak = 813.078 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-318] Generating core instance : dbg_hub
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Netlist 29-17] Analyzing 457 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Chipscope 16-318] Generating core instance : u_ila_0
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:ila:6.2 for cell u_ila_0_CV.
+INFO: [Netlist 29-17] Analyzing 565 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1460.523 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 1a554eda7
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:04:35 . Memory (MB): peak = 1460.523 ; gain = 74.098
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 3 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 20c784c71
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:04:37 . Memory (MB): peak = 1479.605 ; gain = 93.180
+INFO: [Opt 31-389] Phase Retarget created 278 cells and removed 341 cells
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 3 Constant propagation | Checksum: 19c3c257d
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:04:38 . Memory (MB): peak = 1479.605 ; gain = 93.180
+INFO: [Opt 31-389] Phase Constant propagation created 16 cells and removed 595 cells
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: 1b7878719
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:04:40 . Memory (MB): peak = 1479.605 ; gain = 93.180
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 583 cells
+
+Phase 5 BUFG optimization
+Phase 5 BUFG optimization | Checksum: 1b7878719
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:04:40 . Memory (MB): peak = 1479.605 ; gain = 93.180
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 6 Shift Register Optimization
+Phase 6 Shift Register Optimization | Checksum: 1b7878719
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:04:41 . Memory (MB): peak = 1479.605 ; gain = 93.180
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1479.605 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 26119ce38
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:04:41 . Memory (MB): peak = 1479.605 ; gain = 93.180
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=4.348 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 19 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 19 newly gated: 0 Total Ports: 38
+Ending PowerOpt Patch Enables Task | Checksum: 1e3a2584a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.186 . Memory (MB): peak = 1783.262 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1e3a2584a
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1783.262 ; gain = 303.656
+INFO: [Common 17-83] Releasing license: Implementation
+45 Infos, 64 Warnings, 2 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:41 ; elapsed = 00:05:06 . Memory (MB): peak = 1783.262 ; gain = 970.184
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 1783.262 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/example_top_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file example_top_drc_opted.rpt -pb example_top_drc_opted.pb -rpx example_top_drc_opted.rpx
+Command: report_drc -file example_top_drc_opted.rpt -pb example_top_drc_opted.pb -rpx example_top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/example_top_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z035'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z035'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1783.262 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 137297852
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1783.262 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1783.262 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1c2515925
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1783.262 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1d33cde96
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1783.262 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1d33cde96
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1783.262 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1d33cde96
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1783.262 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1927ab4c4
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 1783.262 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1927ab4c4
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 1783.262 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1f436da63
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 1783.262 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1c2f3ea96
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 1783.262 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 183279a66
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 1783.262 ; gain = 0.000
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 24536f552
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:25 . Memory (MB): peak = 1783.262 ; gain = 0.000
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 2596dd812
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:26 . Memory (MB): peak = 1783.262 ; gain = 0.000
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 2596dd812
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:26 . Memory (MB): peak = 1783.262 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 2596dd812
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:26 . Memory (MB): peak = 1783.262 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 18886ba27
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 18886ba27
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:29 . Memory (MB): peak = 1783.262 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=3.436. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 221d8d064
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:29 . Memory (MB): peak = 1783.262 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 221d8d064
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:29 . Memory (MB): peak = 1783.262 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 221d8d064
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:29 . Memory (MB): peak = 1783.262 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 221d8d064
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:30 . Memory (MB): peak = 1783.262 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 2b21b87b0
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:30 . Memory (MB): peak = 1783.262 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2b21b87b0
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:30 . Memory (MB): peak = 1783.262 ; gain = 0.000
+Ending Placer Task | Checksum: 1bfce0334
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:30 . Memory (MB): peak = 1783.262 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+67 Infos, 64 Warnings, 2 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:33 . Memory (MB): peak = 1783.262 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 1783.262 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/example_top_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file example_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.122 . Memory (MB): peak = 1783.262 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file example_top_utilization_placed.rpt -pb example_top_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.306 . Memory (MB): peak = 1783.262 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file example_top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1783.262 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z035'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z035'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: e50c330f ConstDB: 0 ShapeSum: dac1d025 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: c935e451
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:01:14 . Memory (MB): peak = 1885.293 ; gain = 102.031
+Post Restoration Checksum: NetGraph: 4e5adfd4 NumContArr: 7adb047d Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: c935e451
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:01:15 . Memory (MB): peak = 1885.293 ; gain = 102.031
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: c935e451
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:01:15 . Memory (MB): peak = 1885.293 ; gain = 102.031
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: c935e451
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:01:15 . Memory (MB): peak = 1885.293 ; gain = 102.031
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 18448584e
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:01:21 . Memory (MB): peak = 1963.727 ; gain = 180.465
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.486  | TNS=0.000  | WHS=-0.235 | THS=-41.445|
+
+Phase 2 Router Initialization | Checksum: c3033318
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:22 . Memory (MB): peak = 1963.727 ; gain = 180.465
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1ba4c580f
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:01:23 . Memory (MB): peak = 1963.727 ; gain = 180.465
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1271
+ Number of Nodes with overlaps = 20
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.530  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 162816dde
+
+Time (s): cpu = 00:01:43 ; elapsed = 00:01:26 . Memory (MB): peak = 1963.727 ; gain = 180.465
+Phase 4 Rip-up And Reroute | Checksum: 162816dde
+
+Time (s): cpu = 00:01:43 ; elapsed = 00:01:26 . Memory (MB): peak = 1963.727 ; gain = 180.465
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 162816dde
+
+Time (s): cpu = 00:01:43 ; elapsed = 00:01:26 . Memory (MB): peak = 1963.727 ; gain = 180.465
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 162816dde
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:01:26 . Memory (MB): peak = 1963.727 ; gain = 180.465
+Phase 5 Delay and Skew Optimization | Checksum: 162816dde
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:01:26 . Memory (MB): peak = 1963.727 ; gain = 180.465
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: d70e6e2c
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:01:26 . Memory (MB): peak = 1963.727 ; gain = 180.465
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.530  | TNS=0.000  | WHS=0.080  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: d70e6e2c
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:01:26 . Memory (MB): peak = 1963.727 ; gain = 180.465
+Phase 6 Post Hold Fix | Checksum: d70e6e2c
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:01:27 . Memory (MB): peak = 1963.727 ; gain = 180.465
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.860486 %
+  Global Horizontal Routing Utilization  = 0.975627 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 145c3a786
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:01:27 . Memory (MB): peak = 1963.727 ; gain = 180.465
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 145c3a786
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:01:27 . Memory (MB): peak = 1963.727 ; gain = 180.465
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 18cd802df
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:01:28 . Memory (MB): peak = 1963.727 ; gain = 180.465
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=3.530  | TNS=0.000  | WHS=0.080  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 18cd802df
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:01:28 . Memory (MB): peak = 1963.727 ; gain = 180.465
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:01:28 . Memory (MB): peak = 1963.727 ; gain = 180.465
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+83 Infos, 64 Warnings, 2 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:51 ; elapsed = 00:01:31 . Memory (MB): peak = 1963.727 ; gain = 180.465
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1963.727 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/example_top_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file example_top_drc_routed.rpt -pb example_top_drc_routed.pb -rpx example_top_drc_routed.rpx
+Command: report_drc -file example_top_drc_routed.rpt -pb example_top_drc_routed.pb -rpx example_top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/example_top_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file example_top_methodology_drc_routed.rpt -pb example_top_methodology_drc_routed.pb -rpx example_top_methodology_drc_routed.rpx
+Command: report_methodology -file example_top_methodology_drc_routed.rpt -pb example_top_methodology_drc_routed.pb -rpx example_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/example_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1963.727 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file example_top_power_routed.rpt -pb example_top_power_summary_routed.pb -rpx example_top_power_routed.rpx
+Command: report_power -file example_top_power_routed.rpt -pb example_top_power_summary_routed.pb -rpx example_top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+95 Infos, 64 Warnings, 2 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1989.992 ; gain = 26.266
+INFO: [runtcl-4] Executing : report_route_status -file example_top_route_status.rpt -pb example_top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file example_top_timing_summary_routed.rpt -rpx example_top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file example_top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file example_top_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1993.004 ; gain = 0.000
+Command: write_bitstream -force example_top.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z035'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z035'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC REQP-1709] Clock output buffering: PLLE2_ADV connectivity violation. The signal u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/pll_clk3_out on the u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3 pin of u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/plle2_i does not drive the same kind of BUFFER load as the other CLKOUT pins. Routing from the different buffer types will not be phase aligned.
+WARNING: [DRC RTSTAT-10] No routable loads: 21 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/s_bscan_tms, u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[13], u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[14], u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[15], u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[16]... and (the first 15 of 19 listed).
+WARNING: [DRC ZPS7-1] PS7 block required: The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 3 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./example_top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+112 Infos, 67 Warnings, 2 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:40 ; elapsed = 00:00:49 . Memory (MB): peak = 2553.828 ; gain = 559.828
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 15 02:13:34 2019...

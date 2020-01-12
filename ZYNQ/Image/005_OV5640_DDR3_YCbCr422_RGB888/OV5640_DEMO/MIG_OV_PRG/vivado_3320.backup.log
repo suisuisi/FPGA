@@ -1,0 +1,187 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Oct 22 21:15:53 2019
+# Process ID: 3320
+# Current directory: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11684 F:\FILE\FPGA\ZYNQ\TEST\CH04_OV5640_DEMO\OV5640_TS_DATA\MIG_OV_PRG\MIG_OV_PRG.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/user/I2C_OV7725_RGB565_Config.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/user/OV7725_TOP.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2017.4/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:HDMI_FPGA_ML_A7:1.0'. The one found in IP location 'f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7' will take precedence over the same IP in location f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 925.203 ; gain = 188.359
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Tue Oct 22 21:19:02 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Tue Oct 22 21:19:03 2019] Launched impl_2...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249856074
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-1434] Device xc7z035 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3403] Dropping logic core with cellname:'sensor_decode_inst/sensor_sg' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1578.363 ; gain = 0.906
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-2302] Device xc7z035 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+set_property -dict [list CONFIG.PRIM_IN_FREQ {50} CONFIG.CLKIN1_JITTER_PS {200.0} CONFIG.MMCM_DIVCLK_DIVIDE {4} CONFIG.MMCM_CLKFBOUT_MULT_F {59.375} CONFIG.MMCM_CLKIN1_PERIOD {20.000} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.CLKOUT1_JITTER {462.435} CONFIG.CLKOUT1_PHASE_ERROR {610.813} CONFIG.CLKOUT2_JITTER {372.733} CONFIG.CLKOUT2_PHASE_ERROR {610.813}] [get_ips clk_wiz_hdmi]
+generate_target all [get_files  F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_hdmi/clk_wiz_hdmi.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_hdmi'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_hdmi'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_hdmi] }
+export_ip_user_files -of_objects [get_files F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_hdmi/clk_wiz_hdmi.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_hdmi_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/clk_wiz_hdmi_synth_1
+
+launch_runs -jobs 12 clk_wiz_hdmi_synth_1
+[Tue Oct 22 21:30:59 2019] Launched clk_wiz_hdmi_synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/clk_wiz_hdmi_synth_1/runme.log
+export_simulation -of_objects [get_files F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/clk_wiz_hdmi/clk_wiz_hdmi.xci] -directory F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Tue Oct 22 21:31:44 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Tue Oct 22 21:31:44 2019] Launched impl_2...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249856074
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-2302] Device xc7z035 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1848.250 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-2302] Device xc7z035 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Tue Oct 22 21:39:58 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Tue Oct 22 21:39:58 2019] Launched impl_2...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/runme.log
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1850.426 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-2302] Device xc7z035 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Tue Oct 22 21:53:56 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Tue Oct 22 21:53:56 2019] Launched impl_2...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249856074
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-2302] Device xc7z035 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+WARNING: Simulation object sensor_decode_inst/hcounter_reg was not found in the design.
+WARNING: Simulation object sensor_decode_inst/vcounter_reg_n_0_ was not found in the design.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1852.418 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-2302] Device xc7z035 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 22 22:03:15 2019...

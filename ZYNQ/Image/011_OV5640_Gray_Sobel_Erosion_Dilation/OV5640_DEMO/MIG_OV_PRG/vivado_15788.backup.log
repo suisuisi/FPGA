@@ -1,0 +1,121 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Nov 10 03:14:00 2019
+# Process ID: 15788
+# Current directory: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15160 F:\FILE\FPGA\ZYNQ\Image\005_OV5640_DDR3_Gray_Sobel\OV5640_DEMO\MIG_OV_PRG\MIG_OV_PRG.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2017.4/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:HDMI_FPGA_ML_A7:1.0'. The one found in IP location 'f:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7' will take precedence over the same IP in location f:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 846.754 ; gain = 175.090
+update_compile_order -fileset sources_1
+create_ip -name cordic -vendor xilinx.com -library ip -version 6.0 -module_name cordic_0 -dir F:/FILE/Xilinx/Miz7035/My_ip_lib
+set_property -dict [list CONFIG.Functional_Selection {Square_Root} CONFIG.Data_Format {UnsignedInteger} CONFIG.Input_Width {21} CONFIG.Round_Mode {Nearest_Even} CONFIG.cartesian_has_tlast {false} CONFIG.Output_Width {11} CONFIG.Coarse_Rotation {false} CONFIG.out_tlast_behv {Null}] [get_ips cordic_0]
+generate_target {instantiation_template} [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/cordic_0/cordic_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'cordic_0'...
+generate_target all [get_files  f:/FILE/Xilinx/Miz7035/My_ip_lib/cordic_0/cordic_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'cordic_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'cordic_0'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'cordic_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'cordic_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'cordic_0'...
+catch { config_ip_cache -export [get_ips -all cordic_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cordic_0, cache-ID = ed984cc3817e5699; cache size = 51.569 MB.
+export_ip_user_files -of_objects [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/cordic_0/cordic_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] f:/FILE/Xilinx/Miz7035/My_ip_lib/cordic_0/cordic_0.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'f:/FILE/Xilinx/Miz7035/My_ip_lib/cordic_0/cordic_0.xci'
+export_simulation -of_objects [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/cordic_0/cordic_0.xci] -directory F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/cordic_0/cordic_0.xci] -no_script -reset -force -quiet
+remove_files  f:/FILE/Xilinx/Miz7035/My_ip_lib/cordic_0/cordic_0.xci
+create_ip -name cordic -vendor xilinx.com -library ip -version 6.0 -module_name XILSQRT -dir F:/FILE/Xilinx/Miz7035/My_ip_lib
+set_property -dict [list CONFIG.Component_Name {XILSQRT} CONFIG.Functional_Selection {Square_Root} CONFIG.Data_Format {UnsignedInteger} CONFIG.Input_Width {21} CONFIG.Round_Mode {Nearest_Even} CONFIG.Output_Width {11} CONFIG.Coarse_Rotation {false}] [get_ips XILSQRT]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'XILSQRT' to 'XILSQRT' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/XILSQRT/XILSQRT.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'XILSQRT'...
+generate_target all [get_files  f:/FILE/Xilinx/Miz7035/My_ip_lib/XILSQRT/XILSQRT.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'XILSQRT'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'XILSQRT'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'XILSQRT'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'XILSQRT'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'XILSQRT'...
+catch { config_ip_cache -export [get_ips -all XILSQRT] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP XILSQRT, cache-ID = ed984cc3817e5699; cache size = 51.569 MB.
+export_ip_user_files -of_objects [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/XILSQRT/XILSQRT.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] f:/FILE/Xilinx/Miz7035/My_ip_lib/XILSQRT/XILSQRT.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'f:/FILE/Xilinx/Miz7035/My_ip_lib/XILSQRT/XILSQRT.xci'
+export_simulation -of_objects [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/XILSQRT/XILSQRT.xci] -directory F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.ARESETN {true}] [get_ips XILSQRT]
+generate_target all [get_files  f:/FILE/Xilinx/Miz7035/My_ip_lib/XILSQRT/XILSQRT.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'XILSQRT'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'XILSQRT'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'XILSQRT'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'XILSQRT'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'XILSQRT'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'XILSQRT'...
+catch { config_ip_cache -export [get_ips -all XILSQRT] }
+export_ip_user_files -of_objects [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/XILSQRT/XILSQRT.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] f:/FILE/Xilinx/Miz7035/My_ip_lib/XILSQRT/XILSQRT.xci]
+launch_runs -jobs 12 XILSQRT_synth_1
+[Sun Nov 10 04:59:22 2019] Launched XILSQRT_synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/XILSQRT_synth_1/runme.log
+export_simulation -of_objects [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/XILSQRT/XILSQRT.xci] -directory F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Nov 10 05:03:41 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Sun Nov 10 05:03:41 2019] Launched impl_2...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249856074
+open_hw_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1623.402 ; gain = 568.922
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-1435] Device xc7z035 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1630.020 ; gain = 0.086
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-2302] Device xc7z035 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1656.441 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-2302] Device xc7z035 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 10 05:17:11 2019...

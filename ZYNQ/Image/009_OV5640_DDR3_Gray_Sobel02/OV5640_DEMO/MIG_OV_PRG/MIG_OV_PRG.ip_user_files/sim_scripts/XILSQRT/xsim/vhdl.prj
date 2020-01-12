@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../../../../../../../Xilinx/Miz7035/My_ip_lib/XILSQRT/sim/XILSQRT.vhd" \
+
+nosort

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Oct 19 23:05:29 2019
+# Process ID: 28640
+# Current directory: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/ila_2_synth_1
+# Command line: vivado.exe -log ila_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ila_2.tcl
+# Log file: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/ila_2_synth_1/ila_2.vds
+# Journal file: F:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/ila_2_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ila_2.tcl -notrace

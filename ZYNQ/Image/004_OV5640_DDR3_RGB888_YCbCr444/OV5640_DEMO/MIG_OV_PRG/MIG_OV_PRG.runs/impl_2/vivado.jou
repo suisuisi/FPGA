@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Nov  2 22:18:23 2019
+# Process ID: 63244
+# Current directory: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2
+# Command line: vivado.exe -log OV5640_TOP.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source OV5640_TOP.tcl -notrace
+# Log file: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.vdi
+# Journal file: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source OV5640_TOP.tcl -notrace

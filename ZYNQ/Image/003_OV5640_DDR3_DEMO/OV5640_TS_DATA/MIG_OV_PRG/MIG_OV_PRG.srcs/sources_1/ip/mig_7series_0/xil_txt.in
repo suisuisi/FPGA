@@ -1,0 +1,24 @@
+SET_FLAG MODE INTERACTIVE
+SET_FLAG STANDALONE_MODE TRUE
+SET_PREFERENCE ipi_mode no
+SET_PREFERENCE is_ip_locked false
+SET_PREFERENCE devicefamily zynq
+SET_PREFERENCE device xc7z035
+SET_PREFERENCE speedgrade -2
+SET_PREFERENCE package ffg676
+SET_PREFERENCE verilogsim true
+SET_PREFERENCE vhdlsim false
+SET_PREFERENCE designentry Verilog
+SET_PREFERENCE outputdirectory f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/.Xil/Vivado-28168-LAPTOP-8E6RLG3I/coregen/mig_7series_0/_tmp/
+SET_PREFERENCE subworkingdirectory f:/FILE/FPGA/ZYNQ/zynq_7035/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/.Xil/Vivado-28168-LAPTOP-8E6RLG3I/coregen/mig_7series_0/_tmp/
+SET_PREFERENCE flowvendor Other
+SET_PREFERENCE tool vivado
+SET_PARAMETER component_name mig_7series_0
+SET_PREFERENCE compnamestatus 1
+SET_PARAMETER component_name mig_7series_0
+SET_PARAMETER data_dir_path e:/Xilinx/Vivado/2017.4/data/ip/xilinx/mig_7series_v4_0
+SET_CORE_NAME Memory Interface Generator (MIG 7 Series)
+SET_CORE_VERSION 2.3
+SET_CORE_VLNV xilinx.com:ip:mig_7series:2.3
+SET_CORE_PATH e:/Xilinx/Vivado/2017.4/data/ip/xilinx/mig_7series_v4_0
+SET_CORE_DATASHEET e:/Xilinx/Vivado/2017.4/data/ip/xilinx/mig_7series_v4_0/data/docs/ds176_7series_MIS.pdf

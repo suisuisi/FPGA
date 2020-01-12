@@ -1,0 +1,21 @@
+# Reading D:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# OpenFile D:/Crazy_FPGA_Examples/18_CMOS_OV7725_RAW8_RGB888/sim/Video_Image_Processor_TB/Video_Image_Processor_TB.mpf 
+# Loading project Video_Image_Processor_TB
+# Compile of Line_Shift_RAM_8Bit.v was successful.
+# Compile of Video_Image_Processor.v was successful.
+# Compile of Video_Image_Processor_TB.v was successful.
+# Compile of Video_Image_Simulate_CMOS.v was successful.
+# Compile of VIP_Matrix_Generate_3X3_8Bit.v was successful.
+# Compile of VIP_RAW8_RGB888.v was successful.
+# 6 compiles, 0 failed with no errors. 
+vsim -L D:/altera/13.0/modelsim_ase/altera/verilog/220model -L D:/altera/13.0/modelsim_ase/altera/verilog/altera_mf -gui work.Video_Image_Processor_TB
+# vsim -L D:/altera/13.0/modelsim_ase/altera/verilog/220model -L D:/altera/13.0/modelsim_ase/altera/verilog/altera_mf -gui work.Video_Image_Processor_TB 
+# Loading work.Video_Image_Processor_TB
+# Loading work.Video_Image_Simulate_CMOS
+# Loading work.Video_Image_Processor
+# Loading work.VIP_RAW8_RGB888
+# Loading work.VIP_Matrix_Generate_3X3_8Bit
+# Loading work.Line_Shift_RAM_8Bit
+# Loading D:/altera/13.0/modelsim_ase/altera/verilog/altera_mf.altshift_taps
+do D:/Crazy_FPGA_Examples/18_CMOS_OV7725_RAW8_RGB888/sim/Video_Image_Processor_TB/wave.do
+run 100000ns

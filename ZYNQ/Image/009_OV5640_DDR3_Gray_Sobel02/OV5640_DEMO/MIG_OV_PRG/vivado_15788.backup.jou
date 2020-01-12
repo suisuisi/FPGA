@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Nov 10 03:14:00 2019
+# Process ID: 15788
+# Current directory: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15160 F:\FILE\FPGA\ZYNQ\Image\005_OV5640_DDR3_Gray_Sobel\OV5640_DEMO\MIG_OV_PRG\MIG_OV_PRG.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.xpr
+update_compile_order -fileset sources_1
+create_ip -name cordic -vendor xilinx.com -library ip -version 6.0 -module_name cordic_0 -dir F:/FILE/Xilinx/Miz7035/My_ip_lib
+set_property -dict [list CONFIG.Functional_Selection {Square_Root} CONFIG.Data_Format {UnsignedInteger} CONFIG.Input_Width {21} CONFIG.Round_Mode {Nearest_Even} CONFIG.cartesian_has_tlast {false} CONFIG.Output_Width {11} CONFIG.Coarse_Rotation {false} CONFIG.out_tlast_behv {Null}] [get_ips cordic_0]
+generate_target {instantiation_template} [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/cordic_0/cordic_0.xci]
+generate_target all [get_files  f:/FILE/Xilinx/Miz7035/My_ip_lib/cordic_0/cordic_0.xci]
+catch { config_ip_cache -export [get_ips -all cordic_0] }
+export_ip_user_files -of_objects [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/cordic_0/cordic_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] f:/FILE/Xilinx/Miz7035/My_ip_lib/cordic_0/cordic_0.xci]
+export_simulation -of_objects [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/cordic_0/cordic_0.xci] -directory F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/cordic_0/cordic_0.xci] -no_script -reset -force -quiet
+remove_files  f:/FILE/Xilinx/Miz7035/My_ip_lib/cordic_0/cordic_0.xci
+create_ip -name cordic -vendor xilinx.com -library ip -version 6.0 -module_name XILSQRT -dir F:/FILE/Xilinx/Miz7035/My_ip_lib
+set_property -dict [list CONFIG.Component_Name {XILSQRT} CONFIG.Functional_Selection {Square_Root} CONFIG.Data_Format {UnsignedInteger} CONFIG.Input_Width {21} CONFIG.Round_Mode {Nearest_Even} CONFIG.Output_Width {11} CONFIG.Coarse_Rotation {false}] [get_ips XILSQRT]
+generate_target {instantiation_template} [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/XILSQRT/XILSQRT.xci]
+generate_target all [get_files  f:/FILE/Xilinx/Miz7035/My_ip_lib/XILSQRT/XILSQRT.xci]
+catch { config_ip_cache -export [get_ips -all XILSQRT] }
+export_ip_user_files -of_objects [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/XILSQRT/XILSQRT.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] f:/FILE/Xilinx/Miz7035/My_ip_lib/XILSQRT/XILSQRT.xci]
+export_simulation -of_objects [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/XILSQRT/XILSQRT.xci] -directory F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.ARESETN {true}] [get_ips XILSQRT]
+generate_target all [get_files  f:/FILE/Xilinx/Miz7035/My_ip_lib/XILSQRT/XILSQRT.xci]
+catch { config_ip_cache -export [get_ips -all XILSQRT] }
+export_ip_user_files -of_objects [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/XILSQRT/XILSQRT.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] f:/FILE/Xilinx/Miz7035/My_ip_lib/XILSQRT/XILSQRT.xci]
+launch_runs -jobs 12 XILSQRT_synth_1
+export_simulation -of_objects [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/XILSQRT/XILSQRT.xci] -directory F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+save_wave_config {F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

@@ -1,0 +1,117 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Nov 10 23:13:41 2019
+# Process ID: 27252
+# Current directory: F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22020 F:\FILE\FPGA\ZYNQ\Image\006_OV5640_DDR3_Gray_Sobel02\OV5640_DEMO\MIG_OV_PRG\MIG_OV_PRG.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.xpr
+INFO: [Project 1-313] Project file moved from 'F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2017.4/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:HDMI_FPGA_ML_A7:1.0'. The one found in IP location 'f:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7' will take precedence over the same IP in location f:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:12 . Memory (MB): peak = 942.664 ; gain = 187.758
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel/SQRT.v] -no_script -reset -force -quiet
+remove_files  F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel/SQRT.v
+export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/user/Video_Image_Processor/RGB888_YCbCr444/Image_RGB888_YCbCr444.v] -no_script -reset -force -quiet
+remove_files  F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/user/Video_Image_Processor/RGB888_YCbCr444/Image_RGB888_YCbCr444.v
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sun Nov 10 23:37:29 2019] Launched impl_2...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249856074
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-2302] Device xc7z035 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1597.668 ; gain = 1.027
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-2302] Device xc7z035 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1
+
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Nov 10 23:46:38 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Sun Nov 10 23:46:38 2019] Launched impl_2...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249856074
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-2302] Device xc7z035 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1607.859 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-2302] Device xc7z035 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1607.859 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-2302] Device xc7z035 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {F:/FILE/FPGA/ZYNQ/Image/006_OV5640_DDR3_Gray_Sobel02/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 10 23:59:35 2019...

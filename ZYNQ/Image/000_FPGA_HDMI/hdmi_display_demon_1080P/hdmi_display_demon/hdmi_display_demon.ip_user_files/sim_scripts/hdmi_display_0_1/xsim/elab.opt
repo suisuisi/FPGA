@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L xil_defaultlib -L secureip -L xpm --snapshot hdmi_display_0 xil_defaultlib.hdmi_display_0 -log elaborate.log

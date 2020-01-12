@@ -1,0 +1,2 @@
+XILSQRT.vhd,vhdl,xil_defaultlib,../../../../../../../../../../Xilinx/Miz7035/My_ip_lib/XILSQRT/sim/XILSQRT.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

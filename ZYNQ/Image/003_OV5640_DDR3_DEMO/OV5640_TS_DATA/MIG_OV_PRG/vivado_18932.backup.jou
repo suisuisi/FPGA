@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Fri Oct 06 19:09:13 2017
+# Process ID: 18932
+# Current directory: E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19264 E:\MIA701SRC\S02_CH12\S02_CH11_OV7725_TEST_DATA\MIG_OV_PRG\MIG_OV_PRG.xpr
+# Log file: E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/vivado.log
+# Journal file: E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.xpr
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV7725_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV7725_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV7725_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV7725_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes sensor_decode_inst/vs_o -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV7725_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_project E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG/MIG_OV_PRG.xpr
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+save_wave_config {E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+current_project MIG_OV_PRG
+close_project
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV7725_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/S02_CH10_640_480_DDR_HDMI_3/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV7725_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"MIG_BURST_IMAGEP_inst/debug_inst0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"MIG_BURST_IMAGEP_inst/debug_inst1"}]]

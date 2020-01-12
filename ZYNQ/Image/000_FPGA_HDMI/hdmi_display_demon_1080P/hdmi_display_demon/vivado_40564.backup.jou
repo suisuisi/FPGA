@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Nov 08 14:38:51 2017
+# Process ID: 40564
+# Current directory: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent38040 F:\MIZ7035_Demon\s1\S01_CH11_hdmi_display_demon_1080P\hdmi_display_demon\hdmi_display_demon.xpr
+# Log file: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/vivado.log
+# Journal file: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.xpr
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/impl_1/HDMI_display_Demon.bit} [lindex [get_hw_devices xc7z035_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROGRAM.FILE {F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/impl_1/HDMI_display_Demon.bit} [lindex [get_hw_devices xc7z035_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROGRAM.FILE {F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/impl_1/HDMI_display_Demon.bit} [lindex [get_hw_devices xc7z035_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z035_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]

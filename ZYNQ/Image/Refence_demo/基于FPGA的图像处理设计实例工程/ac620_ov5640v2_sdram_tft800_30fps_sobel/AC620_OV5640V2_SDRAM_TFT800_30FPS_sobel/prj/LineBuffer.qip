@@ -1,0 +1,4 @@
+set_global_assignment -name IP_TOOL_NAME "Shift register (RAM-based)"
+set_global_assignment -name IP_TOOL_VERSION "13.0"
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "LineBuffer.vhd"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "LineBuffer.cmp"]

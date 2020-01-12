@@ -1,0 +1,17 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic/src/TMDSEncoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TMDSEncoder
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic/src/SerializerN_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SerializerN_1
+ERROR: [VRFC 10-91] oserdes2 is not declared [E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic/src/SerializerN_1.vhd:134]
+ERROR: [VRFC 10-91] oserdes2 is not declared [E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic/src/SerializerN_1.vhd:168]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic/src/SerializerN_1.vhd:76]
+INFO: [VRFC 10-240] VHDL file E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic/src/SerializerN_1.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic/src/DVITransmitter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DVITransmitter
+ERROR: [VRFC 10-91] bufpll is not declared [E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic/src/DVITransmitter.vhd:171]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic/src/DVITransmitter.vhd:87]
+INFO: [VRFC 10-240] VHDL file E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic/src/DVITransmitter.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic/src/hdmi_tx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HDMI_FPGA_ML_A7
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/MIA701SRC/S02_CH10/S02_CH10_640_480_DDR_HDMI/user/HDMI_SRC/HDMI_FPGA_ML_A7_0/sim/HDMI_FPGA_ML_A7_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HDMI_FPGA_ML_A7_0

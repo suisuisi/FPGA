@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jan  6 21:20:04 2020
+# Process ID: 39968
+# Current directory: F:/FILE/FPGA/ZYNQ/FPGA/ZYNQ/Image/000_FPGA_HDMI/hdmi_display_demon_720P/hdmi_display_demon_720P/hdmi_display_demon
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent54500 F:\FILE\FPGA\ZYNQ\FPGA\ZYNQ\Image\000_FPGA_HDMI\hdmi_display_demon_720P\hdmi_display_demon_720P\hdmi_display_demon\hdmi_display_demon.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/FPGA/ZYNQ/Image/000_FPGA_HDMI/hdmi_display_demon_720P/hdmi_display_demon_720P/hdmi_display_demon/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/FPGA/ZYNQ/Image/000_FPGA_HDMI/hdmi_display_demon_720P/hdmi_display_demon_720P/hdmi_display_demon\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/FPGA/ZYNQ/Image/000_FPGA_HDMI/hdmi_display_demon_720P/hdmi_display_demon_720P/hdmi_display_demon/hdmi_display_demon.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'F:/FILE/FPGA/ZYNQ/FPGA/ZYNQ/Image/000_FPGA_HDMI/hdmi_display_demon_720P/hdmi_display_demon_720P/hdmi_display_demon'
+INFO: [Project 1-313] Project file moved from 'F:/FILE/FPGA/ZYNQ/Image/000_FPGA_HDMI/hdmi_display_demon_720P/hdmi_display_demon_720P/hdmi_display_demon' since last save.
+WARNING: [Project 1-312] File not found as 'F:/FILE/FPGA/ZYNQ/Xilinx/Miz7035/My_ip_lib/clk_wiz_0.xcix'; using path 'F:/FILE/Xilinx/Miz7035/My_ip_lib/clk_wiz_0.xcix' instead.
+WARNING: [Project 1-312] File not found as 'F:/FILE/FPGA/ZYNQ/Xilinx/Miz7035/My_ip_lib/clk_wiz_0/clk_wiz_0.xci'; using path 'F:/FILE/Xilinx/Miz7035/My_ip_lib/clk_wiz_0/clk_wiz_0.xci' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'F:/FILE/FPGA/ZYNQ/Xilinx/Miz7035/My_ip_lib/clk_wiz_0/clk_wiz_0.xci'; using path 'F:/FILE/Xilinx/Miz7035/My_ip_lib/clk_wiz_0/clk_wiz_0.xci' instead.
+WARNING: [Project 1-312] File not found as 'F:/FILE/FPGA/ZYNQ/Xilinx/Miz7035/My_ip_lib/clk_wiz_0.xcix'; using path 'F:/FILE/Xilinx/Miz7035/My_ip_lib/clk_wiz_0.xcix' instead.
+WARNING: [Project 1-312] File not found as 'F:/FILE/FPGA/ZYNQ/Xilinx/Miz7035/My_ip_lib/clk_wiz_0/clk_wiz_0.xci'; using path 'F:/FILE/Xilinx/Miz7035/My_ip_lib/clk_wiz_0/clk_wiz_0.xci' instead.
+WARNING: [Project 1-312] File not found as 'F:/FILE/FPGA/ZYNQ/Xilinx/Miz7035/My_ip_lib/clk_wiz_0.xcix'; using path 'F:/FILE/Xilinx/Miz7035/My_ip_lib/clk_wiz_0.xcix' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FILE/FPGA/ZYNQ/FPGA/ZYNQ/Image/000_FPGA_HDMI/hdmi_display_demon_720P/hdmi_display_demon_720P/Miz_ip_lib'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 777.660 ; gain = 126.762
+update_compile_order -fileset sources_1
+reset_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  6 21:22:24 2020...

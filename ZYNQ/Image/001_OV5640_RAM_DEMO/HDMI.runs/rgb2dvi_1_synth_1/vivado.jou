@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Oct 27 02:07:11 2019
+# Process ID: 35888
+# Current directory: F:/FILE/FPGA/ZYNQ/TEST/OV5640_Nexys_Video_CSDN/OV5640_Nexys_Video_CSDN/HDMI/HDMI.runs/rgb2dvi_1_synth_1
+# Command line: vivado.exe -log rgb2dvi_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rgb2dvi_1.tcl
+# Log file: F:/FILE/FPGA/ZYNQ/TEST/OV5640_Nexys_Video_CSDN/OV5640_Nexys_Video_CSDN/HDMI/HDMI.runs/rgb2dvi_1_synth_1/rgb2dvi_1.vds
+# Journal file: F:/FILE/FPGA/ZYNQ/TEST/OV5640_Nexys_Video_CSDN/OV5640_Nexys_Video_CSDN/HDMI/HDMI.runs/rgb2dvi_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source rgb2dvi_1.tcl -notrace

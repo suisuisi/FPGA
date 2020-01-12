@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Sep 12 19:21:55 2017
+# Process ID: 69956
+# Current directory: E:/DS_SRC/7035A/mig_7series_0_ex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent69712 E:\DS_SRC\7035A\mig_7series_0_ex\mig_7series_0_ex.xpr
+# Log file: E:/DS_SRC/7035A/mig_7series_0_ex/vivado.log
+# Journal file: E:/DS_SRC/7035A/mig_7series_0_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/DS_SRC/7035A/mig_7series_0_ex/mig_7series_0_ex.xpr

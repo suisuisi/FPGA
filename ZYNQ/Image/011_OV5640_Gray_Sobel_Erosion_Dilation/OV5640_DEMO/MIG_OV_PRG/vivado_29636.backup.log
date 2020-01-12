@@ -1,0 +1,113 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Nov 10 22:10:23 2019
+# Process ID: 29636
+# Current directory: F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/MIG_OV_PRG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7700 F:\FILE\FPGA\ZYNQ\Image\008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation\OV5640_DEMO\MIG_OV_PRG\MIG_OV_PRG.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/MIG_OV_PRG/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/MIG_OV_PRG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/MIG_OV_PRG'
+INFO: [Project 1-313] Project file moved from 'F:/FILE/FPGA/ZYNQ/Image/007_OV5640_DDR3_Gray_Sobel_Erosion/OV5640_DEMO/MIG_OV_PRG' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2017.4/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:HDMI_FPGA_ML_A7:1.0'. The one found in IP location 'f:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7' will take precedence over the same IP in location f:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 944.473 ; gain = 205.789
+update_compile_order -fileset sources_1
+add_files -norecurse {F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Bit_Dilation_Detector.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Bit_Erosion_Detector.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/SQRT.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Matrix_Generate_3X3_8Bit.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Line_Shift_RAM_1Bit.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Video_Image_Processor.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Matrix_Generate_3X3_1Bit.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Sobel_Edge_Detector.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Sobel_Threshold_Adj.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Line_Shift_RAM_8Bit.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion/Video_Image_Processor.v] -no_script -reset -force -quiet
+remove_files  F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion/Video_Image_Processor.v
+update_compile_order -fileset sources_1
+add_files -norecurse F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Video_Image_Processor.v
+WARNING: [filemgmt 56-12] File 'F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Video_Image_Processor.v' cannot be added to the project because it already exists in the project, skipping this file
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Sobel_Threshold_Adj()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 31 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion/Sobel_Threshold_Adj.v
+Duplicate found at line 31 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Sobel_Threshold_Adj.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'VIP_Bit_Erosion_Detector()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion/VIP_Bit_Erosion_Detector.v
+Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Bit_Erosion_Detector.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'VIP_Matrix_Generate_3X3_1Bit()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion/VIP_Matrix_Generate_3X3_1Bit.v
+Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Matrix_Generate_3X3_1Bit.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'VIP_Matrix_Generate_3X3_8Bit()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion/VIP_Matrix_Generate_3X3_8Bit.v
+Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Matrix_Generate_3X3_8Bit.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'VIP_Sobel_Edge_Detector()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion/VIP_Sobel_Edge_Detector.v
+Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Sobel_Edge_Detector.v
+[Sun Nov 10 22:18:50 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+add_files -norecurse F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Bit_Dilation_Detector.v
+WARNING: [filemgmt 56-12] File 'F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Bit_Dilation_Detector.v' cannot be added to the project because it already exists in the project, skipping this file
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Sobel_Threshold_Adj()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 31 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion/Sobel_Threshold_Adj.v
+Duplicate found at line 31 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Sobel_Threshold_Adj.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'VIP_Bit_Erosion_Detector()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion/VIP_Bit_Erosion_Detector.v
+Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Bit_Erosion_Detector.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'VIP_Matrix_Generate_3X3_1Bit()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion/VIP_Matrix_Generate_3X3_1Bit.v
+Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Matrix_Generate_3X3_1Bit.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'VIP_Matrix_Generate_3X3_8Bit()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion/VIP_Matrix_Generate_3X3_8Bit.v
+Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Matrix_Generate_3X3_8Bit.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'VIP_Sobel_Edge_Detector()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion/VIP_Sobel_Edge_Detector.v
+Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Sobel_Edge_Detector.v
+[Sun Nov 10 22:21:08 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+add_files -norecurse {F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Bit_Dilation_Detector.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Bit_Erosion_Detector.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/SQRT.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Matrix_Generate_3X3_8Bit.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Line_Shift_RAM_1Bit.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Video_Image_Processor.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Matrix_Generate_3X3_1Bit.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Sobel_Edge_Detector.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Sobel_Threshold_Adj.v F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Line_Shift_RAM_8Bit.v}
+WARNING: [filemgmt 56-12] File 'F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Bit_Dilation_Detector.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Bit_Erosion_Detector.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/SQRT.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Matrix_Generate_3X3_8Bit.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Line_Shift_RAM_1Bit.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Video_Image_Processor.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Matrix_Generate_3X3_1Bit.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Sobel_Edge_Detector.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Sobel_Threshold_Adj.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Line_Shift_RAM_8Bit.v' cannot be added to the project because it already exists in the project, skipping this file
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Sobel_Threshold_Adj()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 31 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion/Sobel_Threshold_Adj.v
+Duplicate found at line 31 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/Sobel_Threshold_Adj.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'VIP_Bit_Erosion_Detector()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion/VIP_Bit_Erosion_Detector.v
+Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Bit_Erosion_Detector.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'VIP_Matrix_Generate_3X3_1Bit()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion/VIP_Matrix_Generate_3X3_1Bit.v
+Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Matrix_Generate_3X3_1Bit.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'VIP_Matrix_Generate_3X3_8Bit()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion/VIP_Matrix_Generate_3X3_8Bit.v
+Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Matrix_Generate_3X3_8Bit.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'VIP_Sobel_Edge_Detector()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion/VIP_Sobel_Edge_Detector.v
+Duplicate found at line 34 of file F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Sobel_Edge_Detector.v
+[Sun Nov 10 22:22:18 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
+add_files -norecurse F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Sobel_Edge_Detector.v
+WARNING: [filemgmt 56-12] File 'F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel_Erosion_Dilation/VIP_Sobel_Edge_Detector.v' cannot be added to the project because it already exists in the project, skipping this file
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Sun Nov 10 22:25:27 2019] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+[Sun Nov 10 22:26:45 2019] Launched impl_2...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel_Erosion_Dilation/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 10 22:29:26 2019...

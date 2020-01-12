@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Dec 15 15:58:25 2019
+# Process ID: 18076
+# Current directory: F:/FILE/FPGA/ZYNQ/Image/004_OV5640_DDR3_RGB888_YCbCr444/OV5640_DEMO/MIG_OV_PRG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19344 F:\FILE\FPGA\ZYNQ\Image\004_OV5640_DDR3_RGB888_YCbCr444\OV5640_DEMO\MIG_OV_PRG\MIG_OV_PRG.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/Image/004_OV5640_DDR3_RGB888_YCbCr444/OV5640_DEMO/MIG_OV_PRG/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/Image/004_OV5640_DDR3_RGB888_YCbCr444/OV5640_DEMO/MIG_OV_PRG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/Image/004_OV5640_DDR3_RGB888_YCbCr444/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.xpr
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {f:/FILE/FPGA/ZYNQ/Image/004_OV5640_DDR3_RGB888_YCbCr444/mia_ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML F:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7 f:/FILE/FPGA/ZYNQ/Image/004_OV5640_DDR3_RGB888_YCbCr444/mia_ip_lib/HDMI_FPGA_ML_A7} [current_project]
+update_ip_catalog

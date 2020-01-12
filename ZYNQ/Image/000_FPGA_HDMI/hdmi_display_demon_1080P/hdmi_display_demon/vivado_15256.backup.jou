@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Nov 06 10:57:03 2017
+# Process ID: 15256
+# Current directory: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6500 F:\MIZ7035_Demon\s1\S01_CH11_hdmi_display_demon_1080P\hdmi_display_demon\hdmi_display_demon.xpr
+# Log file: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/vivado.log
+# Journal file: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.xpr
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {148.5} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {742.5} CONFIG.CLKOUT2_REQUESTED_PHASE {0} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {37.125} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.000} CONFIG.MMCM_CLKOUT1_DIVIDE {1} CONFIG.MMCM_CLKOUT1_PHASE {0.000} CONFIG.CLKOUT1_JITTER {298.245} CONFIG.CLKOUT1_PHASE_ERROR {322.999} CONFIG.CLKOUT2_JITTER {232.529} CONFIG.CLKOUT2_PHASE_ERROR {322.999}] [get_ips clk_wiz_0]
+generate_target all [get_files  F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+export_ip_user_files -of_objects [get_files F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+launch_runs -jobs 8 clk_wiz_0_synth_1
+export_simulation -of_objects [get_files F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.ip_user_files/sim_scripts -ip_user_files_dir F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.ip_user_files -ipstatic_source_dir F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/modelsim} {questa=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/questa} {riviera=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/riviera} {activehdl=F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+wait_on_run clk_wiz_0_synth_1
+synth_design -rtl -name rtl_1
+set_property IOSTANDARD LVCMOS15 [get_ports [list {LED[3]} {LED[2]} {LED[1]} {LED[0]}]]
+place_ports {LED[0]} B9
+place_ports {LED[1]} K10
+place_ports {LED[2]} H11
+place_ports {LED[3]} G9
+set_property IOSTANDARD LVCMOS15 [get_ports [list clk_100M]]
+place_ports clk_100M C8
+set_property IOSTANDARD LVDS [get_ports [list HDMI1_CLK_P]]
+set_property IOSTANDARD LVDS [get_ports [list HDMI1_D0_P]]
+set_property IOSTANDARD LVDS [get_ports [list HDMI1_D1_P]]
+place_ports HDMI1_D0_P D15
+set_property IOSTANDARD TMDS_33 [get_ports [list HDMI1_CLK_P]]
+set_property IOSTANDARD TMDS_33 [get_ports [list HDMI1_D0_P]]
+startgroup
+set_property package_pin "" [get_ports [list  HDMI1_D0_P]]
+place_ports HDMI1_CLK_P D15
+endgroup
+set_property IOSTANDARD LVDS [get_ports [list HDMI1_CLK_P]]
+place_ports HDMI1_D0_P E16
+set_property IOSTANDARD LVDS [get_ports [list HDMI1_D0_P]]
+place_ports HDMI1_D1_P F15
+place_ports HDMI1_D2_P C17
+set_property IOSTANDARD LVDS [get_ports [list HDMI1_D2_P]]
+set_property IOSTANDARD LVDS [get_ports [list HDMI2_CLK_P]]
+place_ports HDMI2_CLK_P J14
+place_ports HDMI2_D0_P K13
+place_ports HDMI2_D1_P G14
+place_ports HDMI2_D2_P K15
+set_property IOSTANDARD LVDS [get_ports [list HDMI2_D0_P]]
+set_property IOSTANDARD TMDS_33 [get_ports [list HDMI2_D0_P]]
+set_property IOSTANDARD LVDS [get_ports [list HDMI2_D0_P]]
+set_property IOSTANDARD LVDS [get_ports [list HDMI2_D1_P]]
+set_property IOSTANDARD LVDS [get_ports [list HDMI2_D2_P]]
+place_ports KEY A10
+set_property IOSTANDARD LVCMOS15 [get_ports [list KEY]]
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/impl_1/HDMI_display_Demon.bit} [lindex [get_hw_devices xc7z035_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROGRAM.FILE {F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/impl_1/HDMI_display_Demon.bit} [lindex [get_hw_devices xc7z035_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z035_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROGRAM.FILE {F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/impl_1/HDMI_display_Demon.bit} [lindex [get_hw_devices xc7z035_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z035_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROGRAM.FILE {F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/impl_1/HDMI_display_Demon.bit} [lindex [get_hw_devices xc7z035_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z035_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]

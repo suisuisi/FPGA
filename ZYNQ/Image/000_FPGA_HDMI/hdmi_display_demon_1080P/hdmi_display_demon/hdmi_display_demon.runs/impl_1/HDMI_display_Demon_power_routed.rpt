@@ -1,0 +1,178 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date             : Mon Nov 06 11:08:37 2017
+| Host             : LB-201708051431 running 64-bit major release  (build 9200)
+| Command          : report_power -file HDMI_display_Demon_power_routed.rpt -pb HDMI_display_Demon_power_summary_routed.pb -rpx HDMI_display_Demon_power_routed.rpx
+| Design           : HDMI_display_Demon
+| Device           : xc7z035ffg676-2
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------+
+| Total On-Chip Power (W)  | 0.492  |
+| Dynamic (W)              | 0.263  |
+| Device Static (W)        | 0.229  |
+| Total Off-Chip Power (W) | 0.010  |
+| Effective TJA (C/W)      | 1.9    |
+| Max Ambient (C)          | 84.1   |
+| Junction Temperature (C) | 25.9   |
+| Confidence Level         | Medium |
+| Setting File             | ---    |
+| Simulation Activity File | ---    |
+| Design Nets Matched      | NA     |
++--------------------------+--------+
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Clocks         |     0.016 |        6 |       --- |             --- |
+| Slice Logic    |     0.003 |      914 |       --- |             --- |
+|   LUT as Logic |     0.003 |      433 |    171900 |            0.25 |
+|   Register     |    <0.001 |      338 |    343800 |            0.10 |
+|   CARRY4       |    <0.001 |       11 |     54650 |            0.02 |
+|   Others       |     0.000 |       41 |       --- |             --- |
+| Signals        |     0.002 |      701 |       --- |             --- |
+| MMCM           |     0.106 |        1 |         8 |           12.50 |
+| I/O            |     0.135 |       22 |       250 |            8.80 |
+| Static Power   |     0.229 |          |           |                 |
+| Total          |     0.492 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.081 |       0.029 |      0.052 |
+| Vccaux    |       1.800 |     0.112 |       0.059 |      0.053 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.078 |       0.077 |      0.001 |
+| Vcco15    |       1.500 |     0.001 |       0.000 |      0.001 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.002 |       0.000 |      0.002 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccpint   |       1.000 |     0.016 |       0.000 |      0.016 |
+| Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
+| Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
+| Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio1 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                               | Action                                                                                                     |
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                      |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                |                                                                                                            |
+| I/O nodes activity          | Medium     | More than 5% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes        | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                          |                                                                                                            |
+|                             |            |                                                       |                                                                                                            |
+| Overall confidence level    | Medium     |                                                       |                                                                                                            |
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.9                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 3.4                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++--------------------+-------------------------------+-----------------+
+| Clock              | Domain                        | Constraint (ns) |
++--------------------+-------------------------------+-----------------+
+| clk_100M           | clk_100M                      |            10.0 |
+| clk_out1_clk_wiz_0 | u_clk/inst/clk_out1_clk_wiz_0 |             6.7 |
+| clk_out2_clk_wiz_0 | u_clk/inst/clk_out2_clk_wiz_0 |             1.3 |
+| clkfbout_clk_wiz_0 | u_clk/inst/clkfbout_clk_wiz_0 |            50.0 |
++--------------------+-------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++----------------------------------+-----------+
+| Name                             | Power (W) |
++----------------------------------+-----------+
+| HDMI_display_Demon               |     0.263 |
+|   u_clk                          |     0.109 |
+|     inst                         |     0.109 |
+|   u_hdmi_data_gen                |     0.002 |
+|   u_hdmi_display_0               |     0.076 |
+|     U0                           |     0.076 |
+|       Inst_DVITransmitter        |     0.076 |
+|         Inst_TMDSEncoder_blue    |     0.001 |
+|         Inst_TMDSEncoder_green   |     0.001 |
+|         Inst_TMDSEncoder_red     |     0.001 |
+|         Inst_clk_serializer_10_1 |     0.018 |
+|         Inst_d0_serializer_10_1  |     0.019 |
+|         Inst_d1_serializer_10_1  |     0.018 |
+|         Inst_d2_serializer_10_1  |     0.018 |
+|   u_hdmi_display_1               |     0.076 |
+|     U0                           |     0.076 |
+|       Inst_DVITransmitter        |     0.076 |
+|         Inst_TMDSEncoder_blue    |     0.001 |
+|         Inst_TMDSEncoder_green   |     0.001 |
+|         Inst_TMDSEncoder_red     |     0.001 |
+|         Inst_clk_serializer_10_1 |     0.018 |
+|         Inst_d0_serializer_10_1  |     0.019 |
+|         Inst_d1_serializer_10_1  |     0.018 |
+|         Inst_d2_serializer_10_1  |     0.018 |
++----------------------------------+-----------+
+
+

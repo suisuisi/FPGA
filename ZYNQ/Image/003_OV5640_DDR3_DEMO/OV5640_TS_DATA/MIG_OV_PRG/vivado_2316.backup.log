@@ -1,0 +1,577 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Fri Oct 06 20:23:48 2017
+# Process ID: 2316
+# Current directory: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18212 E:\MIA701SRC\S02_CH12\S02_CH12_OV5640\MIG_OV_PRG\MIG_OV_PRG.xpr
+# Log file: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/vivado.log
+# Journal file: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.xpr
+INFO: [Project 1-313] Project file moved from 'E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/user/I2C_OV7725_RGB565_Config.v', nor could it be found using path 'E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/user/I2C_OV7725_RGB565_Config.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/user/OV7725_TOP.v', nor could it be found using path 'E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/user/OV7725_TOP.v'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/user/OV_Sensor_ML', nor could it be found using path 'E:/MIA701SRC/S02_CH12/S02_CH11_OV7725_TEST_DATA/user/OV_Sensor_ML'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'e:/MIA701SRC/S02_CH12/S02_CH12_OV5640/user/OV_Sensor_ML'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'HDMI_FPGA_ML_A7_0' is locked:
+* IP definition 'HDMI_FPGA_ML_A7 (1.0)' for IP 'HDMI_FPGA_ML_A7_0' (customized with software release 2016.4) was not found in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 914.398 ; gain = 239.809
+add_files -norecurse {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/user/OV5640_TOP.v E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/user/I2C_OV5640_RGB565_Config.v}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 20:25:32 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 20:25:32 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Dec 14 2016-22:58:11
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249855465
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 20:52:44 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 20:52:44 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 21:03:10 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 21:03:10 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 21:15:48 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 21:15:48 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 21:21:56 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 21:21:56 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 21:27:30 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 21:27:30 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 21:43:32 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 21:43:32 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 21:57:11 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 21:57:11 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 22:07:55 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 22:07:55 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 22:36:39 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 22:36:39 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 22:56:55 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 22:56:55 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 23:03:42 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 23:03:42 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+open_project E:/MIA701SRC/S02_CH11/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/MIG_OV_PRG.xpr
+INFO: [Project 1-313] Project file moved from 'E:/MIA701SRC/S02_CH11/S02_CH10_640_480_DDR_HDMI_4/MIG_OV_PRG' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/MIA701SRC/S02_CH11/S02_CH11_OV7725_TEST_DATA/MIG_OV_PRG/sim_tb_top_behav.wcfg', nor could it be found using path 'E:/MIA701SRC/S02_CH11/S02_CH10_640_480_DDR_HDMI_4/MIG_OV_PRG/sim_tb_top_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/MIA701SRC/S02_CH11/S02_CH11_OV7725_TEST_DATA/user/OV_Sensor_ML'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'HDMI_FPGA_ML_A7_0' is locked:
+* IP definition 'HDMI_FPGA_ML_A7 (1.0)' for IP 'HDMI_FPGA_ML_A7_0' (customized with software release 2016.4) was not found in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1285.020 ; gain = 184.270
+current_project MIG_OV_PRG
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 23:17:36 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 23:17:36 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 23:25:51 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 23:25:51 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 23:35:42 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 23:35:42 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 23:42:20 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 23:42:20 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 23:51:47 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 23:51:47 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Fri Oct 06 23:59:28 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Fri Oct 06 23:59:28 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Sat Oct 07 00:07:50 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Sat Oct 07 00:07:50 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210249855465.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Sat Oct 07 00:57:36 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Sat Oct 07 00:57:36 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Sat Oct 07 01:11:16 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Sat Oct 07 01:11:16 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+current_project MIG_OV_PRG(2)
+current_project MIG_OV_PRG
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Sat Oct 07 01:24:05 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Sat Oct 07 01:24:05 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Sat Oct 07 01:24:53 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Sat Oct 07 01:24:53 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Sat Oct 07 01:34:40 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Sat Oct 07 01:34:40 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/MSG_FIFO/MSG_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/CH0_FIFO/CH0_FIFO.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' is already up-to-date
+[Sat Oct 07 01:35:03 2017] Launched synth_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log
+[Sat Oct 07 01:35:03 2017] Launched impl_1...
+Run output will be captured here: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/runme.log
+set_property PROBES.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/OV5640_TOP.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Common 17-48] File not found: E:/MIA701SRC/S02_CH12/S02_CH12_OV5640/MIG_OV_PRG/MIG_OV_PRG.runs/impl_1/debug_nets.ltx
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210249855465.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+close_project
+close_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1295.965 ; gain = 1.941
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 07 01:47:44 2017...

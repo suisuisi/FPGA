@@ -1,0 +1,13 @@
+set_global_assignment -entity "Sdram_PLL" -library "Sdram_PLL" -name IP_TOOL_NAME "altera_pll"
+set_global_assignment -entity "Sdram_PLL" -library "Sdram_PLL" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "Sdram_PLL" -library "Sdram_PLL" -name IP_TOOL_ENV "mwpim"
+set_global_assignment -library "Sdram_PLL" -name MISC_FILE [file join $::quartus(qip_path) "Sdram_PLL.cmp"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+
+set_global_assignment -library "Sdram_PLL" -name VERILOG_FILE [file join $::quartus(qip_path) "Sdram_PLL.v"]
+set_global_assignment -library "Sdram_PLL" -name VERILOG_FILE [file join $::quartus(qip_path) "Sdram_PLL/Sdram_PLL_0002.v"]
+set_global_assignment -library "Sdram_PLL" -name QIP_FILE [file join $::quartus(qip_path) "Sdram_PLL/Sdram_PLL_0002.qip"]
+
+set_global_assignment -entity "Sdram_PLL_0002" -library "Sdram_PLL" -name IP_TOOL_NAME "altera_pll"
+set_global_assignment -entity "Sdram_PLL_0002" -library "Sdram_PLL" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "Sdram_PLL_0002" -library "Sdram_PLL" -name IP_TOOL_ENV "mwpim"

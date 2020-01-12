@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Apr 19 16:25:59 2017
+# Process ID: 19528
+# Current directory: F:/A7_HDMI/HDMI_FPGA_ML_A7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14312 F:\A7_HDMI\HDMI_FPGA_ML_A7\HDMI_FPGA_ML_A7.xpr
+# Log file: F:/A7_HDMI/HDMI_FPGA_ML_A7/vivado.log
+# Journal file: F:/A7_HDMI/HDMI_FPGA_ML_A7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/A7_HDMI/HDMI_FPGA_ML_A7/HDMI_FPGA_ML_A7.xpr
+INFO: [Project 1-313] Project file moved from 'F:/miz701N/S01_CH12_hdmi_display_demon/Miz_ip_lib/HDMI_FPGA_ML_A7' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/A7_HDMI/HDMI_FPGA_ML_A7/miz701n/s01_ch12_hdmi_display_demon/miz_ip_lib/hdmi_fpga_ml_a7/hdmi_fpga_ml'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2015.4/data/ip'.
+launch_runs synth_1 -jobs 8
+INFO: [HDL 9-1061] Parsing VHDL file "F:/A7_HDMI/HDMI_FPGA_ML_A7/src/DVITransmitter.vhd" into library xil_defaultlib [F:/A7_HDMI/HDMI_FPGA_ML_A7/src/DVITransmitter.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "F:/A7_HDMI/HDMI_FPGA_ML_A7/src/SerializerN_1.vhd" into library xil_defaultlib [F:/A7_HDMI/HDMI_FPGA_ML_A7/src/SerializerN_1.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "F:/A7_HDMI/HDMI_FPGA_ML_A7/src/TMDSEncoder.vhd" into library xil_defaultlib [F:/A7_HDMI/HDMI_FPGA_ML_A7/src/TMDSEncoder.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "F:/A7_HDMI/HDMI_FPGA_ML_A7/src/hdmi_tx.vhd" into library xil_defaultlib [F:/A7_HDMI/HDMI_FPGA_ML_A7/src/hdmi_tx.vhd:1]
+[Wed Apr 19 16:26:33 2017] Launched synth_1...
+Run output will be captured here: F:/A7_HDMI/HDMI_FPGA_ML_A7/HDMI_FPGA_ML_A7.runs/synth_1/runme.log
+ipx::package_project -root_dir F:/A7_HDMI/HDMI_FPGA_ML_A7 -vendor xilinx.com -library user -taxonomy /UserIP
+INFO: [IP_Flow 19-2228] Inferred bus interface "HDMI_CLK_N" of definition type "xilinx.com:signal:clock:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "HDMI_CLK_P" of definition type "xilinx.com:signal:clock:1.0".
+ipx::remove_bus_interface HDMI_CLK_N [ipx::current_core]
+ipx::remove_bus_interface HDMI_CLK_P [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {f:/A7_HDMI/HDMI_FPGA_ML_A7 f:/A7_HDMI/HDMI_FPGA_ML_A7/miz701n/s01_ch12_hdmi_display_demon/miz_ip_lib/hdmi_fpga_ml_a7/hdmi_fpga_ml} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/A7_HDMI/HDMI_FPGA_ML_A7'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'f:/A7_HDMI/HDMI_FPGA_ML_A7/miz701n/s01_ch12_hdmi_display_demon/miz_ip_lib/hdmi_fpga_ml_a7/hdmi_fpga_ml'. The path is contained within another repository.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:HDMI_FPGA_ML_A7:1.0'. The one found in IP location 'f:/A7_HDMI/HDMI_FPGA_ML_A7' will take precedence over the same IP in location f:/A7_HDMI/HDMI_FPGA_ML_A7/HDMI_FPGA_ML
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path f:/A7_HDMI/HDMI_FPGA_ML_A7
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'f:/A7_HDMI/HDMI_FPGA_ML_A7'
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:HDMI_FPGA_ML_A7:1.0'. The one found in IP location 'f:/A7_HDMI/HDMI_FPGA_ML_A7' will take precedence over the same IP in location f:/A7_HDMI/HDMI_FPGA_ML_A7/HDMI_FPGA_ML
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 19 16:28:08 2017...

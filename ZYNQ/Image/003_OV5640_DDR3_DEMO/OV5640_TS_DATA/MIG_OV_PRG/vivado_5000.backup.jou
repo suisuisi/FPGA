@@ -1,0 +1,174 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Oct 20 00:02:46 2019
+# Process ID: 5000
+# Current directory: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14756 F:\FILE\FPGA\ZYNQ\TEST\CH04_OV5640_DEMO\OV5640_TS_DATA\MIG_OV_PRG\MIG_OV_PRG.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+save_wave_config {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+create_ip -name HDMI_FPGA_ML -vendor xilinx.com -library user -version 1.0 -module_name HDMI_FPGA_ML_0 -dir F:/FILE/Xilinx/Miz7035/My_ip_lib
+generate_target {instantiation_template} [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/HDMI_FPGA_ML_0_2/HDMI_FPGA_ML_0.xci]
+generate_target all [get_files  f:/FILE/Xilinx/Miz7035/My_ip_lib/HDMI_FPGA_ML_0_2/HDMI_FPGA_ML_0.xci]
+catch { config_ip_cache -export [get_ips -all HDMI_FPGA_ML_0] }
+export_ip_user_files -of_objects [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/HDMI_FPGA_ML_0_2/HDMI_FPGA_ML_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] f:/FILE/Xilinx/Miz7035/My_ip_lib/HDMI_FPGA_ML_0_2/HDMI_FPGA_ML_0.xci]
+launch_runs -jobs 12 HDMI_FPGA_ML_0_synth_1
+export_simulation -of_objects [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/HDMI_FPGA_ML_0_2/HDMI_FPGA_ML_0.xci] -directory F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+save_wave_config {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/user/HDMI_SRC/HDMI_FPGA_ML_A7_0/HDMI_FPGA_ML_A7_0.xci] -no_script -reset -force -quiet
+remove_files  F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/user/HDMI_SRC/HDMI_FPGA_ML_A7_0/HDMI_FPGA_ML_A7_0.xci
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+save_wave_config {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+set_property  ip_repo_paths  f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/user/HDMI_SRC} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/user/HDMI_SRC/HDMI_FPGA_ML_A7_0} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7} [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild
+set_property  ip_repo_paths  f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7} [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild -repo_path f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML
+set_property  ip_repo_paths  f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7_0} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {f:/FILE/FPGA/ZYNQ/zynq_7035/004_FPGA_HDMI/hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib/HDMI_FPGA_ML F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild
+update_ip_catalog -rebuild
+update_ip_catalog -rebuild
+update_ip_catalog -rebuild
+add_files -norecurse F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7_0/HDMI_FPGA_ML_A7_0.dcp
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7_0/HDMI_FPGA_ML_A7_0.dcp] -no_script -reset -force -quiet
+remove_files  F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7_0/HDMI_FPGA_ML_A7_0.dcp
+report_ip_status -name ip_status 
+export_ip_user_files -of_objects  [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/HDMI_FPGA_ML_0_2/HDMI_FPGA_ML_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset HDMI_FPGA_ML_0 f:/FILE/Xilinx/Miz7035/My_ip_lib/HDMI_FPGA_ML_0_2/HDMI_FPGA_ML_0.xci
+set_property  ip_repo_paths  {f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7} [current_project]
+update_ip_catalog
+create_ip -name HDMI_FPGA_ML_A7 -vendor xilinx.com -library user -version 1.0 -module_name HDMI_FPGA_ML_A7_0 -dir F:/FILE/Xilinx/Miz7035/My_ip_lib
+generate_target {instantiation_template} [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/HDMI_FPGA_ML_A7_0/HDMI_FPGA_ML_A7_0.xci]
+generate_target all [get_files  f:/FILE/Xilinx/Miz7035/My_ip_lib/HDMI_FPGA_ML_A7_0/HDMI_FPGA_ML_A7_0.xci]
+catch { config_ip_cache -export [get_ips -all HDMI_FPGA_ML_A7_0] }
+export_ip_user_files -of_objects [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/HDMI_FPGA_ML_A7_0/HDMI_FPGA_ML_A7_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] f:/FILE/Xilinx/Miz7035/My_ip_lib/HDMI_FPGA_ML_A7_0/HDMI_FPGA_ML_A7_0.xci]
+launch_runs -jobs 12 HDMI_FPGA_ML_A7_0_synth_1
+export_simulation -of_objects [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/HDMI_FPGA_ML_A7_0/HDMI_FPGA_ML_A7_0.xci] -directory F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/sim_scripts -ip_user_files_dir F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files -ipstatic_source_dir F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/modelsim} {questa=F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/questa} {riviera=F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/riviera} {activehdl=F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+save_wave_config {F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/OV5640_TS_DATA/MIG_OV_PRG/MIG_OV_PRG.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

@@ -1,0 +1,5 @@
+Info (10281): Verilog HDL Declaration information at I2C_OV5640_Init_RGB565.v(41): object "config_done" differs only in case from object "Config_done" in the same scope
+Info (10281): Verilog HDL Declaration information at sobel.v(18): object "X1" differs only in case from object "x1" in the same scope
+Info (10281): Verilog HDL Declaration information at sobel.v(18): object "X2" differs only in case from object "x2" in the same scope
+Info (10281): Verilog HDL Declaration information at sobel.v(23): object "Y1" differs only in case from object "y1" in the same scope
+Info (10281): Verilog HDL Declaration information at sobel.v(23): object "Y2" differs only in case from object "y2" in the same scope

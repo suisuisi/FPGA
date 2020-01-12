@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Nov 25 21:38:57 2019
+# Process ID: 16312
+# Current directory: F:/FILE/FPGA/ZYNQ/Image/001_OV5640_RAM_DEMO/HDMI.runs/impl_1
+# Command line: vivado.exe -log ov5640_rgb565_1024x768_vga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ov5640_rgb565_1024x768_vga.tcl -notrace
+# Log file: F:/FILE/FPGA/ZYNQ/Image/001_OV5640_RAM_DEMO/HDMI.runs/impl_1/ov5640_rgb565_1024x768_vga.vdi
+# Journal file: F:/FILE/FPGA/ZYNQ/Image/001_OV5640_RAM_DEMO/HDMI.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ov5640_rgb565_1024x768_vga.tcl -notrace

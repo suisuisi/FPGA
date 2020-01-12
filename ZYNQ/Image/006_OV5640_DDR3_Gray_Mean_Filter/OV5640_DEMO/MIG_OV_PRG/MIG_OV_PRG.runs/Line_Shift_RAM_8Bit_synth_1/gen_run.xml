@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="Line_Shift_RAM_8Bit_synth_1" LaunchPart="xc7z035ffg676-2" LaunchTime="1572788853">
+  <File Type="PA-TCL" Name="Line_Shift_RAM_8Bit.tcl"/>
+  <File Type="REPORTS-TCL" Name="Line_Shift_RAM_8Bit_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Line_Shift_RAM_8Bit.vds"/>
+  <File Type="RDS-UTIL" Name="Line_Shift_RAM_8Bit_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Line_Shift_RAM_8Bit_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Line_Shift_RAM_8Bit.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Line_Shift_RAM_8Bit">
+    <File Path="$PPRDIR/../../../../../../Xilinx/Miz7035/My_ip_lib/Line_Shift_RAM_8Bit/Line_Shift_RAM_8Bit.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="Line_Shift_RAM_8Bit"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Line_Shift_RAM_8Bit">
+    <File Path="$PPRDIR/../../../../../../Xilinx/Miz7035/My_ip_lib/Line_Shift_RAM_8Bit/Line_Shift_RAM_8Bit.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="Line_Shift_RAM_8Bit"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

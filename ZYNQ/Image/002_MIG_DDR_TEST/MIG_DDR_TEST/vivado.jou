@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jan  6 21:22:44 2020
+# Process ID: 59336
+# Current directory: F:/FILE/FPGA/ZYNQ/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent60404 F:\FILE\FPGA\ZYNQ\FPGA\ZYNQ\Image\002_MIG_DDR_TEST\MIG_DDR_TEST\mig_7series_0_ex.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.xpr
+update_compile_order -fileset sources_1
+reset_project

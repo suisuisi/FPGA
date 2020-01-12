@@ -1,0 +1,118 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Nov 29 20:08:40 2017
+# Process ID: 9048
+# Current directory: E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3808 E:\DS_SRC\MIZ7035\S07\S07_CH01_MIG_DDR_TEST\mig_7series_0_ex.xpr
+# Log file: E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/vivado.log
+# Journal file: E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.xpr
+INFO: [Project 1-313] Project file moved from 'F:/BaiduNetdiskDownload/S07_CH09' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 854.898 ; gain = 184.691
+Loading device for application Rf_Device from file '7z035.nph' in environment
+D:/Xilinx/Vivado/2016.4/ids_lite/ISE.
+child killed: segmentation violation
+Loading device for application Rf_Device from file '7z035.nph' in environment
+D:/Xilinx/Vivado/2016.4/ids_lite/ISE.
+child killed: segmentation violation
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Dec 14 2016-22:58:11
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249855720
+set_property PROGRAM.FILE {E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/example_top.bit} [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROBES.FILE {E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z035_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-1435] Device xc7z035 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROGRAM.FILE {E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/example_top.bit} [lindex [get_hw_devices xc7z035_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 991.730 ; gain = 7.832
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-2302] Device xc7z035 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210249855720.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+set_property PROBES.FILE {E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROGRAM.FILE {E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/example_top.bit} [lindex [get_hw_devices xc7z035_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1012.297 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-2302] Device xc7z035 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+set_property PROBES.FILE {E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROGRAM.FILE {E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/example_top.bit} [lindex [get_hw_devices xc7z035_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1041.637 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-2302] Device xc7z035 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Nov-29 20:16:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Nov-29 20:16:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Nov-29 20:16:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Nov-29 20:16:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes error_rddata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Nov-29 20:16:56
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2017-Nov-29 20:17:24
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Nov-29 20:17:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Nov-29 20:17:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210249855720.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 29 21:02:53 2017...

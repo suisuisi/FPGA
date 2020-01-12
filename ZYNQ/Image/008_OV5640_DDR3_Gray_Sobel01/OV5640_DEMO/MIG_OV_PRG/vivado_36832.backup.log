@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Dec 19 21:06:26 2019
+# Process ID: 36832
+# Current directory: F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel01/OV5640_DEMO/MIG_OV_PRG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20892 F:\FILE\FPGA\ZYNQ\Image\008_OV5640_DDR3_Gray_Sobel01\OV5640_DEMO\MIG_OV_PRG\MIG_OV_PRG.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel01/OV5640_DEMO/MIG_OV_PRG/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel01/OV5640_DEMO/MIG_OV_PRG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/Image/008_OV5640_DDR3_Gray_Sobel01/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.xpr
+INFO: [Project 1-313] Project file moved from 'F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG' since last save.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/linebuffer_Wapper/ImageXlib_utils.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2017.4/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:HDMI_FPGA_ML_A7:1.0'. The one found in IP location 'f:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7' will take precedence over the same IP in location f:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 882.699 ; gain = 208.004
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 19 21:37:51 2019...

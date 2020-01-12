@@ -1,0 +1,1065 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Nov  2 22:17:24 2019
+# Process ID: 61352
+# Current directory: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1
+# Command line: vivado.exe -log OV5640_TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source OV5640_TOP.tcl
+# Log file: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/OV5640_TOP.vds
+# Journal file: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source OV5640_TOP.tcl -notrace
+Command: synth_design -top OV5640_TOP -part xc7z035ffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 62420 
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:59]
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:60]
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:61]
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:62]
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:64]
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:65]
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:66]
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:67]
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:69]
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:70]
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:71]
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:98]
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:99]
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:100]
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:101]
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:102]
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:103]
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:104]
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:445]
+WARNING: [Synth 8-2507] parameter declaration becomes local in MIG_BURST_IMAGE with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:446]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 460.305 ; gain = 104.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'OV5640_TOP' [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/OV5640_TOP.v:25]
+	Parameter PORT_MODE bound to: BI_MODE - type: string 
+	Parameter DATA_MODE bound to: 4'b0010 
+	Parameter TST_MEM_INSTR_MODE bound to: R_W_INSTR_MODE - type: string 
+	Parameter EYE_TEST bound to: FALSE - type: string 
+	Parameter DATA_PATTERN bound to: DGEN_ALL - type: string 
+	Parameter CMD_PATTERN bound to: CGEN_ALL - type: string 
+	Parameter CMD_WDT bound to: 1023 - type: integer 
+	Parameter WR_WDT bound to: 8191 - type: integer 
+	Parameter RD_WDT bound to: 1023 - type: integer 
+	Parameter SEL_VICTIM_LINE bound to: 0 - type: integer 
+	Parameter BEGIN_ADDRESS bound to: 0 - type: integer 
+	Parameter END_ADDRESS bound to: 16777215 - type: integer 
+	Parameter PRBS_EADDR_MASK_POS bound to: -16777216 - type: integer 
+	Parameter CK_WIDTH bound to: 1 - type: integer 
+	Parameter nCS_PER_RANK bound to: 1 - type: integer 
+	Parameter CKE_WIDTH bound to: 1 - type: integer 
+	Parameter DM_WIDTH bound to: 4 - type: integer 
+	Parameter ODT_WIDTH bound to: 1 - type: integer 
+	Parameter BANK_WIDTH bound to: 3 - type: integer 
+	Parameter COL_WIDTH bound to: 10 - type: integer 
+	Parameter CS_WIDTH bound to: 1 - type: integer 
+	Parameter DQ_WIDTH bound to: 32 - type: integer 
+	Parameter DQS_WIDTH bound to: 4 - type: integer 
+	Parameter DQS_CNT_WIDTH bound to: 2 - type: integer 
+	Parameter DRAM_WIDTH bound to: 8 - type: integer 
+	Parameter ECC bound to: OFF - type: string 
+	Parameter ECC_TEST bound to: OFF - type: string 
+	Parameter nBANK_MACHS bound to: 4 - type: integer 
+	Parameter RANKS bound to: 1 - type: integer 
+	Parameter ROW_WIDTH bound to: 14 - type: integer 
+	Parameter ADDR_WIDTH bound to: 28 - type: integer 
+	Parameter BURST_MODE bound to: 8 - type: string 
+	Parameter CLKIN_PERIOD bound to: 5000 - type: integer 
+	Parameter CLKFBOUT_MULT bound to: 4 - type: integer 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DIVIDE bound to: 2 - type: integer 
+	Parameter CLKOUT2_DIVIDE bound to: 32 - type: integer 
+	Parameter CLKOUT3_DIVIDE bound to: 8 - type: integer 
+	Parameter MMCM_VCO bound to: 800 - type: integer 
+	Parameter MMCM_MULT_F bound to: 8 - type: integer 
+	Parameter MMCM_DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter SIMULATION bound to: FALSE - type: string 
+	Parameter TCQ bound to: 100 - type: integer 
+	Parameter DRAM_TYPE bound to: DDR3 - type: string 
+	Parameter nCK_PER_CLK bound to: 4 - type: integer 
+	Parameter DEBUG_PORT bound to: OFF - type: string 
+	Parameter RST_ACT_LOW bound to: 0 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter RANK_WIDTH bound to: 1 - type: integer 
+	Parameter PAYLOAD_WIDTH bound to: 32 - type: integer 
+	Parameter BURST_LENGTH bound to: 8 - type: integer 
+	Parameter APP_DATA_WIDTH bound to: 256 - type: integer 
+	Parameter APP_MASK_WIDTH bound to: 32 - type: integer 
+	Parameter TG_ADDR_WIDTH bound to: 27 - type: integer 
+	Parameter MASK_SIZE bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_sys' [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/realtime/clk_wiz_sys_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_sys' (1#1) [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/realtime/clk_wiz_sys_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_hdmi' [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/realtime/clk_wiz_hdmi_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_hdmi' (2#1) [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/realtime/clk_wiz_hdmi_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_0' [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/realtime/mig_7series_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_0' (3#1) [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/realtime/mig_7series_0_stub.v:5]
+WARNING: [Synth 8-689] width (14) of port connection 'ddr3_addr' does not match port width (15) of module 'mig_7series_0' [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/OV5640_TOP.v:302]
+WARNING: [Synth 8-689] width (28) of port connection 'app_addr' does not match port width (29) of module 'mig_7series_0' [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/OV5640_TOP.v:319]
+INFO: [Synth 8-638] synthesizing module 'count_resetn' [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/count_reset.v:23]
+	Parameter num bound to: 20'b11111111111111110000 
+INFO: [Synth 8-256] done synthesizing module 'count_resetn' (4#1) [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/count_reset.v:23]
+INFO: [Synth 8-638] synthesizing module 'i2c_timing_ctrl' [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/i2c_timing_ctrl.v:2]
+	Parameter CLK_FREQ bound to: 25000000 - type: integer 
+	Parameter I2C_FREQ bound to: 100000 - type: integer 
+	Parameter DELAY_TOP bound to: 25000 - type: integer 
+	Parameter I2C_IDLE bound to: 5'b00000 
+	Parameter I2C_WR_START bound to: 5'b00001 
+	Parameter I2C_WR_IDADDR bound to: 5'b00010 
+	Parameter I2C_WR_ACK1 bound to: 5'b00011 
+	Parameter I2C_WR_REGADDR bound to: 5'b00100 
+	Parameter I2C_WR_ACK2 bound to: 5'b00101 
+	Parameter I2C_WR_REGADDR2 bound to: 5'b00110 
+	Parameter I2C_WR_ACK2A bound to: 5'b00111 
+	Parameter I2C_WR_REGDATA bound to: 5'b01000 
+	Parameter I2C_WR_ACK3 bound to: 5'b01001 
+	Parameter I2C_WR_STOP bound to: 5'b01010 
+INFO: [Synth 8-155] case statement is not full and has no default [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/i2c_timing_ctrl.v:316]
+INFO: [Synth 8-256] done synthesizing module 'i2c_timing_ctrl' (5#1) [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/i2c_timing_ctrl.v:2]
+INFO: [Synth 8-638] synthesizing module 'I2C_OV5640_RGB565_Config' [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/I2C_OV5640_RGB565_Config.v:2]
+INFO: [Synth 8-256] done synthesizing module 'I2C_OV5640_RGB565_Config' (6#1) [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/I2C_OV5640_RGB565_Config.v:2]
+INFO: [Synth 8-638] synthesizing module 'sensor_decode' [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/sensor_decode.v:27]
+	Parameter CMOS_FRAME_WAITCNT bound to: 6'b001111 
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/sensor_decode.v:222]
+INFO: [Synth 8-638] synthesizing module 'ila_2' [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/realtime/ila_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ila_2' (7#1) [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/realtime/ila_2_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'sensor_sg'. This will prevent further optimization [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/sensor_decode.v:222]
+WARNING: [Synth 8-6014] Unused sequential element grid_data_1_reg was removed.  [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/sensor_decode.v:192]
+INFO: [Synth 8-256] done synthesizing module 'sensor_decode' (8#1) [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/sensor_decode.v:27]
+INFO: [Synth 8-638] synthesizing module 'vga_lcd_driver' [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/new/vga_lcd_driver.v:23]
+	Parameter hVisible bound to: 1280 - type: integer 
+	Parameter hStartSync bound to: 1352 - type: integer 
+	Parameter hEndSync bound to: 1432 - type: integer 
+	Parameter hMax bound to: 1648 - type: integer 
+	Parameter vVisible bound to: 720 - type: integer 
+	Parameter vStartSync bound to: 723 - type: integer 
+	Parameter vEndSync bound to: 728 - type: integer 
+	Parameter vMax bound to: 750 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_lcd_driver' (9#1) [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/new/vga_lcd_driver.v:23]
+INFO: [Synth 8-638] synthesizing module 'HDMI_FPGA_ML_A7_0' [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/realtime/HDMI_FPGA_ML_A7_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'HDMI_FPGA_ML_A7_0' (10#1) [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/realtime/HDMI_FPGA_ML_A7_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'Video_Image_Processor' [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/Video_Image_Processor/Video_Image_Processor.v:18]
+INFO: [Synth 8-638] synthesizing module 'Image_RGB888_YCbCr444' [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/Video_Image_Processor/Image_RGB888_YCbCr444.v:18]
+INFO: [Synth 8-256] done synthesizing module 'Image_RGB888_YCbCr444' (11#1) [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/Video_Image_Processor/Image_RGB888_YCbCr444.v:18]
+INFO: [Synth 8-256] done synthesizing module 'Video_Image_Processor' (12#1) [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/Video_Image_Processor/Video_Image_Processor.v:18]
+INFO: [Synth 8-638] synthesizing module 'MIG_BURST_IMAGE' [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:26]
+	Parameter ADDR_WIDTH bound to: 28 - type: integer 
+	Parameter CH0_RANGE bound to: 29'b00000000011100001000000000000 
+	Parameter CH0_BASE_ADDR0 bound to: 29'b00000000000000000000000000000 
+	Parameter CH0_BASE_ADDR1 bound to: 29'b00000000011100001000000000000 
+	Parameter CH0_BASE_ADDR2 bound to: 29'b00000000111000010000000000000 
+	Parameter CH6_RANGE bound to: 29'b00000000011100001000000000000 
+	Parameter CH6_BASE_ADDR0 bound to: 29'b00000000000000000000000000000 
+	Parameter CH6_BASE_ADDR1 bound to: 29'b00000000011100001000000000000 
+	Parameter CH6_BASE_ADDR2 bound to: 29'b00000000111000010000000000000 
+	Parameter PIXEL_H bound to: 8'b01001110 
+	Parameter RD_BURST_LEN bound to: 8'b01010000 
+	Parameter WR_BURST_LEN bound to: 8'b01010000 
+	Parameter M_S_MSG_FIFO0 bound to: 3'b000 
+	Parameter M_S_MSG_FIFO1 bound to: 3'b001 
+	Parameter M_S_MSG_FIFO2 bound to: 3'b010 
+	Parameter M_S_RST_FIFO0 bound to: 3'b011 
+	Parameter M_S_IDLE bound to: 3'b100 
+	Parameter M_S_RD bound to: 3'b101 
+	Parameter M_S_WR bound to: 3'b110 
+	Parameter CMD_WRITE bound to: 3'b000 
+	Parameter CMD_READ bound to: 3'b001 
+INFO: [Synth 8-638] synthesizing module 'MSG_FIFO' [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/realtime/MSG_FIFO_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'MSG_FIFO' (13#1) [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/realtime/MSG_FIFO_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'CH0_FIFO' [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/realtime/CH0_FIFO_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'CH0_FIFO' (14#1) [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/realtime/CH0_FIFO_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'CH6_FIFO' [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/realtime/CH6_FIFO_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'CH6_FIFO' (15#1) [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/realtime/CH6_FIFO_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'MIG_BURST_IMAGE' (16#1) [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:26]
+INFO: [Synth 8-256] done synthesizing module 'OV5640_TOP' (17#1) [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/OV5640_TOP.v:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 499.551 ; gain = 143.488
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 499.551 ; gain = 143.488
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z035ffg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp8/CH0_FIFO_in_context.xdc] for cell 'MIG_BURST_IMAGEP_inst/CH0_FIFO_INST'
+Finished Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp8/CH0_FIFO_in_context.xdc] for cell 'MIG_BURST_IMAGEP_inst/CH0_FIFO_INST'
+Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp9/MSG_FIFO_in_context.xdc] for cell 'MIG_BURST_IMAGEP_inst/MSG_FIFO_INST'
+Finished Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp9/MSG_FIFO_in_context.xdc] for cell 'MIG_BURST_IMAGEP_inst/MSG_FIFO_INST'
+Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp10/ila_2_in_context.xdc] for cell 'sensor_decode_inst/sensor_sg'
+Finished Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp10/ila_2_in_context.xdc] for cell 'sensor_decode_inst/sensor_sg'
+Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp11/clk_wiz_sys_in_context.xdc] for cell 'CLK_WIZ_DDR'
+Finished Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp11/clk_wiz_sys_in_context.xdc] for cell 'CLK_WIZ_DDR'
+Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp12/clk_wiz_hdmi_in_context.xdc] for cell 'clk_wiz_hdmi_inst'
+Finished Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp12/clk_wiz_hdmi_in_context.xdc] for cell 'clk_wiz_hdmi_inst'
+Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp13/CH6_FIFO_in_context.xdc] for cell 'MIG_BURST_IMAGEP_inst/CH6_FIFO_INST'
+Finished Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp13/CH6_FIFO_in_context.xdc] for cell 'MIG_BURST_IMAGEP_inst/CH6_FIFO_INST'
+Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc] for cell 'u_mig_7series_0'
+Finished Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc] for cell 'u_mig_7series_0'
+Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp15/HDMI_FPGA_ML_A7_0_in_context.xdc] for cell 'u_HDMI1'
+Finished Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp15/HDMI_FPGA_ML_A7_0_in_context.xdc] for cell 'u_HDMI1'
+Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.srcs/constrs_1/new/MIA701_PIN.xdc]
+WARNING: [Vivado 12-507] No nets matched 'cmos_pclk_i_IBUF'. [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.srcs/constrs_1/new/MIA701_PIN.xdc:15]
+WARNING: [Vivado 12-507] No nets matched 'CLK_WIZ_DDR/inst/clk_in1_clk_wiz_sys'. [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.srcs/constrs_1/new/MIA701_PIN.xdc:52]
+Finished Parsing XDC File [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.srcs/constrs_1/new/MIA701_PIN.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.srcs/constrs_1/new/MIA701_PIN.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/OV5640_TOP_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.srcs/constrs_1/new/MIA701_PIN.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/OV5640_TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/OV5640_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 944.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 944.168 ; gain = 588.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z035ffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 944.168 ; gain = 588.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk50m_i. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp11/clk_wiz_sys_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk50m_i. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp11/clk_wiz_sys_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_n[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_n[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_p[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_p[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cke[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cke[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cs_n[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cs_n[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[2]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[2]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[3]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[3]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[16]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[16]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[17]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[17]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[18]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[18]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[19]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[19]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[20]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[20]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[21]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[21]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[22]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[22]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[23]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[23]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[24]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[24]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[25]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[25]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[26]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[26]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[27]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[27]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[28]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[28]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[29]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 98).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[29]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 99).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 100).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 101).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[30]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 102).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[30]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 103).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[31]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 104).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[31]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 105).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 106).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 107).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 108).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 109).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 110).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 111).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 112).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 113).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 114).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 115).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 116).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 117).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 118).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 119).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 120).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 121).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 122).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 123).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[2]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 124).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[2]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 125).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[3]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 126).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[3]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 127).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 128).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 129).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 130).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 131).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[2]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 132).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[2]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 133).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[3]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 134).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[3]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 135).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_odt[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 136).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_odt[0]. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 137).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 138).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 139).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 140).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 141).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 142).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp14/mig_7series_0_in_context.xdc, line 143).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI1_CLK_N. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp15/HDMI_FPGA_ML_A7_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI1_CLK_N. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp15/HDMI_FPGA_ML_A7_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI1_CLK_P. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp15/HDMI_FPGA_ML_A7_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI1_CLK_P. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp15/HDMI_FPGA_ML_A7_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI1_D0_N. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp15/HDMI_FPGA_ML_A7_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI1_D0_N. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp15/HDMI_FPGA_ML_A7_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI1_D0_P. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp15/HDMI_FPGA_ML_A7_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI1_D0_P. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp15/HDMI_FPGA_ML_A7_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI1_D1_N. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp15/HDMI_FPGA_ML_A7_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI1_D1_N. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp15/HDMI_FPGA_ML_A7_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI1_D1_P. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp15/HDMI_FPGA_ML_A7_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI1_D1_P. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp15/HDMI_FPGA_ML_A7_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI1_D2_N. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp15/HDMI_FPGA_ML_A7_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI1_D2_N. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp15/HDMI_FPGA_ML_A7_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI1_D2_P. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp15/HDMI_FPGA_ML_A7_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI1_D2_P. (constraint file  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/.Xil/Vivado-61352-LAPTOP-8E6RLG3I/dcp15/HDMI_FPGA_ML_A7_0_in_context.xdc, line 16).
+Applied set_property DONT_TOUCH = true for CLK_WIZ_DDR. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MIG_BURST_IMAGEP_inst/CH0_FIFO_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MIG_BURST_IMAGEP_inst/CH6_FIFO_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MIG_BURST_IMAGEP_inst/MSG_FIFO_INST. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_wiz_hdmi_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for sensor_decode_inst/sensor_sg. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_HDMI1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_mig_7series_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 944.168 ; gain = 588.105
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/count_reset.v:37]
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'i2c_timing_ctrl'
+INFO: [Synth 8-5546] ROM "delay_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_transfer_en0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_capture_en0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "i2c_sdat_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "i2c_stream_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "i2c_wdata" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "i2c_ack2a" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_ack3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_ack2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_ack1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_ack" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_transfer_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element delay_cnt_reg was removed.  [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/i2c_timing_ctrl.v:39]
+WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/i2c_timing_ctrl.v:68]
+WARNING: [Synth 8-6014] Unused sequential element i2c_config_index_reg was removed.  [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/i2c_timing_ctrl.v:131]
+INFO: [Synth 8-5546] ROM "vcounter" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element hcounter_reg was removed.  [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/new/vga_lcd_driver.v:104]
+WARNING: [Synth 8-6014] Unused sequential element vcounter_reg was removed.  [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/new/vga_lcd_driver.v:112]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/MIG_BURST_IMAGE.v:454]
+INFO: [Synth 8-5546] ROM "app_cmd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MSG_FIFO_RDEN" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CH0_FIFO_RST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CH0_Frame_buf" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                I2C_IDLE |                      00000000001 |                            00000
+            I2C_WR_START |                      00000000010 |                            00001
+           I2C_WR_IDADDR |                      00000000100 |                            00010
+             I2C_WR_ACK1 |                      00000001000 |                            00011
+          I2C_WR_REGADDR |                      00000010000 |                            00100
+             I2C_WR_ACK2 |                      00000100000 |                            00101
+         I2C_WR_REGADDR2 |                      00001000000 |                            00110
+            I2C_WR_ACK2A |                      00010000000 |                            00111
+          I2C_WR_REGDATA |                      00100000000 |                            01000
+             I2C_WR_ACK3 |                      01000000000 |                            01001
+             I2C_WR_STOP |                      10000000000 |                            01010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'i2c_timing_ctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 944.168 ; gain = 588.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 3     
+	   2 Input     20 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
+	   4 Input     16 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               28 Bit    Registers := 2     
+	               20 Bit    Registers := 4     
+	               16 Bit    Registers := 14    
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 10    
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 26    
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 2     
+	   8 Input     28 Bit        Muxes := 2     
+	   4 Input     21 Bit        Muxes := 2     
+	   2 Input     21 Bit        Muxes := 1     
+	   5 Input     20 Bit        Muxes := 4     
+	   2 Input     20 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	  23 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   8 Input      8 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 2     
+	  11 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 10    
+	  12 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 9     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 44    
+	   7 Input      1 Bit        Muxes := 10    
+	  12 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module count_resetn 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module i2c_timing_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	  23 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	  11 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	  12 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 21    
+	   7 Input      1 Bit        Muxes := 10    
+	  12 Input      1 Bit        Muxes := 4     
+Module sensor_decode 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+Module vga_lcd_driver 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module Image_RGB888_YCbCr444 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   4 Input     16 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 12    
+	                8 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+Module MIG_BURST_IMAGE 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 3     
+	   2 Input     20 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               28 Bit    Registers := 2     
+	               20 Bit    Registers := 4     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 2     
+	   8 Input     28 Bit        Muxes := 2     
+	   4 Input     21 Bit        Muxes := 2     
+	   2 Input     21 Bit        Muxes := 1     
+	   5 Input     20 Bit        Muxes := 4     
+	   2 Input     20 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 3     
+	   8 Input      8 Bit        Muxes := 2     
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 14    
+	   8 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1000 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/count_reset.v:37]
+INFO: [Synth 8-5546] ROM "delay_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_transfer_en0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_capture_en0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element delay_cnt_reg was removed.  [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/i2c_timing_ctrl.v:39]
+WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/i2c_timing_ctrl.v:68]
+WARNING: [Synth 8-6014] Unused sequential element i2c_config_index_reg was removed.  [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/user/i2c_timing_ctrl.v:131]
+INFO: [Synth 8-5546] ROM "vcounter" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element hcounter_reg was removed.  [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/new/vga_lcd_driver.v:104]
+WARNING: [Synth 8-6014] Unused sequential element vcounter_reg was removed.  [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.srcs/sources_1/new/vga_lcd_driver.v:112]
+INFO: [Synth 8-5546] ROM "app_cmd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[11]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[12]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[12]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[9]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[10]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[10]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[6]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[6]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[7]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[7]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[8]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[8]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[18]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[18]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[17]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[17]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[19]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[19]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[13]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[13]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[14]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[14]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[15]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MIG_BURST_IMAGEP_inst/CH6_CNT_FS_reg[16] )
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[11]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[12]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[12]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[9]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[9]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[10]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[10]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[6]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[6]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[7]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[7]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[8]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[8]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[18]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[18]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[17]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[17]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[19]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[19]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[13]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[13]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[14]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[14]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[15]' (FDR) to 'MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MIG_BURST_IMAGEP_inst/CH0_CNT_FS_reg[16] )
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r2_reg[7]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r2_reg[12]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r2_reg[15]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r2_reg[14]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r2_reg[13]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r1_reg[15]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r1_reg[6]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r1_reg[5]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r1_reg[4]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r1_reg[3]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r1_reg[2]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r1_reg[1]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r1_reg[0]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r1_reg[15]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r1_reg[14]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r0_reg[0]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r1_reg[15]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r2_reg[15]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r2_reg[0]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r2_reg[1]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r2_reg[2]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r2_reg[3]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r2_reg[4]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r2_reg[5]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r2_reg[6]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r2_reg[15]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r1_reg[7]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r1_reg[12]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r0_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r0_reg[13]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r0_reg[14]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r0_reg[15]' (FDC) to 'u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r0_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r0_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MIG_BURST_IMAGEP_inst/MSG_FIFO_WRDATA_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MIG_BURST_IMAGEP_inst/MSG_FIFO_WRDATA_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MIG_BURST_IMAGEP_inst/MSG_FIFO_WRDATA_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MIG_BURST_IMAGEP_inst/MSG_FIFO_WRDATA_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MIG_BURST_IMAGEP_inst/MSG_FIFO_WRDATA_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MIG_BURST_IMAGEP_inst/MSG_FIFO_WRDATA_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MIG_BURST_IMAGEP_inst/M_S_reg[3] )
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/M_S_reg[4]' (FDR) to 'MIG_BURST_IMAGEP_inst/M_S_reg[5]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/M_S_reg[5]' (FDR) to 'MIG_BURST_IMAGEP_inst/M_S_reg[6]'
+INFO: [Synth 8-3886] merging instance 'MIG_BURST_IMAGEP_inst/M_S_reg[6]' (FDR) to 'MIG_BURST_IMAGEP_inst/M_S_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MIG_BURST_IMAGEP_inst/M_S_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Y_r0_reg[7]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Y_r0_reg[6]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Y_r0_reg[5]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Y_r0_reg[4]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Y_r0_reg[3]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Y_r0_reg[2]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Y_r0_reg[1]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Y_r0_reg[0]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r1_reg[13]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r1_reg[12]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r1_reg[11]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r1_reg[10]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r1_reg[9]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r1_reg[8]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r1_reg[7]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r1_reg[6]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r1_reg[5]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r1_reg[4]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r1_reg[3]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r1_reg[2]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r1_reg[1]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r1_reg[0]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r1_reg[14]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r1_reg[13]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r1_reg[12]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r1_reg[11]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r1_reg[10]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r1_reg[9]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r1_reg[8]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r1_reg[7]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r1_reg[6]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r1_reg[5]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r1_reg[4]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r1_reg[3]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r1_reg[2]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r1_reg[1]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r1_reg[0]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r1_reg[14]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r1_reg[13]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r1_reg[11]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r1_reg[10]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r1_reg[9]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r1_reg[8]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r0_reg[15]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r0_reg[14]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r0_reg[13]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r0_reg[12]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r0_reg[11]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r0_reg[10]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r0_reg[9]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r0_reg[8]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r0_reg[7]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r0_reg[6]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r0_reg[5]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r0_reg[4]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r0_reg[3]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r0_reg[2]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r0_reg[1]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r0_reg[0]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r1_reg[7]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r1_reg[6]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r1_reg[5]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r1_reg[4]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r1_reg[3]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r1_reg[2]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r1_reg[1]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_Cb_r1_reg[0]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r2_reg[14]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r2_reg[13]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r2_reg[12]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r2_reg[11]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r2_reg[10]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r2_reg[9]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r2_reg[8]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r2_reg[7]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r2_reg[6]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r2_reg[5]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r2_reg[4]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r2_reg[3]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r2_reg[2]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r2_reg[1]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_green_r2_reg[0]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r2_reg[12]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r2_reg[11]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r2_reg[10]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r2_reg[9]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r2_reg[8]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r2_reg[7]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r2_reg[6]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r2_reg[5]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r2_reg[4]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r2_reg[3]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r2_reg[2]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r2_reg[1]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_blue_r2_reg[0]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r2_reg[14]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r2_reg[13]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r2_reg[11]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r2_reg[10]) is unused and will be removed from module OV5640_TOP.
+WARNING: [Synth 8-3332] Sequential element (u_Video_Image_Processor/u_VIP_RGB888_YCbCr444/img_red_r2_reg[9]) is unused and will be removed from module OV5640_TOP.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 944.168 ; gain = 588.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------------------+------------+---------------+----------------+
+|Module Name              | RTL Object | Depth x Width | Implemented As | 
++-------------------------+------------+---------------+----------------+
+|I2C_OV5640_RGB565_Config | LUT_DATA   | 1024x23       | LUT            | 
+|I2C_OV5640_RGB565_Config | LUT_DATA   | 1024x23       | LUT            | 
++-------------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'CLK_WIZ_DDR/clk_out1' to pin 'CLK_WIZ_DDR/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'CLK_WIZ_DDR/clk_out2' to pin 'CLK_WIZ_DDR/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'CLK_WIZ_DDR/clk_out3' to pin 'CLK_WIZ_DDR/bbstub_clk_out3/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_hdmi_inst/clk_in1' to pin 'CLK_WIZ_DDR/bbstub_clk_out3/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_hdmi_inst/clk_out1' to pin 'clk_wiz_hdmi_inst/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'clk_wiz_hdmi_inst/clk_in1' to 'CLK_WIZ_DDR/bbstub_clk_out3/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_hdmi_inst/clk_out2' to pin 'clk_wiz_hdmi_inst/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'clk_wiz_hdmi_inst/clk_in1' to 'CLK_WIZ_DDR/bbstub_clk_out3/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_mig_7series_0/ui_clk' to pin 'u_mig_7series_0/bbstub_ui_clk/O'
+INFO: [Synth 8-5819] Moved 7 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 944.168 ; gain = 588.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 953.004 ; gain = 596.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 963.094 ; gain = 607.031
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 963.094 ; gain = 607.031
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 963.094 ; gain = 607.031
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 963.094 ; gain = 607.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 963.094 ; gain = 607.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 963.094 ; gain = 607.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 963.094 ; gain = 607.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name   | RTL Name                             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|sensor_decode | rst_n_reg_reg[4]                     | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|OV5640_TOP    | u_i2c_timing_ctrl/RESETn_reg[4]      | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|OV5640_TOP    | MIG_BURST_IMAGEP_inst/rst_tem_reg[4] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++--------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------+----------+
+|      |BlackBox name     |Instances |
++------+------------------+----------+
+|1     |ila_2             |         1|
+|2     |clk_wiz_sys       |         1|
+|3     |clk_wiz_hdmi      |         1|
+|4     |mig_7series_0     |         1|
+|5     |HDMI_FPGA_ML_A7_0 |         1|
+|6     |MSG_FIFO          |         1|
+|7     |CH0_FIFO          |         1|
+|8     |CH6_FIFO          |         1|
++------+------------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |CH0_FIFO          |     1|
+|2     |CH6_FIFO          |     1|
+|3     |HDMI_FPGA_ML_A7_0 |     1|
+|4     |MSG_FIFO          |     1|
+|5     |clk_wiz_hdmi      |     1|
+|6     |clk_wiz_sys       |     1|
+|7     |ila_2             |     1|
+|8     |mig_7series_0     |     1|
+|9     |BUFG              |     1|
+|10    |CARRY4            |    85|
+|11    |LUT1              |    24|
+|12    |LUT2              |   134|
+|13    |LUT3              |    67|
+|14    |LUT4              |    69|
+|15    |LUT5              |   101|
+|16    |LUT6              |   257|
+|17    |MUXF7             |    33|
+|18    |SRL16E            |     3|
+|19    |FDCE              |    68|
+|20    |FDRE              |   336|
+|21    |FDSE              |    33|
+|22    |IBUF              |    12|
+|23    |IOBUF             |     1|
+|24    |OBUF              |     3|
++------+------------------+------+
+
+Report Instance Areas: 
++------+-----------------------------+-------------------------+------+
+|      |Instance                     |Module                   |Cells |
++------+-----------------------------+-------------------------+------+
+|1     |top                          |                         |  1885|
+|2     |  sensor_decode_inst         |sensor_decode            |   136|
+|3     |  MIG_BURST_IMAGEP_inst      |MIG_BURST_IMAGE          |   711|
+|4     |  nolabel_line354            |count_resetn             |    34|
+|5     |  u_I2C_OV5640_RGB565_Config |I2C_OV5640_RGB565_Config |   211|
+|6     |  u_Video_Image_Processor    |Video_Image_Processor    |   201|
+|7     |    u_VIP_RGB888_YCbCr444    |Image_RGB888_YCbCr444    |   201|
+|8     |  u_i2c_timing_ctrl          |i2c_timing_ctrl          |   199|
+|9     |  vga_lcd_driver_u0          |vga_lcd_driver           |    51|
++------+-----------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 963.094 ; gain = 607.031
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 155 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 963.094 ; gain = 162.414
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 963.094 ; gain = 607.031
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 131 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+165 Infos, 139 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 966.930 ; gain = 610.867
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/OV5640_TOP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file OV5640_TOP_utilization_synth.rpt -pb OV5640_TOP_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 966.930 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  2 22:18:16 2019...

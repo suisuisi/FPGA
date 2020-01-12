@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Oct 20 01:01:04 2019
+# Process ID: 30508
+# Current directory: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30068 F:\FILE\FPGA\ZYNQ\TEST\CH04_OV5640_DEMO\mia_ip_lib\HDMI_FPGA_ML_A7\HDMI_FPGA_ML_A7.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML_A7.xpr
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir f:/file/fpga/zynq/test/ch04_ov5640_demo/mia_ip_lib/hdmi_fpga_ml_a7 -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7

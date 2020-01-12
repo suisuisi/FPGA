@@ -1,0 +1,8 @@
+xpm_cdc.sv,systemverilog,xil_defaultlib,D:/Xilinx/Vivado/2016.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_VCOMP.vhd,vhdl,xpm,D:/Xilinx/Vivado/2016.4/data/ip/xpm/xpm_VCOMP.vhd,
+TMDSEncoder.vhd,vhdl,xil_defaultlib,../../../ipstatic/src/TMDSEncoder.vhd,
+SerializerN_1.vhd,vhdl,xil_defaultlib,../../../ipstatic/src/SerializerN_1.vhd,
+DVITransmitter.vhd,vhdl,xil_defaultlib,../../../ipstatic/src/DVITransmitter.vhd,
+hdmi_tx.vhd,vhdl,xil_defaultlib,../../../ipstatic/src/hdmi_tx.vhd,
+hdmi_display_0.vhd,vhdl,xil_defaultlib,../../../ip/hdmi_display_0_1/sim/hdmi_display_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

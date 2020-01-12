@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z035ffg676-2" LaunchTime="1574689065">
+  <File Type="PWROPT-DCP" Name="ov5640_rgb565_1024x768_vga_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="ov5640_rgb565_1024x768_vga_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="ov5640_rgb565_1024x768_vga.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="ov5640_rgb565_1024x768_vga_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="ov5640_rgb565_1024x768_vga_reports.tcl"/>
+  <File Type="BG-DRC" Name="ov5640_rgb565_1024x768_vga.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="ov5640_rgb565_1024x768_vga_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="ov5640_rgb565_1024x768_vga_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="ov5640_rgb565_1024x768_vga.hwdef"/>
+  <File Type="OPT-DCP" Name="ov5640_rgb565_1024x768_vga_opt.dcp"/>
+  <File Type="OPT-DRC" Name="ov5640_rgb565_1024x768_vga_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="ov5640_rgb565_1024x768_vga_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="ov5640_rgb565_1024x768_vga_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="ov5640_rgb565_1024x768_vga_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="ov5640_rgb565_1024x768_vga_placed.dcp"/>
+  <File Type="PLACE-IO" Name="ov5640_rgb565_1024x768_vga_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="ov5640_rgb565_1024x768_vga_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="ov5640_rgb565_1024x768_vga_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ov5640_rgb565_1024x768_vga_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="ov5640_rgb565_1024x768_vga_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="ov5640_rgb565_1024x768_vga_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ov5640_rgb565_1024x768_vga_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="ov5640_rgb565_1024x768_vga_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ov5640_rgb565_1024x768_vga_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="ov5640_rgb565_1024x768_vga_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="ov5640_rgb565_1024x768_vga_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="ov5640_rgb565_1024x768_vga_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="ov5640_rgb565_1024x768_vga.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="ov5640_rgb565_1024x768_vga_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ov5640_rgb565_1024x768_vga_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="ov5640_rgb565_1024x768_vga_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ov5640_rgb565_1024x768_vga_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="ov5640_rgb565_1024x768_vga_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="ov5640_rgb565_1024x768_vga_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="ov5640_rgb565_1024x768_vga.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="ov5640_rgb565_1024x768_vga_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="ov5640_rgb565_1024x768_vga.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ov5640_rgb565_1024x768_vga_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="ov5640_rgb565_1024x768_vga.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ov5640_rgb565_1024x768_vga_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="ov5640_rgb565_1024x768_vga.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ov5640_rgb565_1024x768_vga_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="ov5640_rgb565_1024x768_vga_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="ov5640_rgb565_1024x768_vga_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="ov5640_rgb565_1024x768_vga_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ov5640_rgb565_1024x768_vga_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="ov5640_rgb565_1024x768_vga_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ov5640_rgb565_1024x768_vga_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="ov5640_rgb565_1024x768_vga_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="ov5640_rgb565_1024x768_vga.vdi"/>
+  <File Type="ROUTE-CLK" Name="ov5640_rgb565_1024x768_vga_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ov5640_rgb565_1024x768_vga_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ov5640_rgb565_1024x768_vga_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ov5640_rgb565_1024x768_vga_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ov5640_rgb565_1024x768_vga_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ov5640_rgb565_1024x768_vga_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="ov5640_rgb565_1024x768_vga.nky"/>
+  <File Type="BITSTR-BMM" Name="ov5640_rgb565_1024x768_vga_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="ov5640_rgb565_1024x768_vga.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="ov5640_rgb565_1024x768_vga.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="ov5640_rgb565_1024x768_vga.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/cmos_capture_data.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="H:/BaiduNetdiskDownload/1_Verilog/1_Verilog/31_ov5640_rgb565_1024x768_vga/rtl/cmos_capture_data.v"/>
+        <Attr Name="ImportTime" Val="1547168208"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/i2c_dri.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="H:/BaiduNetdiskDownload/1_Verilog/1_Verilog/31_ov5640_rgb565_1024x768_vga/rtl/i2c_dri.v"/>
+        <Attr Name="ImportTime" Val="1531791642"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/i2c_ov5640_rgb565_cfg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="H:/BaiduNetdiskDownload/1_Verilog/1_Verilog/31_ov5640_rgb565_1024x768_vga/rtl/i2c_ov5640_rgb565_cfg.v"/>
+        <Attr Name="ImportTime" Val="1547169207"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/vga_driver.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="H:/BaiduNetdiskDownload/1_Verilog/1_Verilog/31_ov5640_rgb565_1024x768_vga/rtl/vga_driver.v"/>
+        <Attr Name="ImportTime" Val="1529911227"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ov5640_rgb565_1024x768_vga.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="H:/BaiduNetdiskDownload/1_Verilog/1_Verilog/31_ov5640_rgb565_1024x768_vga/rtl/ov5640_rgb565_1024x768_vga.v"/>
+        <Attr Name="ImportTime" Val="1547168226"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ov5640_rgb565_1024x768_vga"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/NexyVideo/Nexys-Video-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../研究生/各个开发板资料/NexyVideo/Nexys-Video-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1528310786"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/NexyVideo/Nexys-Video-Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="rgb2dvi_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_1"/>
+</GenRun>

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jan  6 21:20:04 2020
+# Process ID: 39968
+# Current directory: F:/FILE/FPGA/ZYNQ/FPGA/ZYNQ/Image/000_FPGA_HDMI/hdmi_display_demon_720P/hdmi_display_demon_720P/hdmi_display_demon
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent54500 F:\FILE\FPGA\ZYNQ\FPGA\ZYNQ\Image\000_FPGA_HDMI\hdmi_display_demon_720P\hdmi_display_demon_720P\hdmi_display_demon\hdmi_display_demon.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/FPGA/ZYNQ/Image/000_FPGA_HDMI/hdmi_display_demon_720P/hdmi_display_demon_720P/hdmi_display_demon/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/FPGA/ZYNQ/Image/000_FPGA_HDMI/hdmi_display_demon_720P/hdmi_display_demon_720P/hdmi_display_demon\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/FPGA/ZYNQ/Image/000_FPGA_HDMI/hdmi_display_demon_720P/hdmi_display_demon_720P/hdmi_display_demon/hdmi_display_demon.xpr
+update_compile_order -fileset sources_1
+reset_project

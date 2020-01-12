@@ -1,0 +1,79 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Mon Nov 06 11:07:21 2017
+| Host         : LB-201708051431 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file HDMI_display_Demon_control_sets_placed.rpt
+| Design       : HDMI_display_Demon
+| Device       : xc7z035
+-----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    14 |
+| Unused register locations in slices containing registers |    54 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             185 |           66 |
+| No           | No                    | Yes                    |               2 |            2 |
+| No           | Yes                   | No                     |             119 |           52 |
+| Yes          | No                    | No                     |               4 |            1 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              28 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------+-----------------------------------+----------------------------------------------------------------------------------+------------------+----------------+
+|     Clock Signal     |           Enable Signal           |                                 Set/Reset Signal                                 | Slice Load Count | Bel Load Count |
++----------------------+-----------------------------------+----------------------------------------------------------------------------------+------------------+----------------+
+|  u_clk/inst/clk_out1 |                                   | u_hdmi_display_1/U0/Inst_DVITransmitter/Inst_clk_serializer_10_1/RST_I           |                1 |              1 |
+|  u_clk/inst/clk_out1 |                                   | u_hdmi_display_0/U0/Inst_DVITransmitter/Inst_clk_serializer_10_1/RST_I           |                1 |              1 |
+|  u_clk/inst/clk_out1 | u_hdmi_data_gen/dis_mode          |                                                                                  |                1 |              4 |
+|  u_clk/inst/clk_out1 |                                   | u_hdmi_data_gen/VGA_G_reg[7]_i_1_n_0                                             |                4 |              8 |
+|  u_clk/inst/clk_out1 |                                   | u_hdmi_data_gen/VGA_R_reg[7]_i_1_n_0                                             |                3 |              8 |
+|  u_clk/inst/clk_out1 |                                   | u_hdmi_data_gen/VGA_B_reg[7]_i_1_n_0                                             |                4 |              8 |
+|  u_clk/inst/clk_out1 |                                   | u_hdmi_display_1/U0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/q_out_d[9]_i_1_n_0 |                3 |             10 |
+|  u_clk/inst/clk_out1 |                                   | u_hdmi_display_0/U0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/q_out_d[9]_i_1_n_0 |                3 |             10 |
+|  u_clk/inst/clk_out1 |                                   | u_hdmi_data_gen/x_cnt[11]_i_1_n_0                                                |                3 |             11 |
+|  u_clk/inst/clk_out1 | u_hdmi_data_gen/y_cnt[11]_i_2_n_0 | u_hdmi_data_gen/y_cnt[11]_i_1_n_0                                                |                3 |             11 |
+|  u_clk/inst/clk_out1 | u_hdmi_data_gen/sel               | u_hdmi_data_gen/clear                                                            |                5 |             17 |
+|  u_clk/inst/clk_out1 |                                   | u_hdmi_display_1/U0/Inst_DVITransmitter/Inst_TMDSEncoder_red/SR[0]               |               16 |             32 |
+|  u_clk/inst/clk_out1 |                                   | u_hdmi_display_0/U0/Inst_DVITransmitter/Inst_TMDSEncoder_red/SR[0]               |               16 |             32 |
+|  u_clk/inst/clk_out1 |                                   |                                                                                  |               66 |            185 |
++----------------------+-----------------------------------+----------------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     2 |
+| 4      |                     1 |
+| 8      |                     3 |
+| 10     |                     2 |
+| 11     |                     2 |
+| 16+    |                     4 |
++--------+-----------------------+
+
+

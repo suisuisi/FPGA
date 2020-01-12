@@ -1,0 +1,140 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Mon Nov 06 11:08:36 2017
+| Host         : LB-201708051431 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file HDMI_display_Demon_methodology_drc_routed.rpt -rpx HDMI_display_Demon_methodology_drc_routed.rpx
+| Design       : HDMI_display_Demon
+| Device       : xc7z035ffg676-2
+| Speed File   : -2
+| Design State : Routed
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 21
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| TIMING-18 | Warning  | Missing input or output delay | 21         |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on KEY relative to clock(s) VIRTUAL_clk_out1_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on HDMI1_CLK_N relative to clock(s) VIRTUAL_clk_out2_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on HDMI1_CLK_P relative to clock(s) VIRTUAL_clk_out2_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on HDMI1_D0_N relative to clock(s) VIRTUAL_clk_out2_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on HDMI1_D0_P relative to clock(s) VIRTUAL_clk_out2_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on HDMI1_D1_N relative to clock(s) VIRTUAL_clk_out2_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on HDMI1_D1_P relative to clock(s) VIRTUAL_clk_out2_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on HDMI1_D2_N relative to clock(s) VIRTUAL_clk_out2_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on HDMI1_D2_P relative to clock(s) VIRTUAL_clk_out2_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on HDMI2_CLK_N relative to clock(s) VIRTUAL_clk_out2_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on HDMI2_CLK_P relative to clock(s) VIRTUAL_clk_out2_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on HDMI2_D0_N relative to clock(s) VIRTUAL_clk_out2_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on HDMI2_D0_P relative to clock(s) VIRTUAL_clk_out2_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on HDMI2_D1_N relative to clock(s) VIRTUAL_clk_out2_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on HDMI2_D1_P relative to clock(s) VIRTUAL_clk_out2_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on HDMI2_D2_N relative to clock(s) VIRTUAL_clk_out2_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on HDMI2_D2_P relative to clock(s) VIRTUAL_clk_out2_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on LED[0] relative to clock(s) VIRTUAL_clk_out1_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on LED[1] relative to clock(s) VIRTUAL_clk_out1_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on LED[2] relative to clock(s) VIRTUAL_clk_out1_clk_wiz_0 
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on LED[3] relative to clock(s) VIRTUAL_clk_out1_clk_wiz_0 
+Related violations: <none>
+
+

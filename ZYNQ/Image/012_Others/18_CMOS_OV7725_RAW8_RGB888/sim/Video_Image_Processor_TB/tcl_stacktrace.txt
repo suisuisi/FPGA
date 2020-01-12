@@ -1,0 +1,28 @@
+Sun May 04 12:17:54 ?????? 2014
+Trace back: invalid command name "::.main_pane.source.interior.cs.body.editor"
+    while executing
+"::.main_pane.source.interior.cs.body.editor source_dragdrop_getsel"
+    (in namespace inscope "::vsimwidgets::Srcedit" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcedit {::.main_pane.source.interior.cs.body.editor source_dragdrop_getsel}"
+    ("eval" body line 1)
+    invoked from within
+"eval $args"
+    (procedure "DND_GetData" line 4)
+    invoked from within
+"DND_GetData namespace inscope ::vsimwidgets::Srcedit {::.main_pane.source.interior.cs.body.editor source_dragdrop_getsel}"
+    ("eval" body line 1)
+    invoked from within
+"eval $vsimPriv(DragDrop_GetHandler,$vsimPriv(DragDrop_fromwindow))"
+    (procedure "DND_Drag" line 16)
+    invoked from within
+"DND_Drag .main_pane.objects.interior.cs.body.tree.lwchildsite.clipper.canvas.sfchildsite.list 29 14"
+  <2: ::tkerror {invalid command name "::.main_pane.source.interior.cs.body.editor"}
+  <1: ::bgerror {invalid command name "::.main_pane.source.interior.cs.body.editor"}
+Tue May 06 10:36:36 ?????? 2014
+Trace back: wrong # args: should be "mti_popupinternal menu w"
+    while executing
+"mti_popupinternal .dockbar.tbf0.standard.tb.button_0.menu "
+    ("after" script)
+  <2: ::tkerror {wrong # args: should be "mti_popupinternal menu w"}
+  <1: ::bgerror {wrong # args: should be "mti_popupinternal menu w"}

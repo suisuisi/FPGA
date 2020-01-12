@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Nov 28 22:51:12 2017
+# Process ID: 13212
+# Current directory: F:/BaiduNetdiskDownload/S07_CH09/mig_7series_0_ex.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source F:/BaiduNetdiskDownload/S07_CH09/mig_7series_0_ex.sim/sim_1/behav/xsim.dir/sim_tb_top_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: F:/BaiduNetdiskDownload/S07_CH09/mig_7series_0_ex.sim/sim_1/behav/webtalk.log
+# Journal file: F:/BaiduNetdiskDownload/S07_CH09/mig_7series_0_ex.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source F:/BaiduNetdiskDownload/S07_CH09/mig_7series_0_ex.sim/sim_1/behav/xsim.dir/sim_tb_top_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 49.250 ; gain = 0.016
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 28 22:51:19 2017...

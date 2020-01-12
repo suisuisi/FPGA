@@ -1,0 +1,8 @@
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source g:/miz701_hdmi/hdmi_ip/hdmi_fpga_ml/hdmi_fpga_ml/tmp_edit_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 26 10:38:55 2016...

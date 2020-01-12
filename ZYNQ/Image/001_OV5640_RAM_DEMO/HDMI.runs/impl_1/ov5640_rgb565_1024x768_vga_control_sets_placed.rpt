@@ -1,0 +1,84 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Nov 25 21:41:14 2019
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ov5640_rgb565_1024x768_vga_control_sets_placed.rpt
+| Design       : ov5640_rgb565_1024x768_vga
+| Device       : xc7z035
+-------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    18 |
+| Unused register locations in slices containing registers |    64 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             104 |           51 |
+| No           | No                    | Yes                    |              98 |           62 |
+| No           | Yes                   | No                     |              42 |           19 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             124 |           40 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+-----------------------------------+-----------------------------------------------------------------------------+------------------+----------------+
+|       Clock Signal       |           Enable Signal           |                               Set/Reset Signal                              | Slice Load Count | Bel Load Count |
++--------------------------+-----------------------------------+-----------------------------------------------------------------------------+------------------+----------------+
+|  clk_BUFG                | u_i2c_dri/scl_i_1_n_0             | u_i2c_cfg/i2c_data_reg[0]_0                                                 |                1 |              1 |
+|  u_pll_clk/inst/clk_out1 |                                   | rst_n                                                                       |                1 |              2 |
+|  u_pll_clk/inst/clk_out1 |                                   | myrgb/U0/ClockGenInternal.ClockGenX/in0                                     |                1 |              2 |
+|  cam_pclk_IBUF_BUFG      | u_cmos_capture_data/cmos_ps_cnt0  | u_i2c_cfg/byte_flag_d0_reg                                                  |                1 |              4 |
+|  u_pll_clk/inst/clk_out1 |                                   | myrgb/U0/ClockGenInternal.ClockGenX/LockLostReset/SyncAsyncx/oSyncStages[1] |                1 |              4 |
+|  u_pll_clk/inst/clk_out1 |                                   | myrgb/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0              |                4 |             10 |
+|  u_pll_clk/inst/clk_out1 | vga/cnt_v                         | u_i2c_cfg/i2c_data_reg[0]_0                                                 |                4 |             10 |
+|  cam_pclk_IBUF_BUFG      |                                   | u_i2c_cfg/byte_flag_d0_reg                                                  |                7 |             13 |
+|  clk_BUFG                | u_i2c_cfg/sel                     | u_i2c_cfg/i2c_data_reg[0]_0                                                 |                4 |             15 |
+|  cam_pclk_IBUF_BUFG      | u_cmos_capture_data/cmos_data_t_0 | u_i2c_cfg/byte_flag_d0_reg                                                  |                9 |             16 |
+|  clk_BUFG                | u_i2c_cfg/i2c_exec                | u_i2c_cfg/i2c_data_reg[0]_0                                                 |                3 |             16 |
+|  cam_pclk_IBUF_BUFG      | u_cmos_capture_data/E[0]          | u_i2c_cfg/i2c_data_reg[0]_0                                                 |                5 |             20 |
+|  u_pll_clk/inst/clk_out1 | vga/E[0]                          | u_i2c_cfg/i2c_data_reg[0]_0                                                 |                6 |             20 |
+|  clk_BUFG                | u_i2c_dri/addr_t                  | u_i2c_cfg/i2c_data_reg[0]_0                                                 |                7 |             22 |
+|  u_pll_clk/inst/clk_out1 |                                   | myrgb/U0/DataEncoders[0].DataEncoder/SR[0]                                  |               15 |             32 |
+|  u_pll_clk/inst/clk_out1 |                                   | u_i2c_cfg/i2c_data_reg[0]_0                                                 |               21 |             36 |
+|  clk_BUFG                |                                   | u_i2c_cfg/i2c_data_reg[0]_0                                                 |               31 |             41 |
+|  u_pll_clk/inst/clk_out1 |                                   |                                                                             |               51 |            104 |
++--------------------------+-----------------------------------+-----------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 2      |                     2 |
+| 4      |                     2 |
+| 10     |                     2 |
+| 13     |                     1 |
+| 15     |                     1 |
+| 16+    |                     9 |
++--------+-----------------------+
+
+

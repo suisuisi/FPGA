@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Dec 15 15:58:25 2019
+# Process ID: 18076
+# Current directory: F:/FILE/FPGA/ZYNQ/Image/004_OV5640_DDR3_RGB888_YCbCr444/OV5640_DEMO/MIG_OV_PRG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19344 F:\FILE\FPGA\ZYNQ\Image\004_OV5640_DDR3_RGB888_YCbCr444\OV5640_DEMO\MIG_OV_PRG\MIG_OV_PRG.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/Image/004_OV5640_DDR3_RGB888_YCbCr444/OV5640_DEMO/MIG_OV_PRG/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/Image/004_OV5640_DDR3_RGB888_YCbCr444/OV5640_DEMO/MIG_OV_PRG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/Image/004_OV5640_DDR3_RGB888_YCbCr444/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.xpr
+INFO: [Project 1-313] Project file moved from 'F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/OV5640_DEMO/MIG_OV_PRG' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'F:/FILE/FPGA/ZYNQ/Image/004_OV5640_DDR3_RGB888_YCbCr444/mia_ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML', nor could it be found using path 'F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'F:/FILE/FPGA/ZYNQ/Image/004_OV5640_DDR3_RGB888_YCbCr444/mia_ip_lib/HDMI_FPGA_ML_A7', nor could it be found using path 'F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'f:/FILE/FPGA/ZYNQ/Image/004_OV5640_DDR3_RGB888_YCbCr444/mia_ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/FILE/FPGA/ZYNQ/Image/004_OV5640_DDR3_RGB888_YCbCr444/mia_ip_lib/HDMI_FPGA_ML_A7'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2017.4/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'HDMI_FPGA_ML_A7_0' is locked:
+* IP definition 'HDMI_FPGA_ML_A7 (1.0)' for IP 'HDMI_FPGA_ML_A7_0' (customized with software release 2017.4) was not found in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:01:36 . Memory (MB): peak = 876.625 ; gain = 214.504
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {f:/FILE/FPGA/ZYNQ/Image/004_OV5640_DDR3_RGB888_YCbCr444/mia_ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML F:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7 f:/FILE/FPGA/ZYNQ/Image/004_OV5640_DDR3_RGB888_YCbCr444/mia_ip_lib/HDMI_FPGA_ML_A7} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'f:/FILE/FPGA/ZYNQ/Image/004_OV5640_DDR3_RGB888_YCbCr444/mia_ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/FILE/FPGA/ZYNQ/Image/004_OV5640_DDR3_RGB888_YCbCr444/mia_ip_lib/HDMI_FPGA_ML_A7'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:HDMI_FPGA_ML_A7:1.0'. The one found in IP location 'f:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7' will take precedence over the same IP in location f:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 15 21:12:16 2019...

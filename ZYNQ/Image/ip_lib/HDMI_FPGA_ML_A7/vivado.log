@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Oct 20 01:01:04 2019
+# Process ID: 30508
+# Current directory: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30068 F:\FILE\FPGA\ZYNQ\TEST\CH04_OV5640_DEMO\mia_ip_lib\HDMI_FPGA_ML_A7\HDMI_FPGA_ML_A7.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML_A7.xpr
+INFO: [Project 1-313] Project file moved from 'F:/A7_HDMI/HDMI_FPGA_ML_A7' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/a7_hdmi/hdmi_fpga_ml_a7/hdmi_fpga_ml', nor could it be found using path 'F:/a7_hdmi/hdmi_fpga_ml_a7/hdmi_fpga_ml'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'F:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7/miz701n/s01_ch12_hdmi_display_demon/miz_ip_lib/hdmi_fpga_ml_a7/hdmi_fpga_ml', nor could it be found using path 'F:/A7_HDMI/HDMI_FPGA_ML_A7/miz701n/s01_ch12_hdmi_display_demon/miz_ip_lib/hdmi_fpga_ml_a7/hdmi_fpga_ml'.
+INFO: [Project 1-230] Project 'HDMI_FPGA_ML_A7.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/a7_hdmi/hdmi_fpga_ml_a7/hdmi_fpga_ml'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7/miz701n/s01_ch12_hdmi_display_demon/miz_ip_lib/hdmi_fpga_ml_a7/hdmi_fpga_ml'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2017.4/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:HDMI_FPGA_ML_A7:1.0'. The one found in IP location 'f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7' will take precedence over the same IP in location f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir f:/file/fpga/zynq/test/ch04_ov5640_demo/mia_ip_lib/hdmi_fpga_ml_a7 -vendor xilinx.com -library user -taxonomy /UserIP -force
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'RST_N' as interface 'RST_N'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RST_N': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'HDMI_CLK_N' as interface 'HDMI_CLK_N'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'HDMI_CLK_P' as interface 'HDMI_CLK_P'.
+INFO: [IP_Flow 19-4728] Bus Interface 'HDMI_CLK_N': Added interface parameter 'ASSOCIATED_RESET' with value 'RST_N'.
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7'
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:HDMI_FPGA_ML_A7:1.0'. The one found in IP location 'f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7' will take precedence over the same IP in location f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7'
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:HDMI_FPGA_ML_A7:1.0'. The one found in IP location 'f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7' will take precedence over the same IP in location f:/FILE/FPGA/ZYNQ/TEST/CH04_OV5640_DEMO/mia_ip_lib/HDMI_FPGA_ML_A7/HDMI_FPGA_ML
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 20 01:02:33 2019...

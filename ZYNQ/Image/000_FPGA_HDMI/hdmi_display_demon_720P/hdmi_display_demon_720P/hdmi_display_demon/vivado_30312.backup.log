@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Sep 18 20:58:45 2019
+# Process ID: 30312
+# Current directory: G:/设计资料/XILINX/米联客/MIZ7035/MIZ7035/CODE_FREE/S01/S01_CH10_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24844 G:\设计资料\XILINX\米联客\MIZ7035\MIZ7035\CODE_FREE\S01\S01_CH10_hdmi_display_demon_720P\S01_CH11_hdmi_display_demon_720P\S01_CH11_hdmi_display_demon_1080P\hdmi_display_demon\hdmi_display_demon.xpr
+# Log file: G:/设计资料/XILINX/米联客/MIZ7035/MIZ7035/CODE_FREE/S01/S01_CH10_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/vivado.log
+# Journal file: G:/设计资料/XILINX/米联客/MIZ7035/MIZ7035/CODE_FREE/S01/S01_CH10_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/设计资料/XILINX/米联客/MIZ7035/MIZ7035/CODE_FREE/S01/S01_CH10_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'G:/设计资料/XILINX/米联客/MIZ7035/MIZ7035/CODE_FREE/S01/S01_CH10_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Administrator/Desktop/Test/S01_CH11_hdmi_display_demon_1080P/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/设计资料/XILINX/米联客/MIZ7035/MIZ7035/CODE_FREE/S01/S01_CH10_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/Miz_ip_lib'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [Project 1-230] Project 'hdmi_display_demon.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 854.449 ; gain = 114.117
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  g:/éè×êá/XILINX/×jí/MIZ7035/MIZ7035/CODE_FREE/S01/S01_CH10_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.x] -log ip_upgrade.log
+WARNING: [Coretcl 2-176] No IPs found
+ERROR: [Common 17-69] Command failed: No IP specified.  Please specify IP with 'objects'
+upgrade_ip [get_ips  g:/éè×êá/XILINX/×jí/MIZ7035/MIZ7035/CODE_FREE/S01/S01_CH10_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.x] -log ip_upgrade.log
+WARNING: [Coretcl 2-176] No IPs found
+ERROR: [Common 17-69] Command failed: No IP specified.  Please specify IP with 'objects'
+upgrade_ip [get_ips  g:/éè×êá/XILINX/×jí/MIZ7035/MIZ7035/CODE_FREE/S01/S01_CH10_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_720P/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.x] -log ip_upgrade.log
+WARNING: [Coretcl 2-176] No IPs found
+ERROR: [Common 17-69] Command failed: No IP specified.  Please specify IP with 'objects'
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 18 21:00:29 2019...

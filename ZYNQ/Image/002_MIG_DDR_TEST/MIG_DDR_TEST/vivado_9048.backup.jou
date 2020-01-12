@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Nov 29 20:08:40 2017
+# Process ID: 9048
+# Current directory: E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3808 E:\DS_SRC\MIZ7035\S07\S07_CH01_MIG_DDR_TEST\mig_7series_0_ex.xpr
+# Log file: E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/vivado.log
+# Journal file: E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.xpr
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/example_top.bit} [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROBES.FILE {E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z035_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROBES.FILE {E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROGRAM.FILE {E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/example_top.bit} [lindex [get_hw_devices xc7z035_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z035_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+set_property PROBES.FILE {E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROGRAM.FILE {E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/example_top.bit} [lindex [get_hw_devices xc7z035_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z035_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROBES.FILE {E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROGRAM.FILE {E:/DS_SRC/MIZ7035/S07/S07_CH01_MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/example_top.bit} [lindex [get_hw_devices xc7z035_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z035_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes error_rddata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"u_ila_0"}]]

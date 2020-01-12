@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Apr 19 16:31:02 2017
+# Process ID: 19120
+# Current directory: F:/A7_HDMI/HDMI_FPGA_ML_A7
+# Command line: wbtcv.exe -mode batch -source f:/a7_hdmi/hdmi_fpga_ml_a7/hdmi_fpga_ml/tmp_edit_project.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: F:/A7_HDMI/HDMI_FPGA_ML_A7/webtalk.log
+# Journal file: F:/A7_HDMI/HDMI_FPGA_ML_A7\webtalk.jou
+#-----------------------------------------------------------
+source f:/a7_hdmi/hdmi_fpga_ml_a7/hdmi_fpga_ml/tmp_edit_project.hw/webtalk/labtool_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 48.672 ; gain = 0.000
+INFO: [Common 17-206] Exiting Webtalk at Wed Apr 19 16:31:24 2017...

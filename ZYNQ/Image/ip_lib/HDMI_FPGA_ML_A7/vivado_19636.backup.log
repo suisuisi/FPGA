@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Apr 19 16:29:39 2017
+# Process ID: 19636
+# Current directory: F:/A7_HDMI/HDMI_FPGA_ML_A7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20348 F:\A7_HDMI\HDMI_FPGA_ML_A7\HDMI_FPGA_ML_A7.xpr
+# Log file: F:/A7_HDMI/HDMI_FPGA_ML_A7/vivado.log
+# Journal file: F:/A7_HDMI/HDMI_FPGA_ML_A7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/A7_HDMI/HDMI_FPGA_ML_A7/HDMI_FPGA_ML_A7.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'F:/A7_HDMI/HDMI_FPGA_ML_A7/miz701n/s01_ch12_hdmi_display_demon/miz_ip_lib/hdmi_fpga_ml_a7/hdmi_fpga_ml'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/A7_HDMI/HDMI_FPGA_ML_A7'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'f:/A7_HDMI/HDMI_FPGA_ML_A7/miz701n/s01_ch12_hdmi_display_demon/miz_ip_lib/hdmi_fpga_ml_a7/hdmi_fpga_ml'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2015.4/data/ip'.
+ipx::package_project -root_dir F:/A7_HDMI/HDMI_FPGA_ML_A7/HDMI_FPGA_ML -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+INFO: [IP_Flow 19-2228] Inferred bus interface "HDMI_CLK_N" of definition type "xilinx.com:signal:clock:1.0".
+INFO: [IP_Flow 19-2228] Inferred bus interface "HDMI_CLK_P" of definition type "xilinx.com:signal:clock:1.0".
+ipx::unload_core f:/A7_HDMI/HDMI_FPGA_ML_A7/HDMI_FPGA_ML/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory F:/A7_HDMI/HDMI_FPGA_ML_A7/HDMI_FPGA_ML f:/A7_HDMI/HDMI_FPGA_ML_A7/HDMI_FPGA_ML/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2015.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/A7_HDMI/HDMI_FPGA_ML_A7'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'f:/A7_HDMI/HDMI_FPGA_ML_A7/miz701n/s01_ch12_hdmi_display_demon/miz_ip_lib/hdmi_fpga_ml_a7/hdmi_fpga_ml'. The path is contained within another repository.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:HDMI_FPGA_ML_A7:1.0'. The one found in IP location 'f:/A7_HDMI/HDMI_FPGA_ML_A7' will take precedence over the same IP in location f:/A7_HDMI/HDMI_FPGA_ML_A7/HDMI_FPGA_ML
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+update_compile_order -fileset sim_1
+current_project HDMI_FPGA_ML_A7
+current_project tmp_edit_project
+ipx::remove_bus_interface HDMI_CLK_N [ipx::current_core]
+ipx::remove_bus_interface HDMI_CLK_P [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source f:/a7_hdmi/hdmi_fpga_ml_a7/hdmi_fpga_ml/tmp_edit_project.hw/webtalk/labtool_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 48.672 ; gain = 0.000
+INFO: [Common 17-206] Exiting Webtalk at Wed Apr 19 16:31:24 2017...
+close_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:23 . Memory (MB): peak = 838.852 ; gain = 0.000
+set_property  ip_repo_paths  {f:/a7_hdmi/hdmi_fpga_ml_a7/hdmi_fpga_ml f:/A7_HDMI/HDMI_FPGA_ML_A7 f:/A7_HDMI/HDMI_FPGA_ML_A7/miz701n/s01_ch12_hdmi_display_demon/miz_ip_lib/hdmi_fpga_ml_a7/hdmi_fpga_ml} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'f:/a7_hdmi/hdmi_fpga_ml_a7/hdmi_fpga_ml'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/A7_HDMI/HDMI_FPGA_ML_A7'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'f:/A7_HDMI/HDMI_FPGA_ML_A7/miz701n/s01_ch12_hdmi_display_demon/miz_ip_lib/hdmi_fpga_ml_a7/hdmi_fpga_ml'. The path is contained within another repository.

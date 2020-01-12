@@ -1,0 +1,108 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Sat Jul 01 17:22:43 2017
+| Host         : LB-201704111542 running 64-bit major release  (build 9200)
+| Command      : report_drc -file HDMI_FPGA_ML_A7_drc_routed.rpt -pb HDMI_FPGA_ML_A7_drc_routed.pb -rpx HDMI_FPGA_ML_A7_drc_routed.rpx
+| Design       : HDMI_FPGA_ML_A7
+| Device       : xc7a100tfgg484-2
+| Speed File   : -2
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 12
++-----------+------------------+------------------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                                      | Violations |
++-----------+------------------+------------------------------------------------------------------+------------+
+| NSTD-1    | Critical Warning | Unspecified I/O Standard                                         | 1          |
+| UCIO-1    | Critical Warning | Unconstrained Logical Port                                       | 1          |
+| CFGBVS-1  | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties              | 1          |
+| CKLD-2    | Warning          | Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads | 1          |
+| REQP-1580 | Warning          | Phase alignment                                                  | 8          |
++-----------+------------------+------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+NSTD-1#1 Critical Warning
+Unspecified I/O Standard  
+39 out of 39 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: VGA_RGB[23:0], PXLCLK_I, PXLCLK_5X_I, LOCKED_I, RST_N, VGA_HS, VGA_VS, VGA_DE, HDMI_CLK_P, HDMI_CLK_N, HDMI_D2_P, HDMI_D2_N, HDMI_D1_P, HDMI_D1_N, HDMI_D0_P (the first 15 of 16 listed).
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+39 out of 39 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: VGA_RGB[23:0], PXLCLK_I, PXLCLK_5X_I, LOCKED_I, RST_N, VGA_HS, VGA_VS, VGA_DE, HDMI_CLK_P, HDMI_CLK_N, HDMI_D2_P, HDMI_D2_N, HDMI_D1_P, HDMI_D1_N, HDMI_D0_P (the first 15 of 16 listed).
+Related violations: <none>
+
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+CKLD-2#1 Warning
+Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads  
+Clock net PXLCLK_5X_I_IBUF is directly driven by an IO rather than a Clock Buffer or may be an IO driving a mix of Clock Buffer and non-Clock loads. This connectivity should be reviewed and corrected as appropriate. Driver(s): PXLCLK_5X_I_IBUF_inst/O
+Related violations: <none>
+
+REQP-1580#1 Warning
+Phase alignment  
+Unsupported clocking topology used for  Inst_DVITransmitter/Inst_clk_serializer_10_1/family_7.oserdese2_master. This can result in corrupted data. The Inst_DVITransmitter/Inst_clk_serializer_10_1/family_7.oserdese2_master/CLK / Inst_DVITransmitter/Inst_clk_serializer_10_1/family_7.oserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#2 Warning
+Phase alignment  
+Unsupported clocking topology used for  Inst_DVITransmitter/Inst_clk_serializer_10_1/family_7.oserdese2_slave. This can result in corrupted data. The Inst_DVITransmitter/Inst_clk_serializer_10_1/family_7.oserdese2_slave/CLK / Inst_DVITransmitter/Inst_clk_serializer_10_1/family_7.oserdese2_slave/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#3 Warning
+Phase alignment  
+Unsupported clocking topology used for  Inst_DVITransmitter/Inst_d0_serializer_10_1/family_7.oserdese2_master. This can result in corrupted data. The Inst_DVITransmitter/Inst_d0_serializer_10_1/family_7.oserdese2_master/CLK / Inst_DVITransmitter/Inst_d0_serializer_10_1/family_7.oserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#4 Warning
+Phase alignment  
+Unsupported clocking topology used for  Inst_DVITransmitter/Inst_d0_serializer_10_1/family_7.oserdese2_slave. This can result in corrupted data. The Inst_DVITransmitter/Inst_d0_serializer_10_1/family_7.oserdese2_slave/CLK / Inst_DVITransmitter/Inst_d0_serializer_10_1/family_7.oserdese2_slave/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#5 Warning
+Phase alignment  
+Unsupported clocking topology used for  Inst_DVITransmitter/Inst_d1_serializer_10_1/family_7.oserdese2_master. This can result in corrupted data. The Inst_DVITransmitter/Inst_d1_serializer_10_1/family_7.oserdese2_master/CLK / Inst_DVITransmitter/Inst_d1_serializer_10_1/family_7.oserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#6 Warning
+Phase alignment  
+Unsupported clocking topology used for  Inst_DVITransmitter/Inst_d1_serializer_10_1/family_7.oserdese2_slave. This can result in corrupted data. The Inst_DVITransmitter/Inst_d1_serializer_10_1/family_7.oserdese2_slave/CLK / Inst_DVITransmitter/Inst_d1_serializer_10_1/family_7.oserdese2_slave/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#7 Warning
+Phase alignment  
+Unsupported clocking topology used for  Inst_DVITransmitter/Inst_d2_serializer_10_1/family_7.oserdese2_master. This can result in corrupted data. The Inst_DVITransmitter/Inst_d2_serializer_10_1/family_7.oserdese2_master/CLK / Inst_DVITransmitter/Inst_d2_serializer_10_1/family_7.oserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#8 Warning
+Phase alignment  
+Unsupported clocking topology used for  Inst_DVITransmitter/Inst_d2_serializer_10_1/family_7.oserdese2_slave. This can result in corrupted data. The Inst_DVITransmitter/Inst_d2_serializer_10_1/family_7.oserdese2_slave/CLK / Inst_DVITransmitter/Inst_d2_serializer_10_1/family_7.oserdese2_slave/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+

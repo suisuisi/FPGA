@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sat Jul 01 17:21:34 2017
+# Process ID: 260
+# Current directory: F:/A7_HDMI/HDMI_FPGA_ML_A7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent492 F:\A7_HDMI\HDMI_FPGA_ML_A7\HDMI_FPGA_ML_A7.xpr
+# Log file: F:/A7_HDMI/HDMI_FPGA_ML_A7/vivado.log
+# Journal file: F:/A7_HDMI/HDMI_FPGA_ML_A7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/A7_HDMI/HDMI_FPGA_ML_A7/HDMI_FPGA_ML_A7.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'F:/A7_HDMI/HDMI_FPGA_ML_A7/miz701n/s01_ch12_hdmi_display_demon/miz_ip_lib/hdmi_fpga_ml_a7/hdmi_fpga_ml'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'f:/a7_hdmi/hdmi_fpga_ml_a7/hdmi_fpga_ml'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/A7_HDMI/HDMI_FPGA_ML_A7'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'f:/A7_HDMI/HDMI_FPGA_ML_A7/miz701n/s01_ch12_hdmi_display_demon/miz_ip_lib/hdmi_fpga_ml_a7/hdmi_fpga_ml'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:HDMI_FPGA_ML_A7:1.0'. The one found in IP location 'f:/A7_HDMI/HDMI_FPGA_ML_A7' will take precedence over the same IP in location f:/A7_HDMI/HDMI_FPGA_ML_A7/HDMI_FPGA_ML
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Jul 01 17:21:51 2017] Launched impl_1...
+Run output will be captured here: F:/A7_HDMI/HDMI_FPGA_ML_A7/HDMI_FPGA_ML_A7.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 01 17:22:58 2017...

@@ -1,0 +1,115 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Nov  3 01:21:30 2019
+# Process ID: 48604
+# Current directory: F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent56132 F:\FILE\FPGA\ZYNQ\Image\002_OV5640_DDR3_YCbCr422_RGB888\OV5640_DEMO\MIG_OV_PRG\MIG_OV_PRG.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/user/Video_Image_Processor/Video_Image_Processor.v] -no_script -reset -force -quiet
+remove_files  F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/user/Video_Image_Processor/Video_Image_Processor.v
+set_property  ip_repo_paths  f:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/mia_ip_lib/HDMI_FPGA_ML_A7 [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  F:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7 [current_project]
+update_ip_catalog
+add_files -norecurse {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/user/Video_Image_Processor/YCbCr422_RGB888/Video_Image_Processor.v F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/user/Video_Image_Processor/YCbCr422_RGB888/Image_YCbCr444_RGB888.v F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/user/Video_Image_Processor/YCbCr422_RGB888/Image_YCbCr422_YCbCr444.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/user/I2C_OV5640_RGB565_Config.v] -no_script -reset -force -quiet
+remove_files  F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/user/I2C_OV5640_RGB565_Config.v
+add_files -norecurse F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/user/I2C_OV5640_YUV422_Config.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/user/I2C_OV5640_YUV422_Config.v] -no_script -reset -force -quiet
+remove_files  F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/user/I2C_OV5640_YUV422_Config.v
+add_files -norecurse F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/user/I2C_OV5640_YUV422_Config.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z035_1] -filter {CELL_NAME=~"sensor_decode_inst/sensor_sg"}]]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 12
+wait_on_run impl_2
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/OV5640_TOP.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+save_wave_config {F:/FILE/FPGA/ZYNQ/Image/002_OV5640_DDR3_YCbCr422_RGB888/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

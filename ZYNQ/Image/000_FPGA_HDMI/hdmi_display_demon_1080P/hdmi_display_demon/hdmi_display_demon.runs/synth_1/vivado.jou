@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Nov 06 11:06:26 2017
+# Process ID: 10504
+# Current directory: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1
+# Command line: vivado.exe -log HDMI_display_Demon.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HDMI_display_Demon.tcl
+# Log file: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1/HDMI_display_Demon.vds
+# Journal file: F:/MIZ7035_Demon/s1/S01_CH11_hdmi_display_demon_1080P/hdmi_display_demon/hdmi_display_demon.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source HDMI_display_Demon.tcl -notrace

@@ -1,0 +1,6 @@
+DVITransmitter.vhd,vhdl,xil_defaultlib,../../../../../../../../../../Xilinx/Miz7035/My_ip_lib/HDMI_FPGA_ML_A7_0/src/DVITransmitter.vhd,
+SerializerN_1.vhd,vhdl,xil_defaultlib,../../../../../../../../../../Xilinx/Miz7035/My_ip_lib/HDMI_FPGA_ML_A7_0/src/SerializerN_1.vhd,
+TMDSEncoder.vhd,vhdl,xil_defaultlib,../../../../../../../../../../Xilinx/Miz7035/My_ip_lib/HDMI_FPGA_ML_A7_0/src/TMDSEncoder.vhd,
+hdmi_tx.vhd,vhdl,xil_defaultlib,../../../../../../../../../../Xilinx/Miz7035/My_ip_lib/HDMI_FPGA_ML_A7_0/src/hdmi_tx.vhd,
+HDMI_FPGA_ML_A7_0.vhd,vhdl,xil_defaultlib,../../../../../../../../../../Xilinx/Miz7035/My_ip_lib/HDMI_FPGA_ML_A7_0/sim/HDMI_FPGA_ML_A7_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,717 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 64940
+License: Customer
+
+Current time: 	Mon Nov 04 21:30:34 CST 2019
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 39 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	E:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	E:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	zlk
+User home directory: C:/Users/zlk
+User working directory: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: E:/Xilinx/Vivado
+HDI_APPROOT: E:/Xilinx/Vivado/2017.4
+RDI_DATADIR: E:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: E:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/zlk/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/zlk/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/zlk/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	E:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/vivado.log
+Vivado journal file location: 	F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/vivado.jou
+Engine tmp dir: 	F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/.Xil/Vivado-64940-LAPTOP-8E6RLG3I
+
+GUI allocated memory:	197 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 560 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 51 MB (+51036kb) [00:00:05]
+// [Engine Memory]: 498 MB (+370813kb) [00:00:05]
+// Opening Vivado Project: F:\FILE\FPGA\ZYNQ\Image\005_OV5640_DDR3_Gray_Sobel\OV5640_DEMO\MIG_OV_PRG\MIG_OV_PRG.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+// Tcl Message: open_project F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.xpr 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 582 MB (+61763kb) [00:00:09]
+// HMemoryUtils.trashcanNow. Engine heap size: 593 MB. GUI used memory: 33 MB. Current time: 11/4/19 9:30:36 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 640 MB (+30076kb) [00:00:13]
+// [GUI Memory]: 56 MB (+3024kb) [00:00:14]
+// [GUI Memory]: 65 MB (+6029kb) [00:00:14]
+// [Engine Memory]: 673 MB (+929kb) [00:00:15]
+// [GUI Memory]: 71 MB (+2823kb) [00:00:16]
+// [GUI Memory]: 78 MB (+3328kb) [00:00:16]
+// Tcl Message: open_project F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'F:/FILE/FPGA/ZYNQ/Image/004_OV5640_DDR3_Gray_Median_Filter/OV5640_DEMO/MIG_OV_PRG' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FILE/FPGA/ZYNQ/Image/ip_lib/HDMI_FPGA_ML_A7'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2017.4/data/ip'. 
+// [Engine Memory]: 728 MB (+23252kb) [00:00:17]
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 914.379 ; gain = 177.250 
+// Project name: MIG_OV_PRG; location: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG; part: xc7z035ffg676-2
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// a (cj): Critical Messages: addNotify
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 27 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 739 MB. GUI used memory: 53 MB. Current time: 11/4/19 9:31:56 PM CST
+// Elapsed time: 58 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, h_pipe(rtl) (ImageXlib_arch.vhd)]", 7, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, active_delay(rtl) (ImageXlib_arch.vhd)]", 6, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, h_pipe(rtl) (ImageXlib_arch.vhd)]", 7, false); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV5640_TOP (OV5640_TOP.v)]", 1); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV5640_TOP (OV5640_TOP.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV5640_TOP (OV5640_TOP.v)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// [GUI Memory]: 85 MB (+3670kb) [00:01:57]
+// [Engine Memory]: 780 MB (+16315kb) [00:02:47]
+// HMemoryUtils.trashcanNow. Engine heap size: 780 MB. GUI used memory: 55 MB. Current time: 11/4/19 9:33:16 PM CST
+// [GUI Memory]: 91 MB (+1682kb) [00:04:02]
+// Elapsed time: 309 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, base_2d_linebuffer(rtl) (ImageXlib_arch.vhd)]", 2, true); // B (D, cj) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, base_2d_linebuffer(rtl) (ImageXlib_arch.vhd)]", 2); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, base_2d_linebuffer(rtl) (ImageXlib_arch.vhd)]", 2, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, base_2d_linebuffer(rtl) (ImageXlib_arch.vhd)]", 2, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// [GUI Memory]: 97 MB (+1004kb) [00:07:09]
+// Elapsed time: 20 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV5640_TOP (OV5640_TOP.v)]", 1); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV5640_TOP (OV5640_TOP.v), u_Video_Image_Processor_1 : Video_Image_Processor (Video_Image_Processor.v)]", 11, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV5640_TOP (OV5640_TOP.v), u_Video_Image_Processor_1 : Video_Image_Processor (Video_Image_Processor.v)]", 11, true, false, false, false, true, false); // B (D, cj) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ac (ai, cj)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// as (cj): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (as)
+dismissDialog("Remove Sources"); // as (cj)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/Video_Image_Processor/Gray_Median_Filter/Video_Image_Processor.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/Video_Image_Processor/Gray_Median_Filter/Video_Image_Processor.v 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VIP_Gray_Median_Filter (VIP_Gray_Median_Filter.v)]", 13, true); // B (D, cj) - Node
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VIP_Gray_Median_Filter (VIP_Gray_Median_Filter.v)]", 13, true, false, false, false, true, false); // B (D, cj) - Popup Trigger - Node
+// TclEventType: DG_GRAPH_GENERATED
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ac (ai, cj)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// as (cj): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (as)
+dismissDialog("Remove Sources"); // as (cj)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/Video_Image_Processor/Gray_Median_Filter/VIP_Gray_Median_Filter.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/Video_Image_Processor/Gray_Median_Filter/VIP_Gray_Median_Filter.v 
+// [GUI Memory]: 103 MB (+1425kb) [00:07:52]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Median_Filter_3X3 (Median_Filter_3X3.v)]", 13, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Median_Filter_3X3 (Median_Filter_3X3.v)]", 13, true, false, false, false, true, false); // B (D, cj) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ac (ai, cj)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// as (cj): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (as)
+dismissDialog("Remove Sources"); // as (cj)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/Video_Image_Processor/Gray_Median_Filter/Median_Filter_3X3.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/Video_Image_Processor/Gray_Median_Filter/Median_Filter_3X3.v 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VIP_Matrix_Generate_3X3_8Bit (VIP_Matrix_Generate_3X3_8Bit.v)]", 13, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VIP_Matrix_Generate_3X3_8Bit (VIP_Matrix_Generate_3X3_8Bit.v)]", 13, true, false, false, false, true, false); // B (D, cj) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ac (ai, cj)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// as (cj): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (as)
+dismissDialog("Remove Sources"); // as (cj)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/Video_Image_Processor/Gray_Median_Filter/VIP_Matrix_Generate_3X3_8Bit.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/Video_Image_Processor/Gray_Median_Filter/VIP_Matrix_Generate_3X3_8Bit.v 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Sort3 (Sort3.v)]", 18, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Sort3 (Sort3.v)]", 18, false, false, false, false, true, false); // B (D, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ac (ai, cj)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// as (cj): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (as)
+dismissDialog("Remove Sources"); // as (cj)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/Video_Image_Processor/Gray_Median_Filter/Sort3.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/Video_Image_Processor/Gray_Median_Filter/Sort3.v 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, h_pipe(rtl) (ImageXlib_arch.vhd)]", 20, false); // B (D, cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, h_pipe(rtl) (ImageXlib_arch.vhd)]", 20, false, false, false, false, true, false); // B (D, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ac (ai, cj)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// as (cj): Remove Sources: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (as)
+dismissDialog("Remove Sources"); // as (cj)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/linebuffer_Wapper/ImageXlib_arch.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/linebuffer_Wapper/ImageXlib_arch.vhd 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, active_delay(rtl) (ImageXlib_arch.vhd)]", 19, false); // B (D, cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, linebuffer_Wapper(rtl) (linebuffer_Wapper.vhd)]", 13, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, linebuffer_Wapper(rtl) (linebuffer_Wapper.vhd)]", 13, true, false, false, false, true, false); // B (D, cj) - Popup Trigger - Node
+// [GUI Memory]: 109 MB (+849kb) [00:08:32]
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ac (ai, cj)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// as (cj): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (as)
+dismissDialog("Remove Sources"); // as (cj)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/linebuffer_Wapper/linebuffer_Wapper.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  F:/FILE/FPGA/ZYNQ/Image/003_OV5640_DDR3_Gray_Mean_Filter/OV5640_DEMO/user/linebuffer_Wapper/linebuffer_Wapper.vhd 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, linebuffer_Wapper(rtl) (linebuffer_Wapper.vhd)]", 13, true, false, false, false, true, false); // B (D, cj) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ac (ai, cj)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// as (cj): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (as)
+dismissDialog("Remove Sources"); // as (cj)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/linebuffer_Wapper/linebuffer_Wapper.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/linebuffer_Wapper/linebuffer_Wapper.vhd 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// [GUI Memory]: 115 MB (+763kb) [00:10:33]
+// Elapsed time: 135 seconds
+String[] filenames31467 = {"F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/linebuffer_Wapper/ImageXlib_arch.vhd", "F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/linebuffer_Wapper/ImageXlib_utils.vhd", "F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/linebuffer_Wapper/linebuffer_Wapper.vhd"};
+setFileChooser(filenames31467);
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+String[] filenames16706 = {"F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel/SQRT.v", "F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel/Sobel_Threshold_Adj.v", "F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel/VIP_Matrix_Generate_3X3_8Bit.v", "F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel/VIP_Sobel_Edge_Detector.v", "F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel/Video_Image_Processor.v"};
+setFileChooser(filenames16706);
+selectButton("FINISH", "Finish"); // JButton (h, c)
+// 'h' command handler elapsed time: 150 seconds
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Add Sources"); // c (cj)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 801 MB. GUI used memory: 64 MB. Current time: 11/4/19 9:41:56 PM CST
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 477 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+setFileChooser("F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/key_counter_scan.v");
+selectButton("FINISH", "Finish"); // JButton (h, c)
+// 'h' command handler elapsed time: 11 seconds
+dismissDialog("Add Sources"); // c (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/key_counter_scan.v 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, OV5640_TOP.v]", 2, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, OV5640_TOP.v]", 2, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, OV5640_TOP.v]", 2, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (cZ, cj)
+// Elapsed time: 59 seconds
+selectCodeEditor("OV5640_TOP.v", 246, 158); // cd (w, cj)
+typeControlKey((HResource) null, "OV5640_TOP.v", 'c'); // cd (w, cj)
+selectCodeEditor("OV5640_TOP.v", 132, 211); // cd (w, cj)
+typeControlKey((HResource) null, "OV5640_TOP.v", 'v'); // cd (w, cj)
+selectCodeEditor("OV5640_TOP.v", 253, 120); // cd (w, cj)
+typeControlKey((HResource) null, "OV5640_TOP.v", 'c'); // cd (w, cj)
+selectCodeEditor("OV5640_TOP.v", 132, 184); // cd (w, cj)
+typeControlKey((HResource) null, "OV5640_TOP.v", 'v'); // cd (w, cj)
+// Elapsed time: 24 seconds
+selectCodeEditor("OV5640_TOP.v", 16, 137); // cd (w, cj)
+typeControlKey((HResource) null, "OV5640_TOP.v", 'v'); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 821 MB (+1042kb) [00:21:32]
+selectCodeEditor("OV5640_TOP.v", 433, 230); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 821 MB. GUI used memory: 62 MB. Current time: 11/4/19 9:52:01 PM CST
+// Elapsed time: 20 seconds
+selectCodeEditor("OV5640_TOP.v", 246, 271); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV5640_TOP (OV5640_TOP.v), u_Video_Image_Processor_1 : Video_Image_Processor (Video_Image_Processor.v)]", 13, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV5640_TOP (OV5640_TOP.v), u_Video_Image_Processor_1 : Video_Image_Processor (Video_Image_Processor.v)]", 13, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OV5640_TOP.v", 1); // k (j, cj)
+selectCodeEditor("OV5640_TOP.v", 188, 134); // cd (w, cj)
+selectCodeEditor("OV5640_TOP.v", 184, 144); // cd (w, cj)
+selectCodeEditor("OV5640_TOP.v", 13, 81); // cd (w, cj)
+typeControlKey((HResource) null, "OV5640_TOP.v", 'v'); // cd (w, cj)
+selectCodeEditor("OV5640_TOP.v", 0, 84); // cd (w, cj)
+selectCodeEditor("OV5640_TOP.v", 82, 83); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "2"); // h (f, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near .. [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/OV5640_TOP.v:498]. ]", 3, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\FILE\FPGA\ZYNQ\Image\005_OV5640_DDR3_Gray_Sobel\OV5640_DEMO\user\OV5640_TOP.v;-;;-;16;-;line;-;498;-;;-;16;-;"); // ah (O, cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near .. [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/OV5640_TOP.v:498]. ]", 5, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\FILE\FPGA\ZYNQ\Image\005_OV5640_DDR3_Gray_Sobel\OV5640_DEMO\user\OV5640_TOP.v;-;;-;16;-;line;-;498;-;;-;16;-;"); // ah (O, cj)
+selectCodeEditor("OV5640_TOP.v", 147, 165); // cd (w, cj)
+selectCodeEditor("OV5640_TOP.v", 148, 168); // cd (w, cj)
+selectCodeEditor("OV5640_TOP.v", 149, 161); // cd (w, cj)
+selectCodeEditor("OV5640_TOP.v", 193, 212); // cd (w, cj)
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // aw (f, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ac (cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 12 
+// Tcl Message: [Mon Nov  4 21:53:38 2019] Launched synth_1... Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: RUN_FAILED
+// ah (cj): Synthesis Failed: addNotify
+// Elapsed time: 37 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cj)
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aQ, cj): FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-2715] syntax error near . [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/OV5640_TOP.v:498]. ]", 2, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\FILE\FPGA\ZYNQ\Image\005_OV5640_DDR3_Gray_Sobel\OV5640_DEMO\user\OV5640_TOP.v;-;;-;16;-;line;-;498;-;;-;16;-;"); // ah (O, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 851 MB. GUI used memory: 60 MB. Current time: 11/4/19 9:54:21 PM CST
+selectCodeEditor("OV5640_TOP.v", 197, 199); // cd (w, cj)
+typeControlKey((HResource) null, "OV5640_TOP.v", 'c'); // cd (w, cj)
+selectCodeEditor("OV5640_TOP.v", 227, 53); // cd (w, cj)
+typeControlKey((HResource) null, "OV5640_TOP.v", 'v'); // cd (w, cj)
+selectCodeEditor("OV5640_TOP.v", 130, 45); // cd (w, cj)
+typeControlKey((HResource) null, "OV5640_TOP.v", 'v'); // cd (w, cj)
+selectCodeEditor("OV5640_TOP.v", 282, 181); // cd (w, cj)
+selectCodeEditor("OV5640_TOP.v", 254, 250); // cd (w, cj)
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+dismissDialog("Launch Runs"); // f (cj)
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// bs (cj):  Generate Bitstream : addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Nov  4 21:54:59 2019] Launched synth_1... Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log [Mon Nov  4 21:54:59 2019] Launched impl_2... Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_FAILED
+// ah (cj): Synthesis Failed: addNotify
+// Elapsed time: 48 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cj)
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aQ, cj): FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-439] module 'Line_Shift_RAM_8Bit' not found [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel/VIP_Matrix_Generate_3X3_8Bit.v:88]. ]", 2, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\FILE\FPGA\ZYNQ\Image\005_OV5640_DDR3_Gray_Sobel\OV5640_DEMO\user\Video_Image_Processor\Gray_Sobel\VIP_Matrix_Generate_3X3_8Bit.v;-;;-;16;-;line;-;88;-;;-;16;-;"); // ah (O, cj)
+// Elapsed time: 49 seconds
+selectCodeEditor("VIP_Matrix_Generate_3X3_8Bit.v", 1, 63); // cd (w, cj)
+typeControlKey((HResource) null, "VIP_Matrix_Generate_3X3_8Bit.v", 'v'); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Mon Nov  4 21:56:54 2019] Launched synth_1... Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/synth_1/runme.log [Mon Nov  4 21:56:54 2019] Launched impl_2... Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/impl_2/runme.log 
+// TclEventType: RUN_FAILED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// ah (cj): Synthesis Failed: addNotify
+// Elapsed time: 45 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cj)
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aQ, cj): FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-439] module 'altsqrt' not found [F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/user/Video_Image_Processor/Gray_Sobel/SQRT.v:53]. ]", 2, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\FILE\FPGA\ZYNQ\Image\005_OV5640_DDR3_Gray_Sobel\OV5640_DEMO\user\Video_Image_Processor\Gray_Sobel\SQRT.v;-;;-;16;-;line;-;53;-;;-;16;-;"); // ah (O, cj)
+// Elapsed time: 75 seconds
+selectCodeEditor("SQRT.v", 111, 87); // cd (w, cj)
+selectCodeEditor("SQRT.v", 111, 83); // cd (w, cj)
+selectCodeEditor("SQRT.v", 116, 84); // cd (w, cj)
+typeControlKey((HResource) null, "SQRT.v", 'c'); // cd (w, cj)
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// bs (cj):  IP Catalog : addNotify
+dismissDialog("IP Catalog"); // bs (cj)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CORDIC ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:cordic:6.0", 3, "CORDIC", 0, true); // O (O, cj) - Node
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "SQ"); // OverlayTextField (P, cj)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CORDIC ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:cordic:6.0", 3); // O (O, cj)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CORDIC ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:cordic:6.0", 3, "CORDIC", 0, true, false, false, false, false, true); // O (O, cj) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// [GUI Memory]: 122 MB (+704kb) [00:29:12]
+// TclEventType: LOAD_FEATURE
+// l (cj):  Customize IP : addNotify
+// r (cj): Customize IP: addNotify
+// [Engine Memory]: 865 MB (+3973kb) [00:29:14]
+dismissDialog("Customize IP"); // l (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 873 MB. GUI used memory: 63 MB. Current time: 11/4/19 9:59:41 PM CST
+// Elapsed time: 152 seconds
+selectComboBox("Functional Selection (Functional_Selection)", "Square Root", 6); // bN (C, r)
+selectComboBox("Data Format (Data_Format)", "UnsignedInteger", 1); // bN (C, r)
+// Elapsed time: 50 seconds
+setText("Input Width", "21"); // z (cZ, r)
+// Elapsed time: 27 seconds
+selectComboBox("Round Mode (Round_Mode)", "Nearest Even", 3); // bN (C, r)
+// Elapsed time: 56 seconds
+setText("Component Name", "CORDIC_SQRT"); // z (ci, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: CREATE_IP_CORE
+dismissDialog("Customize IP"); // r (cj)
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name cordic -vendor xilinx.com -library ip -version 6.0 -module_name CORDIC_SQRT -dir F:/FILE/Xilinx/Miz7035/My_ip_lib 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.Component_Name {CORDIC_SQRT} CONFIG.Functional_Selection {Square_Root} CONFIG.Data_Format {UnsignedInteger} CONFIG.Input_Width {21} CONFIG.Round_Mode {Nearest_Even} CONFIG.Output_Width {11} CONFIG.Coarse_Rotation {false}] [get_ips CORDIC_SQRT] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/CORDIC_SQRT/CORDIC_SQRT.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'CORDIC_SQRT'... 
+// au (cj): Generate Output Products: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (au)
+// bs (cj):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  f:/FILE/Xilinx/Miz7035/My_ip_lib/CORDIC_SQRT/CORDIC_SQRT.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CORDIC_SQRT'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'CORDIC_SQRT'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'CORDIC_SQRT'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'CORDIC_SQRT'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'CORDIC_SQRT'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all CORDIC_SQRT] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/CORDIC_SQRT/CORDIC_SQRT.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] f:/FILE/Xilinx/Miz7035/My_ip_lib/CORDIC_SQRT/CORDIC_SQRT.xci] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs -jobs 12 CORDIC_SQRT_synth_1 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Nov  4 22:04:37 2019] Launched CORDIC_SQRT_synth_1... Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/005_OV5640_DDR3_Gray_Sobel/OV5640_DEMO/MIG_OV_PRG/MIG_OV_PRG.runs/CORDIC_SQRT_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 924 MB (+16097kb) [00:34:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 924 MB. GUI used memory: 62 MB. Current time: 11/4/19 10:04:41 PM CST
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (A, G)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SQRT.v", 4); // k (j, cj)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV5640_TOP (OV5640_TOP.v), u_Video_Image_Processor_1 : Video_Image_Processor (Video_Image_Processor.v), u_VIP_Sobel_Edge_Detector : VIP_Sobel_Edge_Detector (VIP_Sobel_Edge_Detector.v)]", 12, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV5640_TOP (OV5640_TOP.v), u_Video_Image_Processor_1 : Video_Image_Processor (Video_Image_Processor.v), u_VIP_Sobel_Edge_Detector : VIP_Sobel_Edge_Detector (VIP_Sobel_Edge_Detector.v)]", 12, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, OV5640_TOP (OV5640_TOP.v), u_Video_Image_Processor_1 : Video_Image_Processor (Video_Image_Processor.v), u_VIP_Sobel_Edge_Detector : VIP_Sobel_Edge_Detector (VIP_Sobel_Edge_Detector.v)]", 12, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// Elapsed time: 11 seconds
+selectCodeEditor("VIP_Sobel_Edge_Detector.v", 3, 122); // cd (w, cj)
+selectCodeEditor("VIP_Sobel_Edge_Detector.v", 308, 118); // cd (w, cj)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, CORDIC_SQRT]", 5, true); // B (D, cj) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, CORDIC_SQRT]", 5); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, CORDIC_SQRT, CORDIC_SQRT_sim_netlist.v]", 14, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, CORDIC_SQRT, CORDIC_SQRT_sim_netlist.v]", 14, false, false, false, false, false, true); // B (D, cj) - Double Click
+// ac (cj): Unable to Open File: addNotify
+selectButton(PAResourceOtoP.OpenFileAction_OPEN_DIRECTORY, "Open Directory"); // a (ac)
+dismissDialog("Unable to Open File"); // ac (cj)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 43 seconds
+selectCodeEditor("VIP_Sobel_Edge_Detector.v", 623, 74); // cd (w, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, CORDIC_SQRT, CORDIC_SQRT_stub.v]", 16, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, CORDIC_SQRT]", 5, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, CORDIC_SQRT]", 5, true, false, false, false, true, false); // B (D, cj) - Popup Trigger - Node
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // Z (ai, cj)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ac (ai, cj)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// as (cj): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (as)
+dismissDialog("Remove Sources"); // as (cj)
+// Tcl Message: export_ip_user_files -of_objects  [get_files f:/FILE/Xilinx/Miz7035/My_ip_lib/CORDIC_SQRT/CORDIC_SQRT.xci] -no_script -reset -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// as (cj): Remove Sources: addNotify
+// bs (as):  Remove Sources : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: remove_files  -fileset CORDIC_SQRT f:/FILE/Xilinx/Miz7035/My_ip_lib/CORDIC_SQRT/CORDIC_SQRT.xci 
+// Tcl Message: INFO: [Project 1-386] Moving file 'f:/FILE/Xilinx/Miz7035/My_ip_lib/CORDIC_SQRT/CORDIC_SQRT.xci' from fileset 'CORDIC_SQRT' to fileset 'sources_1'. 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// [GUI Memory]: 134 MB (+7096kb) [00:35:53]
+dismissDialog("Remove Sources"); // bs (as)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 146 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IP Catalog", 5); // k (j, cj)
+// Elapsed time: 15 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Complex Multiplier ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:cmpy:6.0", 220, "Complex Multiplier", 0, false); // O (O, cj)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "s"); // OverlayTextField (P, cj)
+// [GUI Memory]: 143 MB (+2176kb) [00:39:44]
+// Elapsed time: 231 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VIP_Matrix_Generate_3X3_8Bit.v", 3); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SQRT.v", 4); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VIP_Sobel_Edge_Detector.v", 6); // k (j, cj)
+selectCodeEditor("VIP_Sobel_Edge_Detector.v", 43, 124); // cd (w, cj)
+selectCodeEditor("VIP_Sobel_Edge_Detector.v", 19, 128); // cd (w, cj)
+selectCodeEditor("VIP_Sobel_Edge_Detector.v", 41, 125); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 150 MB (+94kb) [00:44:05]
+// Elapsed time: 98 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IP Catalog", 5); // k (j, cj)
+// Elapsed time: 11 seconds
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "IntelliProp ;  ;  ;  ; ", 5); // O (O, cj)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Alliance Partners ;  ;  ;  ; ", 4); // O (O, cj)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Automotive & Industrial ;  ;  ;  ; ", 5); // O (O, cj)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Infrastructure ;  ;  ;  ; ", 6); // O (O, cj)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXIS Infrastructure ;  ;  ;  ; ", 7); // O (O, cj)
+// Elapsed time: 74 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CORDIC ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:cordic:6.0", 264, "CORDIC", 0, false); // O (O, cj)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "DDS Compiler ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:dds_compiler:6.0", 267, "DDS Compiler", 0, false); // O (O, cj)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CORDIC ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:cordic:6.0", 266, "CORDIC", 0, false); // O (O, cj)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "DDS Compiler ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:dds_compiler:6.0", 267, "DDS Compiler", 0, false); // O (O, cj)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CORDIC ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:cordic:6.0", 264, "CORDIC", 0, false); // O (O, cj)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CORDIC ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:cordic:6.0", 264, "CORDIC", 0, false); // O (O, cj)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CORDIC ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:cordic:6.0", 264, "CORDIC", 0, false, false, false, false, false, true); // O (O, cj) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// r (cj): Customize IP: addNotify
+selectCheckBox((HResource) null, "Coarse Rotation", false); // g (bB, r): FALSE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "AXI4 Stream Options", 1); // cY (C, r)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Customize IP"); // r (cj)
+// Elapsed time: 210 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CORDIC ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:cordic:6.0", 266, "CORDIC", 0, false); // O (O, cj)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CORDIC ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:cordic:6.0", 264, "CORDIC", 0, false); // O (O, cj)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CORDIC ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:cordic:6.0", 264, "CORDIC", 0, false, false, false, false, false, true); // O (O, cj) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// r (cj): Customize IP: addNotify
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "AXI4 Stream Options", 1); // cY (C, r)
+selectCheckBox((HResource) null, "Has TLAST", true); // g (bB, r): TRUE
+selectCheckBox((HResource) null, "Has TLAST", false); // g (bB, r): FALSE
+selectCheckBox((HResource) null, "Has TUSER", true); // g (bB, r): TRUE
+selectCheckBox((HResource) null, "Has TUSER", false); // g (bB, r): FALSE
+selectCheckBox((HResource) null, "Has TUSER", true); // g (bB, r): TRUE
+selectCheckBox((HResource) null, "Has TUSER", false); // g (bB, r): FALSE
+selectCheckBox(PAResourceTtoZ.XPG_IPSymbol_SHOW_DISABLED_PORTS, "Show disabled ports", false); // g (cD, r): FALSE
+selectCheckBox(PAResourceTtoZ.XPG_IPSymbol_SHOW_DISABLED_PORTS, "Show disabled ports", true); // g (cD, r): TRUE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Configuration Options", 0); // cY (C, r)
+selectComboBox("Functional Selection (Functional_Selection)", "Square Root", 6); // bN (C, r)
+// Elapsed time: 17 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "AXI4 Stream Options", 1); // cY (C, r)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Customize IP"); // r (cj)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CORDIC ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:cordic:6.0", 266, "CORDIC", 0, false); // O (O, cj)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CORDIC ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:cordic:6.0", 266); // O (O, cj)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "CORDIC ; AXI4-Stream ; Production ; Included ; xilinx.com:ip:cordic:6.0", 266, "CORDIC", 0, false, false, false, false, false, true); // O (O, cj) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// r (cj): Customize IP: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Customize IP"); // r (cj)
+// Elapsed time: 19 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Color-Space Converter ; AXI4, AXI4-Stream ; Production ; Purchase ; omnitek.tv:ip:omni_colourspace:0.0", 306, "Color-Space Converter", 0, false); // O (O, cj)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Color-Space Converter ; AXI4, AXI4-Stream ; Production ; Purchase ; omnitek.tv:ip:omni_colourspace:0.0", 306, "Color-Space Converter", 0, false); // O (O, cj)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Color-Space Converter ; AXI4, AXI4-Stream ; Production ; Purchase ; omnitek.tv:ip:omni_colourspace:0.0", 306); // O (O, cj)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Color-Space Converter ; AXI4, AXI4-Stream ; Production ; Purchase ; omnitek.tv:ip:omni_colourspace:0.0", 306, "Color-Space Converter", 0, false, false, false, false, false, true); // O (O, cj) - Double Click
+selectButton("PAResourceCommand.PACommandNames_CUSTOMIZE_CORE_OK", "OK"); // JButton (A, G)
+// Elapsed time: 16 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "MIPI D-PHY ; AXI4 ; Production ; Included ; xilinx.com:ip:mipi_dphy:4.0", 352, "MIPI D-PHY", 0, false); // O (O, cj)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "MIPI DSI Tx Subsystem ; AXI4, AXI4-Stream ; Production ; Purchase ; xilinx.com:ip:mipi_dsi_tx_subsystem:2.0", 353, "MIPI DSI Tx Subsystem", 0, false); // O (O, cj)
+// [GUI Memory]: 159 MB (+1029kb) [00:55:17]
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 72 MB. Current time: 11/5/19 12:10:30 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 71 MB. Current time: 11/5/19 12:40:31 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 71 MB. Current time: 11/5/19 1:10:31 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 71 MB. Current time: 11/5/19 1:40:31 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 71 MB. Current time: 11/5/19 2:10:31 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 71 MB. Current time: 11/5/19 2:40:32 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 71 MB. Current time: 11/5/19 3:10:32 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 71 MB. Current time: 11/5/19 3:40:32 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 71 MB. Current time: 11/5/19 4:10:33 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 71 MB. Current time: 11/5/19 4:40:33 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 71 MB. Current time: 11/5/19 5:10:33 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 71 MB. Current time: 11/5/19 5:40:34 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 71 MB. Current time: 11/5/19 6:10:34 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 71 MB. Current time: 11/5/19 6:40:34 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 72 MB. Current time: 11/5/19 7:36:34 PM CST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 64 MB. Current time: 11/5/19 8:06:35 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 63 MB. Current time: 11/5/19 8:36:35 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 63 MB. Current time: 11/5/19 9:06:35 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 63 MB. Current time: 11/5/19 9:36:35 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 63 MB. Current time: 11/5/19 10:06:36 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 64 MB. Current time: 11/6/19 12:21:30 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 64 MB. Current time: 11/6/19 12:51:30 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 63 MB. Current time: 11/6/19 1:21:31 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 63 MB. Current time: 11/6/19 1:51:31 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 63 MB. Current time: 11/6/19 2:21:31 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 63 MB. Current time: 11/6/19 2:51:32 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 63 MB. Current time: 11/6/19 3:21:32 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 63 MB. Current time: 11/6/19 3:51:32 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 63 MB. Current time: 11/6/19 4:21:33 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 63 MB. Current time: 11/6/19 4:51:33 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 64 MB. Current time: 11/6/19 5:21:33 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 63 MB. Current time: 11/6/19 5:51:34 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 63 MB. Current time: 11/6/19 6:21:34 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 929 MB. GUI used memory: 64 MB. Current time: 11/6/19 11:27:29 PM CST

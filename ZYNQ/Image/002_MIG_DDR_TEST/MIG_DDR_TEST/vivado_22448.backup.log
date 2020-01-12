@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Dec 15 01:52:16 2019
+# Process ID: 22448
+# Current directory: F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27324 F:\FILE\FPGA\ZYNQ\Image\002_MIG_DDR_TEST\MIG_DDR_TEST\mig_7series_0_ex.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.xpr
+INFO: [Project 1-313] Project file moved from 'F:/BaiduNetdiskDownload/S07_CH09' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2017.4/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'mig_7series_0' is locked:
+* IP definition 'Memory Interface Generator (MIG 7 Series) (4.0)' for IP 'mig_7series_0' (customized with software release 2016.4) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (5.3)' for IP 'clk_wiz_0' (customized with software release 2016.4) has a newer minor version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [Project 1-230] Project 'mig_7series_0_ex.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 869.613 ; gain = 132.332
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+report_ip_status -name ip_status 
+upgrade_ip -srcset clk_wiz_0 [get_ips  {clk_wiz_0 mig_7series_0}] -log ip_upgrade.log
+Upgrading 'clk_wiz_0'
+INFO: [Project 1-386] Moving file 'F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' from fileset 'clk_wiz_0' to fileset 'sources_1'.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'CLKOUT2_REQUESTED_OUT_FREQ' from '100.000' to '200.000' has been ignored for IP 'clk_wiz_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKIN1_PERIOD' from '10.000' to '10.0' has been ignored for IP 'clk_wiz_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKIN2_PERIOD' from '10.000' to '10.0' has been ignored for IP 'clk_wiz_0'
+WARNING: [IP_Flow 19-3501] Upgraded clk_wiz_0 from Clocking Wizard 5.3 to Clocking Wizard 5.4, with warnings. Please review the message log.
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'clk_wiz_0' has identified issues that may require user intervention. Please review the upgrade log 'f:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Upgrading 'mig_7series_0'
+INFO: [Project 1-386] Moving file 'F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci' from fileset 'mig_7series_0' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded mig_7series_0 (Memory Interface Generator (MIG 7 Series) 4.0) from revision 2 to revision 5
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mig_7series_0'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1110.785 ; gain = 240.578
+export_ip_user_files -of_objects [get_ips {clk_wiz_0 mig_7series_0}] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+[Sun Dec 15 01:59:53 2019] Launched mig_7series_0_synth_1, clk_wiz_0_synth_1, synth_1...
+Run output will be captured here:
+mig_7series_0_synth_1: F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.runs/mig_7series_0_synth_1/runme.log
+clk_wiz_0_synth_1: F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.runs/clk_wiz_0_synth_1/runme.log
+synth_1: F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.runs/synth_1/runme.log
+[Sun Dec 15 01:59:53 2019] Launched impl_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/Image/002_MIG_DDR_TEST/MIG_DDR_TEST/mig_7series_0_ex.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1149.477 ; gain = 8.227
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 15 02:41:04 2019...
