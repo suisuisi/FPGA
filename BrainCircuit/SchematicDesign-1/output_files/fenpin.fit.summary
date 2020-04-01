@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Mar 14 22:14:26 2020
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+Revision Name : fenpin
+Top-level Entity Name : fenpin_2
+Family : Cyclone IV E
+Device : EP4CE15F17C8
+Timing Models : Final
+Total logic elements : 1 / 15,408 ( < 1 % )
+    Total combinational functions : 1 / 15,408 ( < 1 % )
+    Dedicated logic registers : 1 / 15,408 ( < 1 % )
+Total registers : 1
+Total pins : 2 / 166 ( 1 % )
+Total virtual pins : 0
+Total memory bits : 0 / 516,096 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

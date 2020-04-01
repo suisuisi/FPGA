@@ -1,0 +1,35 @@
+# do fenpin.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:53:05 on Mar 14,2020
+# vlog -work work fenpin.vo 
+# -- Compiling module fenpin_2
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	fenpin_2
+# End time: 21:53:05 on Mar 14,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:53:05 on Mar 14,2020
+# vlog -work work fenpin_2.vwf.vt 
+# -- Compiling module fenpin_2_vlg_vec_tst
+# 
+# Top level modules:
+# 	fenpin_2_vlg_vec_tst
+# End time: 21:53:05 on Mar 14,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.fenpin_2_vlg_vec_tst 
+# Start time: 21:53:05 on Mar 14,2020
+# Loading work.fenpin_2_vlg_vec_tst
+# Loading work.fenpin_2
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+# after#24
+# ** Note: $finish    : fenpin_2.vwf.vt(45)
+#    Time: 1 us  Iteration: 0  Instance: /fenpin_2_vlg_vec_tst
+# End time: 21:53:06 on Mar 14,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

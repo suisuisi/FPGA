@@ -42,7 +42,7 @@ parameter    psub_address3=8'b0000_0100;       //PCF8563 的时寄存器的地�
 		      case( iCall[7:0] )
 				
 				    8'b1000_0000 : // psub_address & control_data
-					 begin D1 = psub_address;  D2 <= iData; end  //D2 <= 8'b0000_0000;
+					 begin D1 <s= psub_address;  D2 <= iData; end  //D2 <= 8'b0000_0000;
 					
 				    8'b0100_0000 : // Write second
 					 begin D1 <= psub_address1; D2 <= iData; end //8'b00100100

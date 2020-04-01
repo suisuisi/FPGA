@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FILE/FPGA/ZYNQ/FPGA/BrainCircuit/SchematicDesign-1/simulation/qsim
+vfenpin_2
+Z1 !s110 1584193985
+!i10b 1
+!s100 ;<ek8;z[7dP<OM]?QjW=E2
+I>M_M=[Gjb0m4ePlC;Y2ND0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1584193984
+Z4 8fenpin.vo
+Z5 Ffenpin.vo
+L0 32
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1584193985.000000
+Z8 !s107 fenpin.vo|
+Z9 !s90 -work|work|fenpin.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vfenpin_2_vlg_vec_tst
+R1
+!i10b 1
+!s100 D80FZMT_mL511M6m6oTOg2
+IDWJG:ziDWlDQ;XQTaQ::30
+R2
+R0
+R3
+8fenpin_2.vwf.vt
+Ffenpin_2.vwf.vt
+L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 fenpin_2.vwf.vt|
+!s90 -work|work|fenpin_2.vwf.vt|
+!i113 1
+R10
+R11
+vhard_block
+R1
+!i10b 1
+!s100 izJS86OCL1bZ?203WEXmN3
+ITQ`5:<CkB98F7RP0Z8HSG3
+R2
+R0
+R3
+R4
+R5
+L0 128
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

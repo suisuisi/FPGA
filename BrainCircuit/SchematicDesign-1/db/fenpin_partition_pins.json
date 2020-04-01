@@ -1,0 +1,17 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "fenpin_2o",
+					"strict" : false
+				},
+				{
+					"name" : "fenpin_2i",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

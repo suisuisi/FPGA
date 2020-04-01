@@ -1,0 +1,5 @@
+|fenpin_2
+fenpin_2o <= inst.DB_MAX_OUTPUT_PORT_TYPE
+fenpin_2i => inst.CLK
+
+

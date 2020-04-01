@@ -1,0 +1,161 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Intel and sold by Intel or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition"
+
+// DATE "03/14/2020 21:53:04"
+
+// 
+// Device: Altera EP4CE15F17C8 Package FBGA256
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module fenpin_2 (
+	fenpin_2o,
+	fenpin_2i);
+output 	fenpin_2o;
+input 	fenpin_2i;
+
+// Design Ports Information
+// fenpin_2o	=>  Location: PIN_L2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// fenpin_2i	=>  Location: PIN_K1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \fenpin_2o~output_o ;
+wire \fenpin_2i~input_o ;
+wire \inst~0_combout ;
+wire \inst~q ;
+
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+// Location: IOOBUF_X0_Y10_N23
+cycloneive_io_obuf \fenpin_2o~output (
+	.i(\inst~q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\fenpin_2o~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \fenpin_2o~output .bus_hold = "false";
+defparam \fenpin_2o~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y10_N8
+cycloneive_io_ibuf \fenpin_2i~input (
+	.i(fenpin_2i),
+	.ibar(gnd),
+	.o(\fenpin_2i~input_o ));
+// synopsys translate_off
+defparam \fenpin_2i~input .bus_hold = "false";
+defparam \fenpin_2i~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y10_N16
+cycloneive_lcell_comb \inst~0 (
+// Equation(s):
+// \inst~0_combout  = !\inst~q 
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\inst~q ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\inst~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst~0 .lut_mask = 16'h0F0F;
+defparam \inst~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X1_Y10_N17
+dffeas inst(
+	.clk(\fenpin_2i~input_o ),
+	.d(\inst~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam inst.is_wysiwyg = "true";
+defparam inst.power_up = "low";
+// synopsys translate_on
+
+assign fenpin_2o = \fenpin_2o~output_o ;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_C1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_D2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_H1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DATA0~	=>  Location: PIN_H2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_nCEO~	=>  Location: PIN_F16,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire \~ALTERA_ASDO_DATA1~~padout ;
+wire \~ALTERA_FLASH_nCE_nCSO~~padout ;
+wire \~ALTERA_DATA0~~padout ;
+wire \~ALTERA_ASDO_DATA1~~ibuf_o ;
+wire \~ALTERA_FLASH_nCE_nCSO~~ibuf_o ;
+wire \~ALTERA_DATA0~~ibuf_o ;
+
+
+endmodule
